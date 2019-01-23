@@ -1,0 +1,7 @@
+## Barfriends 
+
+Notes:
+
+### Frontend
+
+### Backend
