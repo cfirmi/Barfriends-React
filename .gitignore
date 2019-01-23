@@ -4,5 +4,6 @@ node_modules/
 haters/
 .next/
 .build/
+package-lock.json
 layout.md
 variables.env
