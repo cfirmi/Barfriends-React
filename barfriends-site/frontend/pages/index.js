@@ -1,12 +1,9 @@
 import styled from 'styled-components';
+import Home from './homepage';
 
-const Div = styled.div`
-`;
 
-const Home = () => (
-  <Div>
-    This is THE HOME PAGE LETS WORK ON THE HEADER FIRST W.E THAT IS 
-  </Div>
+const Index = () => (
+  <Home />
 );
 
-export default Home;
+export default Index;

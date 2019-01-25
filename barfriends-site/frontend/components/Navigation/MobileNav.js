@@ -31,7 +31,8 @@ export default MobileNav;
 const NavStyles = styled.div`
   position: fixed;
   top: 0; right: 0; left: 0;
-  width: 100vw; height: 44px;
+  width: 100vw;  height: 66px;
+  line-height: 66px;
   background: ${props => props.theme.black};;
   z-index: 10;
   ${props => props.open && `transform: translateX(0);`};

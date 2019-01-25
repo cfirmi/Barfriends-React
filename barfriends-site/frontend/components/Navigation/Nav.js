@@ -5,17 +5,27 @@ import styled from 'styled-components';
 const Logo = '../../static/images/Logo.svg';
 
 const NavStyles = styled.div`
-  height: 44px;
+  background: ${props => props.theme.black};
+  position:fixed;
+  height: 66px;
   width: 100vw;
   font-weight: 200;
-`;
+  line-height: 70px;
+  `;
+
 const NavItems = styled.div`
-  width: 100px;
-  text-align: center;
-  line-height: 55px;
+  /* background: blue; */
+  width: 170px;
+  height: 66px;
   color: white;
-  :hover {
-    color: green;
+  text-align: center;
+  a {
+    width: 150px;
+    text-align: center;
+    padding: 10px 15px;
+    :hover {
+      color: white;
+    }
   }
 `;
 
@@ -34,33 +44,33 @@ const NavBox = styled.div`
 `;
 const StyleLogo = styled.img`
   height: 25px;
-  margin-top: 25%;
-  transform: translateY(-50%);
+  margin-top: 20px;
+  /* transform: translateY(-50%); */
 `;
 const Nav = () => (
   <NavStyles>
     <NavBox>
-    <Link href='#'>
-        <a>
-          <NavItems>
-                <StyleLogo src={Logo} alt=""/>
-          </NavItems>
-        </a>
-      </Link>
-      <Link href='#'>
-        <a>
-          <NavItems>
-                download
-          </NavItems>
-        </a>
-      </Link>
-      <Link href='#'>
-        <a>
-          <NavItems>
-              owners
-          </NavItems>
-        </a>
-      </Link>
+      <NavItems>
+        <Link href='#'>
+          <a>
+            <StyleLogo src={Logo} alt=""/>
+          </a>
+        </Link>
+      </NavItems>
+      <NavItems>
+        <Link href='#'>
+          <a>
+              download
+          </a>
+        </Link>
+      </NavItems>
+      <NavItems>
+        <Link href='#'>
+          <a>
+              more information
+          </a>
+        </Link>
+      </NavItems>
     </NavBox>
   </NavStyles>
 );

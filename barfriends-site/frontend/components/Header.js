@@ -19,6 +19,8 @@ Router.onRouteChangeError = () => {
 
 const HeaderStyles = styled.div` 
   display: inline-block;
+  position: fixed;
+  z-index: 100;
   @media (max-width: 764px) {
     display: none;
   };

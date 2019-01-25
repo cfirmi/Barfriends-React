@@ -48,9 +48,9 @@ injectGlobal`
       font-family: 'Montserrat';
       /* Control background to the page */
       background: ${theme.black};
-      ::-webkit-scrollbar { 
+      /* ::-webkit-scrollbar { 
     display: none; 
-}
+} */
     }
     a {
       text-decoration: none;

@@ -53,13 +53,11 @@ export default MobileDropNav;
 export { LOCAL_STATE_QUERY, TOGGLE_CART_MUTATION };
 
 const NavDropStyle = styled.div`
-  padding: 20px;
-  background: red;
+  background: ${props => props.theme.black};;
   position: fixed;
-  height: 100%;
-  top: 44px;
-  right: 0;
-  width: 100vw;
+  padding: 20px;
+  /* width: 100vw; height: 100vh; */
+  top: 44px; right: 0; bottom: 0px; left: 0px;
   z-index: 10;
   transform: translateX(100%);
   transition: all 0.3s;
@@ -77,7 +75,7 @@ const NavItems = styled.div`
   font-weight: 300;
   letter-spacing: 0.55px;
   :hover {
-    color: green;
+    color: black;
   }
 `;
 
