@@ -1,38 +1,42 @@
 import Link from 'next/link';
 import styled from 'styled-components';
-import MobileToggleButton from './MobileToggleButton';
+import { Mutation } from 'react-apollo';
+import { TOGGLE_CART_MUTATION } from './MobileDropNav';
+import {NavHamburger, InputCheckBox} from '../styles/ToggleDropButton';
 
+// Logo
 const Logo = '../../static/images/Logo.svg';
 
+const MobileNav = props => (
+      <NavStyles> 
+        <NavHamburger id="menuToggle">
+          <Mutation mutation={TOGGLE_CART_MUTATION}>
+            {(toggleCart) => (
+              <InputCheckBox type="checkbox" onClick={toggleCart} />
+            )}
+          </Mutation>
+                {/* <span></span> */}
+                <span></span>
+                <span></span>
+        </NavHamburger>
+        <Link href='#'>
+          <a>
+            <StyleLogo src={Logo} alt=""/>
+          </a>
+        </Link>
+      </NavStyles>
+);
+
+export default MobileNav;
 const NavStyles = styled.div`
-  position: absolute;
-  top: 0px;
-  height: 44px;
-  width: 100vw;
-`;
-const NavItems = styled.div`
-  /* background: red; */
-  width: 33vw;
-  line-height: 43px;
-  color: white;
-  /* Change this if text is not on the right hand side of the mobile nav */
-  text-align: right;
-  :hover {
-    color: green;
-  }
+  position: fixed;
+  top: 0; right: 0; left: 0;
+  width: 100vw; height: 44px;
+  background: ${props => props.theme.black};;
+  z-index: 10;
+  ${props => props.open && `transform: translateX(0);`};
 `;
 
-const NavBox = styled.div`
-  background: ${props => props.theme.black};;
-  display: none;
-  @media (max-width: 764px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
-    margin-left: 50%;
-    transform: translateX(-50%);  
-  };
-`;
 const StyleLogo = styled.img`
   position: absolute;
   height: 25px;
@@ -40,29 +44,3 @@ const StyleLogo = styled.img`
   margin-left: 50%;
   transform: translateX(-50%);
 `;
-
-const MobileNav = props => (
-  <NavStyles>
-    <NavBox>
-      <NavItems>
-        <MobileToggleButton click={props.NavClickHandler}/>
-      </NavItems>
-      <Link href='#'>
-        <a>
-          <NavItems>
-                <StyleLogo src={Logo} alt=""/>
-          </NavItems>
-        </a>
-      </Link>
-      <NavItems>
-        <Link href='#'>
-          <a>
-            DDB
-          </a>
-        </Link>
-      </NavItems>
-    </NavBox>
-  </NavStyles>
-);
-
-export default MobileNav;

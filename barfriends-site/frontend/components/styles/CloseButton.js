@@ -10,4 +10,5 @@ const CloseButton = styled.button`
   right: 0;
 `;
 
+
 export default CloseButton;

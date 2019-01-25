@@ -1,3 +1,4 @@
+import React from 'react';
 import Link from 'next/link';
 import styled from 'styled-components';
 
@@ -11,7 +12,7 @@ const NavStyles = styled.div`
 const NavItems = styled.div`
   width: 100px;
   text-align: center;
-  line-height: 43px;
+  line-height: 55px;
   color: white;
   :hover {
     color: green;
@@ -29,11 +30,11 @@ const NavBox = styled.div`
   };
   @media (max-width: 764px) {
     display: none;
-  };
+    }
 `;
 const StyleLogo = styled.img`
   height: 25px;
-  margin-top: 23%;
+  margin-top: 25%;
   transform: translateY(-50%);
 `;
 const Nav = () => (
@@ -60,21 +61,6 @@ const Nav = () => (
           </NavItems>
         </a>
       </Link>
-  
-      {/* <Link href='#'>
-        <a>
-          <NavItems>
-              Owners
-          </NavItems>
-        </a>
-      </Link> */}
-      {/* <Link href='#'>
-        <a>
-          <NavItems>
-                About
-          </NavItems>
-        </a>
-      </Link> */}
     </NavBox>
   </NavStyles>
 );

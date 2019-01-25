@@ -1,10 +1,11 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import styled from 'styled-components';
 import Router from 'next/router';
 import NProgress from 'nprogress';
 import Nav from './Navigation/Nav';
 import MobileNav from './Navigation/MobileNav';
-import MobileDropNav from './Navigation/MobileDropNav';
+import DropDown from './Navigation/MobileDropNav';
+
 
 Router.onRouteChangeStart = () => {
     NProgress.start();
@@ -15,7 +16,6 @@ Router.onRouteChangeComplete = () => {
 Router.onRouteChangeError = () => {
     NProgress.done()
 }
-
 
 const HeaderStyles = styled.div` 
   display: inline-block;
@@ -32,31 +32,16 @@ const MobileHeaderStyles = styled.div`
 `;
 
 class Header extends Component {
-  
-  state = {
-    DropNavOpen: false,
-    HamburgerClose: false
-  };
-  NavToggleClickHandler = () => {
-    this.setState((prevState) => {
-      return {DropNavOpen: !prevState.DropNavOpen};
-    });
-  };
   render() {
-    let dropDown;
-    if (this.state.DropNavOpen) {
-      dropDown = <MobileDropNav />
-    }
     return (
       <div>
-      <HeaderStyles> 
-        <Nav />
-      </HeaderStyles>
-
-      <MobileHeaderStyles>
-        <MobileNav NavClickHandler={this.NavToggleClickHandler} />
-        {dropDown}
-      </MobileHeaderStyles>
+        <HeaderStyles> 
+          <Nav />
+        </HeaderStyles>
+        <MobileHeaderStyles>
+          <MobileNav />
+          <DropDown />
+        </MobileHeaderStyles >
       </div>
     )
   }
@@ -65,3 +50,4 @@ class Header extends Component {
 
 
 export default Header;
+export { LOCAL_STATE_QUERY, TOGGLE_NAV_MUTATION };

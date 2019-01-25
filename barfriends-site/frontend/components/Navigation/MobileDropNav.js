@@ -1,31 +1,72 @@
+import React from 'react';
 import Link from 'next/link';
+import { Query} from 'react-apollo';
+import gql from 'graphql-tag';
 import styled from 'styled-components';
 
-const NavStyles = styled.div`
-  /* background: ${props => props.theme.red}; */
-  background: ${props => props.theme.black};
-  position: fixed;
-  margin-top: 23px;
-  height: 100vh; width: 100vw;
-  z-index: 10;
-  animation: NavAnimation 0.75s;
-  -moz-animation: NavAnimation 0.75s; /* Firefox */
-  -webkit-animation: NavAnimation 0.75s; /* Safari and Chrome */ 
-  -webkit-animation-direction: alternate; 
-  animation-direction: alternate;
-  animation-timing-function: ease-in-out;
-
-  @keyframes NavAnimation {
-    0% {height: 0vh}
-    80% { height: 95vh}
-    100% { height: 100vh}
-  }
-  @-webkit-keyframes NavAnimation {
-    0% {height: 0vh}
-    80% { height: 95vh}
-    100% { height: 100vh}
+const LOCAL_STATE_QUERY = gql`
+  query {
+    dropOpen @client
   }
 `;
+const TOGGLE_CART_MUTATION = gql`
+  mutation {
+    toggleDrop @client
+  }
+`;
+
+const MobileDropNav = () => (
+  <Query query={LOCAL_STATE_QUERY}> 
+  {({data}) => 
+  console.log(data) || (
+    <NavDropStyle open={data.dropOpen}>
+        <NavBox>
+          <Link href='#'>
+            <a>
+              <NavItems>
+                    App
+              </NavItems>
+            </a>
+          </Link>
+          <Link href='#'>
+            <a>
+              <NavItems>
+                    Products
+              </NavItems>
+            </a>
+          </Link> 
+          <Link href='#'>
+            <a>
+              <NavItems>
+                    About
+              </NavItems>
+            </a>
+          </Link>
+        </NavBox>
+      </NavDropStyle>
+        )}
+      </Query>
+  );
+
+
+export default MobileDropNav;
+export { LOCAL_STATE_QUERY, TOGGLE_CART_MUTATION };
+
+const NavDropStyle = styled.div`
+  padding: 20px;
+  background: red;
+  position: fixed;
+  height: 100%;
+  top: 44px;
+  right: 0;
+  width: 100vw;
+  z-index: 10;
+  transform: translateX(100%);
+  transition: all 0.3s;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.2);
+  ${props => props.open && `transform: translateX(0);`};
+`;
+
 const NavItems = styled.div`
   margin-left: 50%; transform: translateX(-50%);
   text-align: left;
@@ -47,45 +88,4 @@ const NavBox = styled.div`
   width: 100%;
   margin-left: 50%;
   transform: translateX(-50%);  
-  @media (min-width: 764px) {
-    display: none;
-  };
 `;
-
-const DropNav = props => (
-  <NavStyles>
-    <NavBox>
-      <Link href='#'>
-        <a>
-          <NavItems>
-                App
-          </NavItems>
-        </a>
-      </Link>
-      <Link href='#'>
-        <a>
-          <NavItems>
-                Products
-          </NavItems>
-        </a>
-      </Link>
-      <Link href='#'>
-        <a>
-          <NavItems>
-              Owners
-          </NavItems>
-        </a>
-      </Link>
-      <Link href='#'>
-        <a>
-          <NavItems>
-                About
-          </NavItems>
-        </a>
-      </Link>
-    </NavBox>
-  </NavStyles>
-
-);
-
-export default DropNav;

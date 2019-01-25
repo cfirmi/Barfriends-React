@@ -1,4 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Mutation } from 'react-apollo';
+import { TOGGLE_CART_MUTATION } from './MobileDropNav';
 
 export default class MobileToggleButton extends Component {
   constructor(props){
@@ -56,12 +58,14 @@ export default class MobileToggleButton extends Component {
       },       
     }
     return (
-      <div style={styles.container} 
-      onClick={this.props.onClick ? this.props.onClick: () => {this.handleClick();}}>
-      <div style={{...styles.line,...styles.lineTop}}/>
-      {/* <div style={{...styles.line,...styles.lineMiddle}}/> */}
-      <div style={{...styles.line,...styles.lineBottom}}/>
-    </div>
+      <Mutation mutation={TOGGLE_CART_MUTATION}>
+        {(toggleCart) => (
+          <div style={styles.container} onClick={toggleCart}>
+            <div style={{...styles.line,...styles.lineTop}}/>
+            <div style={{...styles.line,...styles.lineBottom}}/>
+          </div>
+        )}
+      </Mutation>
     )
   }
 }
