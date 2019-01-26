@@ -29,19 +29,20 @@ const MobileNav = props => (
 
 export default MobileNav;
 const NavStyles = styled.div`
-  position: fixed;
-  top: 0; right: 0; left: 0;
-  width: 100vw;  height: 66px;
+position: relative;
+  width: 100vw;  height: 20vh;
   line-height: 66px;
-  background: ${props => props.theme.black};;
+  background: ${props => props.theme.orange};
+  /* background: ${props => props.theme.black}; */
   z-index: 10;
   ${props => props.open && `transform: translateX(0);`};
 `;
 
 const StyleLogo = styled.img`
   position: absolute;
-  height: 25px;
-  top: 10px;
+  height: 86px;
+  top: 10vh;
+  border-radius: 7px;
   margin-left: 50%;
   transform: translateX(-50%);
 `;

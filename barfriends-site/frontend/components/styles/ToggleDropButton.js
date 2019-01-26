@@ -39,10 +39,13 @@ input:checked ~ span:nth-last-child(2)
 `;
 
 const NavHamburger = styled.div`
+  position: fixed;
+  right: 30px;
   height: 30px; width: 33px;
-  margin-left: 20px;
+  /* margin-right: 20px; */
   margin-top: 8px;
   color: white;
+  z-index: 110;
   /* Change this if text is not on the right hand side of the mobile nav */
   :hover {
     color: green;
@@ -52,12 +55,12 @@ span
 {
   display: block;
   width: 33px;
-  height: 4px;
+  height: 3px;
   margin-top: 10px;
   margin-bottom: 5px;
   position: relative;
   
-  background: #cdcdcd;
+  background: #fff;
   border-radius: 5px;
   
   z-index: 1;

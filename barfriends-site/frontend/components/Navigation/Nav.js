@@ -5,11 +5,11 @@ import styled from 'styled-components';
 const Logo = '../../static/images/Logo.svg';
 
 const NavStyles = styled.div`
-  background: ${props => props.theme.black};
+  /* background: ${props => props.theme.white}; */
+  background: #ff7000;
   position:fixed;
   height: 66px;
   width: 100vw;
-  font-weight: 200;
   line-height: 70px;
   `;
 
@@ -17,21 +17,23 @@ const NavItems = styled.div`
   /* background: blue; */
   width: 170px;
   height: 66px;
-  color: white;
+  color: grey;
   text-align: center;
+  font-weight: 200;
   a {
-    width: 150px;
+    color: white;
+    width: 140px;
     text-align: center;
     padding: 10px 15px;
     :hover {
-      color: white;
+      color: black;
     }
   }
 `;
 
 const NavBox = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 100px 100px 100px;
   width: 800px;
   /* margin-left: 50%;
   transform: translateX(-50%);   */
@@ -43,8 +45,9 @@ const NavBox = styled.div`
     }
 `;
 const StyleLogo = styled.img`
-  height: 25px;
+  height: 65px;
   margin-top: 20px;
+  border-radius: 10px;
   /* transform: translateY(-50%); */
 `;
 const Nav = () => (
@@ -60,14 +63,14 @@ const Nav = () => (
       <NavItems>
         <Link href='#'>
           <a>
-              download
+              App
           </a>
         </Link>
       </NavItems>
       <NavItems>
         <Link href='#'>
           <a>
-              more information
+              Terms
           </a>
         </Link>
       </NavItems>

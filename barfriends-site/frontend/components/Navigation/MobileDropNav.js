@@ -4,6 +4,8 @@ import { Query} from 'react-apollo';
 import gql from 'graphql-tag';
 import styled from 'styled-components';
 
+const Logo = '../../static/images/Logo.svg';
+
 const LOCAL_STATE_QUERY = gql`
   query {
     dropOpen @client
@@ -17,9 +19,11 @@ const TOGGLE_CART_MUTATION = gql`
 
 const MobileDropNav = () => (
   <Query query={LOCAL_STATE_QUERY}> 
-  {({data}) => 
-  console.log(data) || (
+  {({data}) => (
     <NavDropStyle open={data.dropOpen}>
+      <LogoBox>
+        <img src={Logo} alt=""/>
+        </LogoBox>
         <NavBox>
           <Link href='#'>
             <a>
@@ -31,7 +35,7 @@ const MobileDropNav = () => (
           <Link href='#'>
             <a>
               <NavItems>
-                    Products
+                    Terms
               </NavItems>
             </a>
           </Link> 
@@ -52,12 +56,24 @@ const MobileDropNav = () => (
 export default MobileDropNav;
 export { LOCAL_STATE_QUERY, TOGGLE_CART_MUTATION };
 
+const LogoBox = styled.div`
+  position:fixed;
+  top: 10px;
+  height: 80px;width: 80px;
+  /* background: transparent; */
+  /* box-shadow: '10px 10px 8px 0 rgba(255, 112, 0, 0.8)'; */
+  img {
+  background: black;
+  height: 80px;width: 80px;
+  }
+`;
+
 const NavDropStyle = styled.div`
   background: ${props => props.theme.black};;
   position: fixed;
   padding: 20px;
   /* width: 100vw; height: 100vh; */
-  top: 44px; right: 0; bottom: 0px; left: 0px;
+  top: 0px; right: 0; bottom: 0px; left: 0px;
   z-index: 10;
   transform: translateX(100%);
   transition: all 0.3s;
@@ -85,5 +101,6 @@ const NavBox = styled.div`
   grid-template-rows: 1fr 1fr 1fr 1fr;
   width: 100%;
   margin-left: 50%;
+  margin-top: 100px;
   transform: translateX(-50%);  
 `;
