@@ -8,8 +8,8 @@ const InputCheckBox = styled.input`
   width: 20px;
   height: 32px;
   position: absolute;
-  top: 7px;
-  left: 27px;
+  top: 5px;
+  left: 6px;
   background-color: #4CAF50;
   -ms-transform: scale(2.5); /* IE */
   -moz-transform: scale(2.5); /* FF */
@@ -18,7 +18,7 @@ const InputCheckBox = styled.input`
   cursor: pointer;
   
   opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
+  z-index: 220; /* and place it over the hamburger */
   
   -webkit-touch-callout: none;
   input:checked ~ span
@@ -45,12 +45,11 @@ const NavHamburger = styled.div`
   /* margin-right: 20px; */
   margin-top: 8px;
   color: white;
-  z-index: 110;
+  z-index: 200;
   /* Change this if text is not on the right hand side of the mobile nav */
   :hover {
     color: green;
   }
-
 span
 {
   display: block;
@@ -59,11 +58,9 @@ span
   margin-top: 10px;
   margin-bottom: 5px;
   position: relative;
-  
+  z-index: 210;
   background: #fff;
   border-radius: 5px;
-  
-  z-index: 1;
   
   transform-origin: 4px 0px;
   
@@ -76,7 +73,6 @@ input:checked ~ span:first-child
   /* transform-origin: 0% 0%; */
   transform: rotate(45deg) translate(0, -1px);
 }
-
 /* input:checked ~ span:nth-last-child(2)
 {
   transform-origin: 0% 100%;

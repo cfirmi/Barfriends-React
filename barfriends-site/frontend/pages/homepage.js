@@ -1,8 +1,12 @@
-import MainDownload from '../components/MainDownload';
+import MainDownload from './Download';
+import MainMap from './Map';
 
 
 const Home = () => (
-  <MainDownload />
+  <div>
+    <MainDownload />
+    <MainMap />
+  </div>
 );
 
 export default Home;

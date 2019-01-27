@@ -32,9 +32,6 @@ const NavStyles = styled.div`
 position: relative;
   width: 100vw;  height: 20vh;
   line-height: 66px;
-  background: ${props => props.theme.orange};
-  /* background: ${props => props.theme.black}; */
-  z-index: 10;
   ${props => props.open && `transform: translateX(0);`};
 `;
 

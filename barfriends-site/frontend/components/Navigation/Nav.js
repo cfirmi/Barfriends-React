@@ -5,8 +5,7 @@ import styled from 'styled-components';
 const Logo = '../../static/images/Logo.svg';
 
 const NavStyles = styled.div`
-  /* background: ${props => props.theme.white}; */
-  background: #ff7000;
+  background: ${props => props.theme.black};
   position:fixed;
   height: 66px;
   width: 100vw;
@@ -48,6 +47,7 @@ const StyleLogo = styled.img`
   height: 65px;
   margin-top: 20px;
   border-radius: 10px;
+  box-shadow: -0px -0px 6px rgba(106, 106, 106);
   /* transform: translateY(-50%); */
 `;
 const Nav = () => (

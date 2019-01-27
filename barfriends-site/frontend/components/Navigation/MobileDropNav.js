@@ -74,7 +74,7 @@ const NavDropStyle = styled.div`
   padding: 20px;
   /* width: 100vw; height: 100vh; */
   top: 0px; right: 0; bottom: 0px; left: 0px;
-  z-index: 10;
+  z-index: 100;
   transform: translateX(100%);
   transition: all 0.3s;
   box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.2);

@@ -31,21 +31,20 @@ const MainDownload = () => (
 export default MainDownload;
 
 const OuterBox = styled.div`
-  background: ${props => props.theme.orange};;
+  background: ${props => props.theme.orange};
+  overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 100px 100px;
-  height: 90vh;
-
-  overflow: hidden;
-  margin-top: 100px;
+  height: 120vh;
+  padding-top: 100px;
   @media (max-width: 764px) { 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 100px 100px;
-  height: 100vh;
+  height: 180vh;
+  padding-top: 0px;
   overflow: hide;
-  margin-top: 100px;
   };
 `;
 const Title = styled.div`
@@ -58,9 +57,11 @@ const Title = styled.div`
   width: 380px; height: 75px;
   color: #080808;
   color: white;
-  @media (max-width: 764px) { 
+  @media (max-width: 764px) {
+    margin-top: 15px; 
     /* background: blue; */
     width: 100vw;
+    grid-row: 1;
     grid-column: 1 / -1;
     text-align: center;
   };
@@ -74,10 +75,9 @@ const Desc = styled.div`
   text-align: left;
   font-size: 16px;
   width: 380px; height: 80px;
-  /* color: #080808; */
   color: white;
   @media (max-width: 764px) { 
-    /* background: blue; */
+    grid-row: 2;
     grid-column: 1 / -1;
     width: 100%;
     text-align: center;
@@ -91,8 +91,8 @@ const AvailFor = styled.div`
   display: grid;
   height: 100px;
   width: 200px;
-  margin-top: 150px;
-  align-self: start;
+  margin-top: 120px;
+  align-content: start;
   grid-row: 3;
   grid-column: 2 / 3;
   row-gap: 10px;
@@ -108,6 +108,7 @@ const Item = styled.div`
   grid-template-rows: 40px;
   width: 200px;
   height: 40px;
+  color: #080808;
 `;
 
 const DeviceIcon = styled.div`
@@ -126,7 +127,8 @@ const DeviceType = styled.div`
   line-height: 40px;
   font-weight: 400;
   font-size: 17px;
-  color: #ff7000;
+  /* color: #ff7000; */
+  
 `;
 //Detailing the phone that displays
 
@@ -142,13 +144,13 @@ const PhoneItem = styled.div`
   }
   @media (max-width: 764px) { 
       /* background: red; */
-      grid-row: 4;
       grid-column: 1 / -1;
+      grid-row: 3;
     img {
+      /* margin-top: 100px; */
       width: 300px;
       transform: translateX(-50%);
       margin-left: 50%;
-      margin-top: 20px;
       overflow-x: hidden;
     }
   };

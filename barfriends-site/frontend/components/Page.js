@@ -48,6 +48,7 @@ injectGlobal`
       line-height: 2;
       font-family: 'Montserrat';
       /* Control background to the page */
+      /* background: ${theme.orange}; */
       background: ${theme.black};
       /* background: white; */
       color: white;
