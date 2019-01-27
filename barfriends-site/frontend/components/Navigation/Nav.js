@@ -47,7 +47,7 @@ const StyleLogo = styled.img`
   height: 65px;
   margin-top: 20px;
   border-radius: 10px;
-  box-shadow: -0px -0px 6px rgba(106, 106, 106);
+  box-shadow: -0px -0px 5px rgba(106, 106, 106, .20);
   /* transform: translateY(-50%); */
 `;
 const Nav = () => (

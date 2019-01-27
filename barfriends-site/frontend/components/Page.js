@@ -14,6 +14,7 @@ const theme = {
 };
 const StylePage = styled.div`
   color: ${props => props.theme.offWhite};
+  overflow-x: hidden;
 `;
 const Inner = styled.div`
   position: absolute;
@@ -52,9 +53,9 @@ injectGlobal`
       background: ${theme.black};
       /* background: white; */
       color: white;
-      /* ::-webkit-scrollbar { 
+      ::-webkit-scrollbar { 
     display: none; 
-} */
+}
     }
     a {
       text-decoration: none;

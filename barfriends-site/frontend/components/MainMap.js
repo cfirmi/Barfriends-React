@@ -6,6 +6,9 @@ const OuterBox = styled.div`
     height: 500px;
     margin-top: 10px;
 `;
+const Title = styled.div`
+  color:white;
+`;
 
 
 const MainMap = () => (
