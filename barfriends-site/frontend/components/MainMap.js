@@ -10,7 +10,7 @@ const OuterBox = styled.div`
 
 const MainMap = () => (
     <OuterBox>
-        <Title>BarMap</Title>
+        {/* <Title>BarMap</Title> */}
     </OuterBox>
 );
 
