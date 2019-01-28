@@ -14,6 +14,7 @@ const theme = {
 };
 const StylePage = styled.div`
   color: ${props => props.theme.offWhite};
+  overflow-x: hidden;
 `;
 const Inner = styled.div`
   position: absolute;
@@ -28,8 +29,8 @@ const Inner = styled.div`
 
 injectGlobal`
 @font-face {
-  font-family: 'Montserrat', sans-serif;
-  src: url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600,700,800");
+  font-family: 'Sarabun', sans-serif;
+  src: url("https://fonts.googleapis.com/css?family=Sarabun:100,200,300,400,500,600,700,800,800i");
   /* font-weight: normal; */
   font-style: normal;
 }
@@ -46,15 +47,15 @@ injectGlobal`
       margin: 0;
       font-size: 1.5rem;
       line-height: 2;
-      font-family: 'Montserrat';
+      font-family: 'Sarabun';
       /* Control background to the page */
       /* background: ${theme.orange}; */
       background: ${theme.black};
       /* background: white; */
       color: white;
-      /* ::-webkit-scrollbar { 
+      ::-webkit-scrollbar { 
     display: none; 
-} */
+}
     }
     a {
       text-decoration: none;

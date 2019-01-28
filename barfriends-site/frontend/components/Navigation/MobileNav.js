@@ -39,7 +39,9 @@ const StyleLogo = styled.img`
   position: absolute;
   height: 86px;
   top: 10vh;
-  border-radius: 7px;
+  border-radius: 10px;
   margin-left: 50%;
   transform: translateX(-50%);
+  box-shadow: -0px -0px 5px rgba(106, 106, 106, .20);
+
 `;

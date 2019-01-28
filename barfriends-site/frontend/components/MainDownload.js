@@ -8,7 +8,7 @@ const IphoneImage = '../../static/images/deviceimages/iphonedisplay.png';
 const MainDownload = () => (
  <OuterBox>
   <Title>Simple. Fun. <br/>For going out.</Title>
-   <Desc>With Barfriends, you'll get real time, simple, information for going out to bars, clubs, pubs near you, available on IPhones all over the world.</Desc>
+   <Desc>With Barfriends, you'll get real time, simple, information for all bars, clubs & pubs near you, available on IPhones all over the world.</Desc>
      <PhoneItem><img src={IphoneImage} alt=""/></PhoneItem>
    <AvailFor>
    <a href="#">
@@ -32,11 +32,10 @@ export default MainDownload;
 
 const OuterBox = styled.div`
   background: ${props => props.theme.orange};
-  overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 100px 100px;
-  height: 120vh;
+  height: 100vh; width:100vw;
   padding-top: 100px;
   @media (max-width: 764px) { 
   display: grid;
@@ -44,7 +43,7 @@ const OuterBox = styled.div`
   grid-template-rows: 100px 100px;
   height: 180vh;
   padding-top: 0px;
-  overflow: hide;
+  overflow: hidden;
   };
 `;
 const Title = styled.div`
@@ -53,7 +52,7 @@ const Title = styled.div`
   font-weight: 400;
   line-height: 35px;
   text-align: left;
-  font-size: 32px;
+  font-size: 35px;
   width: 380px; height: 75px;
   color: #080808;
   color: white;
@@ -70,11 +69,11 @@ const Desc = styled.div`
   /* background: green; */
   grid-column: 2 / 3;
   grid-row: 3;
-  font-weight: 400;
+  font-weight: 200;
   line-height: 26px;
   text-align: left;
   font-size: 16px;
-  width: 380px; height: 80px;
+  width: 350px; height: 80px;
   color: white;
   @media (max-width: 764px) { 
     grid-row: 2;

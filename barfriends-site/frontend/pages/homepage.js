@@ -1,11 +1,11 @@
 import MainDownload from './Download';
-import MainMap from './Map';
+import MainExperience from './Experience';
 
 
 const Home = () => (
   <div>
     <MainDownload />
-    <MainMap />
+    <MainExperience />
   </div>
 );
 
