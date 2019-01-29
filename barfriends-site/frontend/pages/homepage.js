@@ -1,5 +1,5 @@
-import MainDownload from './Download';
-import MainExperience from './Experience';
+import MainDownload from '../components/MainDownload';
+import MainExperience from '../components/MainExperience';
 
 
 const Home = () => (

@@ -54,21 +54,21 @@ const Nav = () => (
   <NavStyles>
     <NavBox>
       <NavItems>
-        <Link href='#'>
+        <Link href='/index'>
           <a>
             <StyleLogo src={Logo} alt=""/>
           </a>
         </Link>
       </NavItems>
       <NavItems>
-        <Link href='#'>
+        <Link href='/BFApp'>
           <a>
               App
           </a>
         </Link>
       </NavItems>
       <NavItems>
-        <Link href='#'>
+        <Link href=''>
           <a>
               Terms
           </a>

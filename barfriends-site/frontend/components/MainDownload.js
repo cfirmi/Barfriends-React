@@ -11,13 +11,13 @@ const MainDownload = () => (
    <Desc>With Barfriends, you'll get real time, simple, information for all bars, clubs & pubs near you, available on IPhones all over the world.</Desc>
      <PhoneItem><img src={IphoneImage} alt=""/></PhoneItem>
    <AvailFor>
-   <a href="#">
+   <a target="_blank" href="https://itunes.apple.com/us/app/barfriends/id1445453937?mt=8">
     <Item>
         <DeviceIcon><img src={AppleIcon} alt=""/></DeviceIcon>
         <DeviceType>Apple</DeviceType>
     </Item>
     </a>
-    <a href="#">
+    <a target="_blank" href="https://play.google.com/store/apps/details?id=ca.acesoft.barfriends">
     <Item>
         <DeviceIcon><img src={AndroidIcon} alt=""/></DeviceIcon>
         <DeviceType>Android</DeviceType>
@@ -41,7 +41,7 @@ const OuterBox = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 100px 100px;
-  height: 180vh;
+  height: 110vh;
   padding-top: 0px;
   overflow: hidden;
   };
@@ -72,13 +72,15 @@ const Desc = styled.div`
   font-weight: 200;
   line-height: 26px;
   text-align: left;
-  font-size: 16px;
+  font-size: 17px;
+  letter-spacing: 0.88px;
   width: 350px; height: 80px;
   color: white;
   @media (max-width: 764px) { 
     grid-row: 2;
     grid-column: 1 / -1;
     width: 100%;
+    margin-top: 25px;
     text-align: center;
     padding: 0px 20px;
 
@@ -145,6 +147,7 @@ const PhoneItem = styled.div`
       /* background: red; */
       grid-column: 1 / -1;
       grid-row: 3;
+      margin-top: 55px;
     img {
       /* margin-top: 100px; */
       width: 300px;

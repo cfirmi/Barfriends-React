@@ -2,27 +2,34 @@
 
 Notes:
 
-Thangs to do: 
+Things DONE ✅ 
 
-easy: 
-favicon
-theme
+    Mobile Navigation hamburger query // mutation @local✅
+    Links for stores Desktop to Store ✅
 
+TODO:
+Easy: 
 
-Mobile Navigation hamburger query// mutation @local✅
-device dettection
-
+    favicon
+    
+    theme
+    
 Hard:
 
+    MP4 of App being Used using Adobe XD. (Need complete App + animations in XD Done :( 
+    
+    Device Dettection and display Link accordingly (Mobile Only) 
+    
+    Change NSLoader color to gradient black orange
+    
+    Think Experience Campaign Page Content
+    
+    Terms of Service Page? What else could go here 
+    
+    Footer????
 
-
-*ucked;
 
 ### Frontend
 
-Started Header Lookin to complete with animation for mobile drop down.
-
-Main: will start commiting when header has mobile functionality down.
 
 ### Backend
-Setup contact shit here

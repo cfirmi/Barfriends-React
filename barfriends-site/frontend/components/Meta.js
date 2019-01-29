@@ -7,7 +7,7 @@ const Meta = () => (
         <link rel="shortcut icon" href="/static/favicon.png" />
         <link rel="stylesheet" type="text/css" href="/static/nprogress.css" />
         {/* <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800" rel="stylesheet"></link> */}
-        <link href="https://fonts.googleapis.com/css?family=Sarabun:100,200,300,400,500,600,700,800,800i" rel="stylesheet"></link>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800,800i" rel="stylesheet"></link>
         <title>Barfriends</title>
     </Head>
 );

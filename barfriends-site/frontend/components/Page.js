@@ -29,8 +29,8 @@ const Inner = styled.div`
 
 injectGlobal`
 @font-face {
-  font-family: 'Sarabun', sans-serif;
-  src: url("https://fonts.googleapis.com/css?family=Sarabun:100,200,300,400,500,600,700,800,800i");
+  font-family: 'Open Sans', sans-serif;
+  src: url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800,800i");
   /* font-weight: normal; */
   font-style: normal;
 }
@@ -47,12 +47,11 @@ injectGlobal`
       margin: 0;
       font-size: 1.5rem;
       line-height: 2;
-      font-family: 'Sarabun';
+      font-family: 'Open Sans';
       /* Control background to the page */
-      /* background: ${theme.orange}; */
       background: ${theme.black};
-      /* background: white; */
       color: white;
+      overflow-x: hidden;
       ::-webkit-scrollbar { 
     display: none; 
 }
