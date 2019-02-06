@@ -36,13 +36,13 @@ const OuterBox = styled.div`
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 100px 100px;
   height: 100vh; width:100vw;
-  padding-top: 100px;
+  padding-top: 90px;
   @media (max-width: 764px) { 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 100px 100px;
   height: 110vh;
-  padding-top: 0px;
+  margin-top: -110px;
   overflow: hidden;
   };
 `;

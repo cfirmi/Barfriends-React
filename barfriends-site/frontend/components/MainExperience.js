@@ -6,7 +6,6 @@ const Moon = '../../static/images/Experience/Moon2.png';
 
 const OuterBox = styled.div`
 background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, #020B31 90%);
-    width: 100vw;
     margin-top: 100px;
 
 `;
@@ -33,7 +32,7 @@ const TitleThink = styled.div`
 `;
 const BigBox = styled.div`
   /* background: blue; */
-  height: 431px;
+  height: 370px;
   font-weight: 600;
   text-align: center;
   font-size: 45px;
@@ -41,14 +40,13 @@ const BigBox = styled.div`
   /* background-position: center top; */
     overflow-x: hidden;
   img {
-    width: 800px;
+    width: 700px;
     margin-left: 50%;
     transform: translateX(-50%);
     -webkit-clip-path: polygon(0% 0%, 0 55%, 100% 55%, 100% 0%);
     clip-path: polygon(0% 0%, 0 55%, 100% 55%, 100% 0%);
   }
 `;
-
 
 const MainMap = () => (
     <OuterBox>
@@ -58,7 +56,7 @@ const MainMap = () => (
           </h1>
           <Link href="/experiencecampaignpage">
             <a>
-              <p>campaign </p>
+              <p>campaign</p>
             </a>
           </Link>
         </TitleThink>

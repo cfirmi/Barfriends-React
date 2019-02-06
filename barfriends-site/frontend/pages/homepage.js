@@ -2,7 +2,7 @@ import MainDownload from '../components/MainDownload';
 import MainExperience from '../components/MainExperience';
 
 
-const Home = () => (
+const Home = props => (
   <div>
     <MainDownload />
     <MainExperience />

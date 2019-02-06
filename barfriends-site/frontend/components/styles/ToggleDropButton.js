@@ -43,7 +43,7 @@ const NavHamburger = styled.div`
   right: 30px;
   height: 30px; width: 33px;
   /* margin-right: 20px; */
-  margin-top: 8px;
+  margin-top: 18px;
   color: white;
   z-index: 200;
   /* Change this if text is not on the right hand side of the mobile nav */

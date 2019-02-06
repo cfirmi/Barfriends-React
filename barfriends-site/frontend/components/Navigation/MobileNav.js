@@ -8,23 +8,22 @@ import {NavHamburger, InputCheckBox} from '../styles/ToggleDropButton';
 const Logo = '../../static/images/Logo.svg';
 
 const MobileNav = props => (
-      <NavStyles> 
-        <NavHamburger id="menuToggle">
-          <Mutation mutation={TOGGLE_CART_MUTATION}>
-            {(toggleCart) => (
-              <InputCheckBox type="checkbox" onClick={toggleCart} />
-            )}
-          </Mutation>
-                {/* <span></span> */}
-                <span></span>
-                <span></span>
-        </NavHamburger>
-        <Link href='#'>
-          <a>
-            <StyleLogo src={Logo} alt=""/>
-          </a>
-        </Link>
-      </NavStyles>
+  <NavStyles> 
+    <NavHamburger id="menuToggle">
+      <Mutation mutation={TOGGLE_CART_MUTATION}>
+        {(toggleCart) => (
+          <InputCheckBox type="checkbox" onClick={toggleCart} />
+        )}
+      </Mutation>
+        <span></span>
+        <span></span>
+    </NavHamburger>
+    <Link href='#'>
+      <a>
+        <StyleLogo src={Logo} alt=""/>
+      </a>
+    </Link>
+  </NavStyles>
 );
 
 export default MobileNav;
@@ -37,11 +36,11 @@ position: relative;
 
 const StyleLogo = styled.img`
   position: absolute;
-  height: 86px;
-  top: 10vh;
+  height: 50px;
+  top: 2vh;
   border-radius: 10px;
-  margin-left: 50%;
-  transform: translateX(-50%);
-  box-shadow: -0px -0px 5px rgba(106, 106, 106, .20);
+  margin-left: 25px;
+  /* transform: translateX(-50%); */
+  box-shadow: -0px -0px 5px rgba(106, 106, 106, .10);
 
 `;
