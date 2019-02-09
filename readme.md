@@ -8,15 +8,17 @@ Things DONE ✅
     Links for stores Desktop to Store ✅
 
 TODO:
-Easy: 
+Easy:
 
+    need device art from place it
     favicon
     
     theme
     
 Hard:
-
-    MP4 of App being Used using Adobe XD. (Need complete App + animations in XD Done :( 
+	Finalize app design// nav etc....... to be det.
+	Maybe:
+	MP4 of App being Used using Adobe XD. (Need complete App + animations in XD Done :( 
     
     Device Dettection and display Link accordingly (Mobile Only) 
     

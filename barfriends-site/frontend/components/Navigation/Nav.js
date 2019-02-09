@@ -18,27 +18,19 @@ const NavItems = styled.div`
   height: 66px;
   color: grey;
   text-align: center;
-  font-weight: 200;
-  a {
-    color: white;
-    width: 140px;
-    text-align: center;
-    padding: 10px 15px;
-    :hover {
-      color: black;
+  font-weight: 300;
+    a {
+      color: white;
+      width: 140px;
+      text-align: center;
+      padding: 10px 15px;
     }
-  }
 `;
 
 const NavBox = styled.div`
   display: grid;
   grid-template-columns: 100px 100px 100px;
   width: 800px;
-  /* margin-left: 50%;
-  transform: translateX(-50%);   */
-  @media (max-width: 1200px) {
-    
-  };
   @media (max-width: 764px) {
     display: none;
     }

@@ -11,19 +11,18 @@ const MainDownload = () => (
    <Desc>With Barfriends, you'll get real time, simple, information for all bars, clubs & pubs near you, available on IPhones all over the world.</Desc>
      <PhoneItem><img src={IphoneImage} alt=""/></PhoneItem>
    <AvailFor>
-   <a target="_blank" href="https://itunes.apple.com/us/app/barfriends/id1445453937?mt=8">
-    <Item>
-        <DeviceIcon><img src={AppleIcon} alt=""/></DeviceIcon>
-        <DeviceType>Apple</DeviceType>
-    </Item>
+    <a target="_blank" href="https://itunes.apple.com/us/app/barfriends/id1445453937?mt=8">
+      <Item>
+          <DeviceIcon><img src={AppleIcon} alt=""/></DeviceIcon>
+          <DeviceType>Apple</DeviceType>
+      </Item>
     </a>
     <a target="_blank" href="https://play.google.com/store/apps/details?id=ca.acesoft.barfriends">
-    <Item>
-        <DeviceIcon><img src={AndroidIcon} alt=""/></DeviceIcon>
-        <DeviceType>Android</DeviceType>
-    </Item>
+      <Item>
+          <DeviceIcon><img src={AndroidIcon} alt=""/></DeviceIcon>
+          <DeviceType>Android</DeviceType>
+      </Item>
     </a>
-   
    </AvailFor>
  </OuterBox>
 );
@@ -56,6 +55,7 @@ const Title = styled.div`
   width: 380px; height: 75px;
   color: #080808;
   color: white;
+
   @media (max-width: 764px) {
     margin-top: 15px; 
     /* background: blue; */
@@ -87,6 +87,7 @@ const Desc = styled.div`
   };
 `;
 
+
 const AvailFor = styled.div`
   /* background: pink; */
   display: grid;
@@ -103,13 +104,18 @@ const AvailFor = styled.div`
 `;
 
 const Item = styled.div`
-  /* background: blue; */
   display: grid;
   grid-template-columns: 40px 200px;
   grid-template-rows: 40px;
-  width: 200px;
+  width: 300px;
   height: 40px;
   color: #080808;
+  border-radius: 20px;
+  :hover {
+    background: #1A1A1A;
+    transition: 0.2s ease-in;
+
+  }
 `;
 
 const DeviceIcon = styled.div`
