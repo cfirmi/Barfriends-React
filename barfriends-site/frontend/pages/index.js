@@ -1,9 +1,9 @@
-import Home from './homepage';
+import Homepage from './homepage';
 
 
 const Index = () => (
   <div>
-    <Home />
+    <Homepage />
   </div>
 );
 

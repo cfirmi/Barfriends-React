@@ -7,7 +7,7 @@ import {NavHamburger, InputCheckBox} from '../styles/ToggleDropButton';
 // Logo
 const Logo = '../../static/images/Logo.svg';
 
-const MobileNav = props => (
+const MobileNav = () => (
   <NavStyles> 
     <NavHamburger id="menuToggle">
       <Mutation mutation={TOGGLE_CART_MUTATION}>
@@ -18,7 +18,7 @@ const MobileNav = props => (
         <span></span>
         <span></span>
     </NavHamburger>
-    <Link href='#'>
+    <Link href='/homepage'>
       <a>
         <StyleLogo src={Logo} alt=""/>
       </a>
@@ -27,9 +27,11 @@ const MobileNav = props => (
 );
 
 export default MobileNav;
+
 const NavStyles = styled.div`
-position: relative;
-  width: 100vw;  height: 20vh;
+  background: blue;
+  position: relative;
+  width: 100vw;  height: 15vh;
   line-height: 66px;
   ${props => props.open && `transform: translateX(0);`};
 `;
@@ -40,6 +42,7 @@ const StyleLogo = styled.img`
   top: 2vh;
   border-radius: 10px;
   margin-left: 25px;
+  z-index: 10;
   /* transform: translateX(-50%); */
   box-shadow: -0px -0px 5px rgba(106, 106, 106, .10);
 

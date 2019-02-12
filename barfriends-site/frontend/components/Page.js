@@ -10,6 +10,7 @@ const theme = {
   offWhite: '#EDEDED',
   maxWidth: '85vw',
   mobileWidth: '766px',
+  NavigationMarginTop: '50px',
   bs: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
 };
 const StylePage = styled.div`
@@ -30,7 +31,7 @@ const Inner = styled.div`
 injectGlobal`
 @font-face {
   font-family: 'Open Sans', sans-serif;
-  src: url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800,800i");
+  src: url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
   /* font-weight: normal; */
   font-style: normal;
 }
@@ -52,9 +53,9 @@ injectGlobal`
       background: ${theme.black};
       color: white;
       overflow-x: hidden;
-      ::-webkit-scrollbar { 
-    display: none; 
-}
+    ::-webkit-scrollbar { 
+      display: none; 
+    }   
     }
     a {
       text-decoration: none;

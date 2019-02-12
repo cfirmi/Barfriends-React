@@ -1,5 +1,5 @@
-import MainDownload from '../components/MainDownload';
-import MainExperience from '../components/MainExperience';
+import MainDownload from '../components/Home/HomeDownload';
+import MainExperience from '../components/Home/HomeExperience';
 
 
 const Home = props => (

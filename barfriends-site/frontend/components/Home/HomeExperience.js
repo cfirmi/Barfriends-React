@@ -59,7 +59,7 @@ const MainMap = () => (
           <h1>
             Think Experience.
           </h1>
-          <h4>#KnowWhereToGo</h4>
+          {/* <h4>#KnowWhereToGo</h4> */}
           <Link href="/experiencecampaignpage">
             <a>
               <p>campaign</p>
