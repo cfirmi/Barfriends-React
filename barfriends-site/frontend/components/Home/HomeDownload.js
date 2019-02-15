@@ -49,7 +49,7 @@ const OuterBox = styled.div`
   height: 100vh; width:100vw;
   padding-top: 90px;
   z-index: 10;
-  @media (max-width: 764px) { 
+  @media (max-width: ${props => props.theme.mobileWidth}) {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 100px 100px;
@@ -75,7 +75,7 @@ const Title = styled.div`
   color: ${props => props.theme.white};
   z-index: 10;
 
-  @media (max-width: 764px) {
+  @media (max-width: ${props => props.theme.mobileWidth}) {
     /* background: blue; */
     margin-left: 0px;
     margin-top: 15px; 
@@ -86,8 +86,6 @@ const Title = styled.div`
   };
 `;
 const Desc = styled.div`
-  /* background: ${props => props.theme.ogBlack}; */
-  /* background: green; */
   grid-column: 2 / 3;
   grid-row: 3;
   font-weight: 200;
@@ -100,7 +98,7 @@ const Desc = styled.div`
   width: 100%; height: 115px;
   color: ${props => props.theme.white};
   z-index: 10;
-  @media (max-width: 764px) { 
+  @media (max-width: ${props => props.theme.mobileWidth}) {
     grid-row: 2;
     grid-column: 1 / -1;
     width: 100%;
@@ -116,17 +114,20 @@ const Desc = styled.div`
 const AvailFor = styled.div`
   /* background: ${props => props.theme.ogBlack}; */
   display: grid;
-  height: 100px;
-  width: 100%;
-  margin-top: 115px;
+  height: 100px; width: 100%;
+  margin-top: 110px;
   border-radius: 0px 0px 20px 20px;
   align-content: start;
   grid-row: 3;
   grid-column: 2 / 3;
   row-gap: 10px;
   z-index: 10;
-  @media (max-width: 764px) { 
-    display: none;
+  @media (max-width: ${props => props.theme.mobileWidth}) {
+  margin-top: 10px;
+    /* display: none; */
+    /* background: rebeccapurple; */
+    height: 450px; width: 100vw;
+    grid-row: 4;
   };
 `;
 
@@ -152,10 +153,14 @@ const Item = styled.div`
     transition: 0.2s ease-in;
 
   }
+  @media (max-width: ${props => props.theme.mobileWidth}) {
+    border-radius: 0px;
+    height: 40px;
+    width: 100vw;
+  };
 `;
 
 const DeviceIcon = styled.div`
-  /* background: green; */
   height: 40px;
   width: 40px;
   z-index: 10;
@@ -172,8 +177,6 @@ const DeviceType = styled.div`
   font-weight: 400;
   font-size: 17px;
   z-index: 10;
-  /* color: #ff7000; */
-  
 `;
 //Detailing the phone that displays
 
@@ -188,7 +191,7 @@ const PhoneItem = styled.div`
   margin-left: 30px ;
   grid-row: 1 / -1;
   }
-  @media (max-width: 764px) { 
+  @media (max-width: ${props => props.theme.mobileWidth}) { 
       /* background: red; */
       grid-column: 1 / -1;
       grid-row: 3;

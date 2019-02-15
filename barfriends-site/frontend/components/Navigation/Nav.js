@@ -47,7 +47,7 @@ const NavBox = styled.div`
   display: grid;
   grid-template-columns: 120px 120px 120px 120px;
   width: 100vw;
-  @media (max-width: 764px) {
+  @media (max-width: ${props => props.theme.mobileWidth}) {
     display: none;
     }
 `;
@@ -56,6 +56,7 @@ const StyleLogo = styled.img`
   margin-top: 20px;
   border-radius: 10px;
   box-shadow: -0px -0px 5px rgba(106, 106, 106, .20);
+  z-index: 10;
 `;
 const Nav = () => (
   <NavStyles>

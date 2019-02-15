@@ -4,18 +4,7 @@ import styled from 'styled-components';
 import CurrentLocation from './Map';
 
 
-const HideDiv = styled.div`
-  position: absolute;
-  margin-top: 90vh;
-  height: 45px; width: 100vw;
-  background: black;
-  z-index: 2;
-  content: '';
-@media (max-width: 764px) {
-    position: absolute;
-    margin-top: -13vh;
-};
-`;
+
 
 export class MapContainer extends Component {
   state = {
@@ -30,7 +19,6 @@ export class MapContainer extends Component {
         centerAroundCurrentLocation
         google={this.props.google}
       >
-      <HideDiv></HideDiv>
       </CurrentLocation>
     );
   }

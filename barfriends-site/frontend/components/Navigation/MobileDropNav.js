@@ -25,24 +25,24 @@ const MobileDropNav = () => (
         <img src={Logo} alt=""/>
         </LogoBox>
         <NavBox>
-          <Link href='#'>
+          <Link href='/join'>
             <a>
               <NavItems>
-                    App
+                    Join
               </NavItems>
             </a>
           </Link>
-          <Link href='#'>
+          <Link href='/business'>
             <a>
               <NavItems>
-                    Terms
+                    Business
               </NavItems>
             </a>
           </Link> 
-          <Link href='#'>
+          <Link href='/terms'>
             <a>
               <NavItems>
-                    About
+                    Terms
               </NavItems>
             </a>
           </Link>

@@ -9,7 +9,7 @@ const theme = {
   ogBlack: '#1D1D1D',
   offWhite: '#EDEDED',
   maxWidth: '85vw',
-  mobileWidth: '766px',
+  mobileWidth: '1025px',
   NavigationMarginTop: '50px',
   bs: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
 };
@@ -20,11 +20,9 @@ const StylePage = styled.div`
 const Inner = styled.div`
   position: absolute;
   max-width:100vw;
-  margin-top: 2%;
   @media (max-width: 850px ) {
   max-width:100vw;
   margin: 0;
-  margin-top: 2%;
   };
 `;
 

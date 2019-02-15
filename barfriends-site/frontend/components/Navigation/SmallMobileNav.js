@@ -41,5 +41,5 @@ const StyleLogo = styled.img`
   top: 0vh; left: 20px;
   border-radius: 10px;
   box-shadow: -0px -0px 5px rgba(106, 106, 106, .25);
-
+  z-index: 10;
 `;

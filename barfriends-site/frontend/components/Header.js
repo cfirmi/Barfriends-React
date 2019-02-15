@@ -21,7 +21,7 @@ const HeaderStyles = styled.div`
   display: inline-block;
   position: fixed;
   z-index: 100;
-  @media (max-width: 764px) {
+  @media (max-width: ${props => props.theme.mobileWidth}) {
     display: none;
   };
 `;
@@ -29,8 +29,9 @@ const MobileHeaderStyles = styled.div`
     display: none;
     /* position: fixed; */
     z-index: 100;
-  @media (max-width: 764px) {
+  @media (max-width: ${props => props.theme.mobileWidth}) {
     display: inline-block;
+    /* z-index: 100; */
   };
 `;
 

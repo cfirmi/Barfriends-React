@@ -5,19 +5,26 @@ const OuterBox = styled.div`
   /* background: blue; */
   display: grid;
   /* height: 50vh; width: 100vw; */
+  width: 100vw;
+  grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
+  grid-template-rows: 100px 100px 100px 100px 100px;
+  margin-top: ${props => props.theme.NavigationMarginTop};
+  @media (max-width: ${props => props.theme.mobileWidth}) {
+  display: grid;
+  width: 100vw;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 100px 100px 100px 100px 100px;
   margin-top: ${props => props.theme.NavigationMarginTop};
- 
+ };
 `;
 const Title = styled.p`
-  /* background: red; */
+  background: red;
   font-size: 40px;
   line-height: 55px;
   font-weight: 400;
-  height: 100%;
+  min-width: 425px;
   margin-top: -25px;
-  grid-column: 2 / 5;
+  grid-column: 2 / 5 ;
   grid-row-start: 3;
   /* user-select: none;   */
   ::selection {
@@ -28,6 +35,11 @@ const Title = styled.p`
     }
     ::-moz-selection {
       background: ${props => props.theme.orange}; 
+    }
+    @media (max-width: ${props => props.theme.mobileWidth} ) {
+  margin-top: -25px;
+  grid-column: 1 / -1 ;
+      
     }
 `;
 

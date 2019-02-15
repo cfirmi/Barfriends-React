@@ -2,19 +2,33 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import styled from 'styled-components';
 
-
-const MapStyle = styled.div`
+const MapContainerBox = styled.div`
   position: absolute;
-  top: 0px;
-  width: 100vw;
-  height: 105vh;
+  top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  height: 100vh; width: 100vw;
+`;
+const MapStyle = styled.div`
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
   text-align: center;
-
-  @media (max-width: 764px) {
-    height: 110vh;
-    margin-top: -25vh;
-    z-index: 1;
+  z-index: 1;
+  @media (max-width: ${props => props.theme.mobileWidth}) {
   };
+`;
+const HideDiv = styled.div`
+  grid-column: 1 / -1;
+  grid-row: -1;
+  margin-top:-50px;
+  height: 50px;
+  background: black;
+  z-index: 2;
+  content: '';
+  @media (max-width: ${props => props.theme.mobileWidth}) {
+    /* margin-top: 2vh; */
+};
 `;
 
 export class CurrentLocation extends React.Component {
@@ -118,11 +132,11 @@ export class CurrentLocation extends React.Component {
     // const style = Object.assign({}, mapStyles.map);
 
     return (
-      <div>
-        <MapStyle ref="map">
-        </MapStyle>
+      <MapContainerBox>
+        <HideDiv></HideDiv>
+        <MapStyle ref="map"> </MapStyle>
         {this.renderChildren()}
-      </div>
+      </MapContainerBox>
     );
   }
 }
