@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
+// import girls from '../images/joinimg/girls'
+const Girls = '../../static/images/joinimg/girls.png';
+const Logo = '../../static/images/LogoNaked.png';
+
 const OuterBox = styled.div`
   /* background: blue; */
   display: grid;
@@ -17,38 +21,25 @@ const OuterBox = styled.div`
   margin-top: ${props => props.theme.NavigationMarginTop};
  };
 `;
-const Title = styled.p`
+
+const Title = styled.div`
   background: red;
-  font-size: 40px;
-  line-height: 55px;
-  font-weight: 400;
-  min-width: 425px;
-  margin-top: -25px;
-  grid-column: 2 / 5 ;
-  grid-row-start: 3;
-  /* user-select: none;   */
-  ::selection {
-      background: ${props => props.theme.orange}; /* WebKit/Blink Browsers */
-    }
-    ::-webkit-selection {
-      background: ${props => props.theme.orange}; 
-    }
-    ::-moz-selection {
-      background: ${props => props.theme.orange}; 
-    }
-    @media (max-width: ${props => props.theme.mobileWidth} ) {
-  margin-top: -25px;
-  grid-column: 1 / -1 ;
-      
-    }
+  line-height: 100px;
+  font-size: 60px; font-weight: 600;
+  width: 100vw;
+  text-align: center;
+  margin-top: 100px;
+  @media (max-width: ${props => props.theme.maxWidth}) {
+  background: red;
+  margin-top: 0px;
+  };
 `;
 
 export default class JoinLearn extends Component {
   render() {
     return (
       <OuterBox>
-        <Title>A guide for how to use <br/> Barfriends</Title>
-
+        <Title>Find. Go. Join.</Title>
       </OuterBox>
     )
   }
