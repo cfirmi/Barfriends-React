@@ -29,7 +29,7 @@ const MobileNav = () => (
 export default MobileNav;
 
 const NavStyles = styled.div`
-  /* background: blue; */
+  background: green;
   position: relative;
   width: 100vw;  height: 15vh;
   line-height: 66px;
@@ -39,7 +39,7 @@ const NavStyles = styled.div`
 const StyleLogo = styled.img`
   position: absolute;
   height: 50px;
-  top: 2vh;
+  top: 25px;
   border-radius: 10px;
   margin-left: 25px;
   z-index: 10;
