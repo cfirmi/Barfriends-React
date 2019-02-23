@@ -20,10 +20,6 @@ const StylePage = styled.div`
 const Inner = styled.div`
   position: absolute;
   max-width:100vw;
-  @media (max-width: 850px ) {
-  max-width:100vw;
-  margin: 0;
-  };
 `;
 
 injectGlobal`
