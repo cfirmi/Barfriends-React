@@ -1,20 +1,12 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-<<<<<<< HEAD
-
-const OuterBox = styled.div`
-`;
-=======
->>>>>>> cf5f50fee0703243b59af908f6c647102366d7f5
 
 export default class JoinHowto extends Component {
   render() {
     return (
       <OuterBox>
-<<<<<<< HEAD
-=======
+        this is where i will show user sign up
         
->>>>>>> cf5f50fee0703243b59af908f6c647102366d7f5
       </OuterBox>
     )
   }

@@ -10,6 +10,7 @@ const theme = {
   offWhite: '#EDEDED',
   maxWidth: '85vw',
   mobileWidth: '1025px',
+  trueMobileWidth: '600px',
   NavigationMarginTop: '80px',
   bs: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
 };

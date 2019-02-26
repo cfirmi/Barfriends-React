@@ -22,7 +22,11 @@ const MobileDropNav = () => (
   {({data}) => (
     <NavDropStyle open={data.dropOpen}>
       <LogoBox>
-        <img src={Logo} alt=""/>
+        <Link href="/index">
+          <a>
+            <img src={Logo} alt=""/>
+          </a>
+        </Link>
         </LogoBox>
         <NavBox>
           <Link href='/join'>
@@ -90,8 +94,11 @@ const NavItems = styled.div`
   color: white;
   font-weight: 300;
   letter-spacing: 0.55px;
+    transition: 0.15s ease-in-out;
   :hover {
-    color: black;
+    transition: 0.15s ease-in-out;
+    color: darkgray;
+    border-bottom: 0.5px solid rgba(255,255,255,0.89);
   }
 `;
 

@@ -6,10 +6,14 @@ Things DONE ✅
 
     Mobile Navigation hamburger query // mutation @local✅
     Links for stores Desktop to Store ✅
+    Done Mobile Navigation Width and True Mobile Width. ✅
+    Started Join Page flow// Layout ✅
+    Fixed Home Page ✅
+    
 
 TODO:
 Easy:
-
+    need images that work for the current components as well asother things 
     need device art from place it
     favicon
     

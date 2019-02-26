@@ -91,7 +91,6 @@ const Desc = styled.div`
   font-weight: 200;
   line-height: 26px;
   text-align: left;
-  /* margin-left: -30px; */
   font-size: 17px;
   padding: 0px 15px;
   letter-spacing: 0.98px;

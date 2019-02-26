@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+// import hhh from '../../static/images/joinimg/join-barfriends.jpg'
 
 // import girls from '../images/joinimg/girls'
-const Girls = '../../static/images/joinimg/girls.png';
+const joinBfs = '../../static/images/joinimg/join-barfriends.jpg';
 const Logo = '../../static/images/LogoNaked.png';
 
 const OuterBox = styled.div`
@@ -18,26 +19,13 @@ const OuterBox = styled.div`
   height: 100%;
  };
 `;
-<<<<<<< HEAD
-
-const Title = styled.div`
-  background: red;
-  line-height: 100px;
-  font-size: 60px; font-weight: 600;
-  width: 100vw;
-  text-align: center;
-  margin-top: 100px;
-  @media (max-width: ${props => props.theme.maxWidth}) {
-  background: red;
-  margin-top: 0px;
-  };
-=======
 const Title = styled.p`
   /* background: red; */
   font-size: 35px;
   height: 100%;
   line-height: 55px;
   font-weight: 400;
+  max-width: 430px;
   grid-column: 2 / 5 ;
   grid-row: 3 / 4;
   /* user-select: none;   */
@@ -59,16 +47,22 @@ const Title = styled.p`
     text-align: left;
     min-width: 380px;
     }
+    @media (max-width: ${props => props.theme.trueMobileWidth}) {
+    text-align: center;
+    };
 `;
-const ImgBox = styled.div`
-  background: blue;
+const ImgBox = styled.img`
+  /* background: blue; */
   grid-column: 5 / -1;
+  height: 100%;
   grid-row: 1 / -1;
   @media (max-width: ${props => props.theme.mobileWidth} ) {
     grid-column: 2 / 8;
     grid-row: 1 / 5;
     }
->>>>>>> cf5f50fee0703243b59af908f6c647102366d7f5
+  @media (max-width: ${props => props.theme.trueMobileWidth}) {
+    grid-column: 1 / -1;
+  };
 `;
 const Signup = styled.div`
   /* color: grey; */
@@ -79,25 +73,33 @@ const Signup = styled.div`
   line-height: 40px;
   text-align: center;
   margin-top: 60px;
+  cursor: pointer;
   div {
     /* background: red; */
     display: inline-block;
     width: 10px;
   }
+  @media (max-width: ${props => props.theme.mobileWidth}) {
+    margin-top: 130px;
+    grid-row: 5;
+    grid-column: 1 / -1;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    div {
+    display: inline-block;
+    width: 10px;
+  }
+  };
 `;
 
 export default class JoinLearn extends Component {
   render() {
     return (
       <OuterBox>
-<<<<<<< HEAD
-        <Title>Find. Go. Join.</Title>
-=======
         <Title>A guide for how to use Barfriends</Title>
-        <Signup>Join <div>→</div>  </Signup>
-        <ImgBox />
+        <Signup>Join <div>→</div></Signup>
+        <ImgBox src={joinBfs} alt=""/>
 
->>>>>>> cf5f50fee0703243b59af908f6c647102366d7f5
       </OuterBox>
     )
   }

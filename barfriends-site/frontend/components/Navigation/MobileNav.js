@@ -29,7 +29,7 @@ const MobileNav = () => (
 export default MobileNav;
 
 const NavStyles = styled.div`
-  background: green;
+  background: blue;
   position: relative;
   width: 100vw;  height: 15vh;
   line-height: 66px;
