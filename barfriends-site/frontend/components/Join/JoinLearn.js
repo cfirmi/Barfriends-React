@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import Link from 'next/link';
 // import hhh from '../../static/images/joinimg/join-barfriends.jpg'
 
 // import girls from '../images/joinimg/girls'
@@ -7,7 +8,7 @@ const joinBfs = '../../static/images/joinimg/join-barfriends.jpg';
 const Logo = '../../static/images/LogoNaked.png';
 
 const OuterBox = styled.div`
-  /* background: pink; */
+  background: green;
   display: grid;
   /* height: 50vh; width: 100vw; */
   width: 100vw;
@@ -57,7 +58,9 @@ const ImgBox = styled.img`
   height: 100%;
   grid-row: 1 / -1;
   @media (max-width: ${props => props.theme.mobileWidth} ) {
+  object-fit: cover;
     grid-column: 2 / 8;
+    width: 100%;
     grid-row: 1 / 5;
     }
   @media (max-width: ${props => props.theme.trueMobileWidth}) {
@@ -97,9 +100,14 @@ export default class JoinLearn extends Component {
     return (
       <OuterBox>
         <Title>A guide for how to use Barfriends</Title>
-        <Signup>Join <div>→</div></Signup>
+        <Signup>
+          <Link href="/signup">
+            <a>
+              Join <div>→</div>
+            </a>
+          </Link>
+        </Signup>
         <ImgBox src={joinBfs} alt=""/>
-
       </OuterBox>
     )
   }
