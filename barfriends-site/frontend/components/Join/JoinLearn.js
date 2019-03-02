@@ -8,7 +8,7 @@ const joinBfs = '../../static/images/joinimg/join-barfriends.jpg';
 const Logo = '../../static/images/LogoNaked.png';
 
 const OuterBox = styled.div`
-  background: green;
+  /* background: green; */
   display: grid;
   /* height: 50vh; width: 100vw; */
   width: 100vw;
@@ -81,6 +81,7 @@ const Signup = styled.div`
     /* background: red; */
     display: inline-block;
     width: 10px;
+    color: white;
   }
   @media (max-width: ${props => props.theme.mobileWidth}) {
     margin-top: 130px;

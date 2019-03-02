@@ -7,7 +7,7 @@ export default class MobileToggleButton extends Component {
     super(props);
     this.state={
       open: this.props.open? this.props.open:false,
-      color: this.props.color? this.props.color:'white',
+      color: this.props.color? this.props.color:'black',
     }
   }
 

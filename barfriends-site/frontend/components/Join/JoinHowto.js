@@ -7,6 +7,7 @@ const Uber = '../../static/images/joinimg/howto/Uber.svg';
 const atBar = '../../static/images/joinimg/howto/AtBar.svg';
 const sendASKS = '../../static/images/joinimg/howto/sendASK.svg';
 const cheers = '../../static/images/joinimg/howto/cheers.svg';
+const line = '../../static/images/joinimg/howto/line.svg';
 
 export default class JoinHowto extends Component {
   render() {
@@ -16,42 +17,42 @@ export default class JoinHowto extends Component {
             <ImgBox src={profile} alt=""/>
             <TextBox>
               <Title>Create A Profile</Title>
-              <Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem excepturi, in porro a doloribus repellendus laboriosam quis neque cum? Quo atque vitae consectetur minus quia et enim consequuntur hic ipsa.</Text>
+              <Text>All you need is a email and set a password. You can find the best places to go out tonight. To download the app, go to <span style={{borderBottom: '1px solid black', cursor: 'pointer', fontWeight: '400' }}> <a target="_blank" href="https://itunes.apple.com/us/app/barfriends/id1445453937?mt=8"> App Store </a></span></Text>
             </TextBox>
           </HowToItem>
           <HowToItem>
             <ImgBox src={mapFinder} alt=""/>
             <TextBox>
-              <Title>Create A Profile</Title>
-              <Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem excepturi, in porro a doloribus repellendus laboriosam quis neque cum? Quo atque vitae consectetur minus quia et enim consequuntur hic ipsa.</Text>
+              <Title>Use the Map to find a bar</Title>
+              <Text>Open the app, Select any bar, club or pub you see, find out where your friends are going out or how many people are going out to each place.</Text>
             </TextBox>
           </HowToItem>
           <HowToItem>
             <ImgBox src={Uber} alt=""/>
             <TextBox>
-              <Title>Create A Profile</Title>
-              <Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem excepturi, in porro a doloribus repellendus laboriosam quis neque cum? Quo atque vitae consectetur minus quia et enim consequuntur hic ipsa.</Text>
+              <Title>Find a ride</Title>
+              <Text>Found a bar! now you need a ride. Use our deeplink into the Uber app where you'll get real time information on a ride to the bar you selected.</Text>
             </TextBox>
           </HowToItem>
           <HowToItem>
             <ImgBox src={atBar} alt=""/>
             <TextBox>
-              <Title>Create A Profile</Title>
-              <Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem excepturi, in porro a doloribus repellendus laboriosam quis neque cum? Quo atque vitae consectetur minus quia et enim consequuntur hic ipsa.</Text>
+              <Title>When you arrive</Title>
+              <Text>Near the bar! You will be able to Join and see other people that are also at the bar and Joined.</Text>
             </TextBox>
           </HowToItem>
           <HowToItem>
             <ImgBox src={sendASKS} alt=""/>
             <TextBox>
-              <Title>Create A Profile</Title>
-              <Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem excepturi, in porro a doloribus repellendus laboriosam quis neque cum? Quo atque vitae consectetur minus quia et enim consequuntur hic ipsa.</Text>
+              <Title>Making new friends</Title>
+              <Text>Message your friends or other joined people. Invite to drink dance or play game in the bar in real time.</Text>
             </TextBox>
           </HowToItem>
           <HowToItem>
             <ImgBox src={cheers} alt=""/>
             <TextBox>
-              <Title>Create A Profile</Title>
-              <Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem excepturi, in porro a doloribus repellendus laboriosam quis neque cum? Quo atque vitae consectetur minus quia et enim consequuntur hic ipsa.</Text>
+              <Title>Cheers to better nights out</Title>
+              <Text>Always use Barfriends to have a fun and safe night out. For everyone at any time.</Text>
             </TextBox>
           </HowToItem>
       </OuterBox>
@@ -63,24 +64,43 @@ export default class JoinHowto extends Component {
 const HowToItem = styled.div`
   /* background: blue; */
   display: grid;
-  grid-template-columns: 215px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 140px;
+  grid-template-columns: 10px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-column: 2 / 9;
   max-width: 1200px;
-  width: 1000px;
+  width: 1000px; 
+  height: 160px;
   margin-top: 10px; margin-left: 50%;
   transform: translateX(-50%);
   @media (max-width: ${props => props.theme.mobileWidth}) {
-  max-width: 1200px;
-  width: 100%;
-  
+    grid-template-columns: 195px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 10px;
+    width: 100%;
   }
+  @media (max-width: 700px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 350px 10px;
+  };
 `;
 const ImgBox = styled.img`
   /* background: green; */
-  height: 100%;
+  height: 145px;
   grid-row: 1 / -1;
-  grid-column: 1 /2;
+  grid-column: 1 / 2;
+  ::selection {
+      background: ${props => props.theme.orange}; /* WebKit/Blink Browsers */
+    }
+    ::-webkit-selection {
+      background: ${props => props.theme.orange}; 
+    }
+    ::-moz-selection {
+      background: ${props => props.theme.orange}; 
+    }
+  @media (max-width: 700px) {
+    margin-left: -50px;
+    height: 100%;
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+  }
 `;
 const TextBox = styled.div`
   /* background: yellow; */
@@ -88,34 +108,86 @@ const TextBox = styled.div`
   grid-template-rows: 50px 1fr;
   grid-template-columns: 1fr;
   grid-column: 4 / -1;
-  margin-left: -20px;
   grid-row: 1 / -1;
+
+  @media (max-width: ${props => props.theme.mobileWidth} ) {
+    margin-left: -10px;
+    grid-template-rows: 35px 1fr;
+  };
+  @media (max-width: 700px) {
+    margin-left: 0px;
+    grid-column: 1 / -1;
+    grid-row: 3;
+    width: 100%;
+  }
 `;
 const Title = styled.p`
   /* background: pink; */
   font-size: 20px;
-  font-weight: 200;
+  font-weight: 600;
   line-height: 1px;
-
+  ::selection {
+      background: ${props => props.theme.orange}; /* WebKit/Blink Browsers */
+    }
+    ::-webkit-selection {
+      background: ${props => props.theme.orange}; 
+    }
+    ::-moz-selection {
+      background: ${props => props.theme.orange}; 
+    }
 `;
 const Text = styled.div`
   /* background: orange; */
-  line-height: 25px;
+  line-height: 35px;
+  font-size: 18px;
   font-weight: 300;
+  ::selection {
+      background: ${props => props.theme.orange}; /* WebKit/Blink Browsers */
+    }
+    ::-webkit-selection {
+      background: ${props => props.theme.orange}; 
+    }
+    ::-moz-selection {
+      background: ${props => props.theme.orange}; 
+    }
+  a {
+    color: black;
+    ::selection {
+      background: ${props => props.theme.orange}; /* WebKit/Blink Browsers */
+    }
+    ::-webkit-selection {
+      background: ${props => props.theme.orange}; 
+    }
+    ::-moz-selection {
+      background: ${props => props.theme.orange}; 
+    }
+  }
+  @media (max-width: ${props => props.theme.mobileWidth} ) {
+    line-height: 25px;
+    font-size: 15px;
+  };
+  @media (max-width:700px ) {
+    line-height: 25px;
+    font-size: 18px;
+  };
 `;
 
 const OuterBox = styled.div`
   /* background: red; */
   display: grid;
-  margin-top: 15px;
+  margin-top: 205px;
   /* height: 50vh; width: 100vw; */
   width: 100vw;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 150px 150px 150px 150px 150px 150px 150px;
-  grid-column-gap: 20px;
+  grid-template-rows: 180px 180px 180px 180px 180px 180px 180px ;
+  grid-column-gap: 25px;
   @media (max-width: ${props => props.theme.mobileWidth}) {
   display: grid;
   width: 100vw;
   height: 100%;
+ };
+ @media (max-width: 700px) {
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
  };
 `;

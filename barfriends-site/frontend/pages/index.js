@@ -2,7 +2,7 @@ import Homepage from './homepage';
 
 
 const Index = () => (
-  <div>
+  <div style={{background: 'black'}}> 
     <Homepage />
   </div>
 );

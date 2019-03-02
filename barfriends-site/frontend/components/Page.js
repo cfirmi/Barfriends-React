@@ -6,6 +6,7 @@ import Meta from '../components/Meta';
 const theme = {
   orange: '#FF7000',
   black: '#000',
+  white: '#fff',
   ogBlack: '#1D1D1D',
   offWhite: '#EDEDED',
   maxWidth: '85vw',
@@ -36,7 +37,7 @@ injectGlobal`
     }
     * , *:before, *:after {
       box-sizing: inherit;
-      color: ${theme.offWhite};
+      color: ${theme.black};
     }
     body {
       padding: 0;
@@ -46,7 +47,7 @@ injectGlobal`
       font-family: 'Open Sans';
       /* Control background to the page */
       background: ${theme.black};
-      color: white;
+      color: ${theme.black};
       overflow-x: hidden;
     ::-webkit-scrollbar { 
       display: none; 

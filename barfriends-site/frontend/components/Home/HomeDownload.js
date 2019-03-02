@@ -145,7 +145,6 @@ const Item = styled.div`
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
-  
   :hover {
     /* background: #1A1A1A; */
     background: ${props => props.theme.orange};
@@ -153,9 +152,10 @@ const Item = styled.div`
 
   }
   @media (max-width: ${props => props.theme.mobileWidth}) {
-    border-radius: 0px;
+    margin-left: 50%; 
+    transform: translateX(-50%);
     height: 40px;
-    width: 100vw;
+    width: 300px;
   };
 `;
 
@@ -176,6 +176,7 @@ const DeviceType = styled.div`
   font-weight: 400;
   font-size: 17px;
   z-index: 10;
+  color: white;
 `;
 //Detailing the phone that displays
 

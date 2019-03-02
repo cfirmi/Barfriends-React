@@ -1,9 +1,10 @@
 import styled from 'styled-components';
+import BusinessIntro from '../components/Business/BusinessIntro'
 
 const BFBusiness = () => (
   <div>
     <h1>
-      This is the business page
+      <BusinessIntro />
     </h1>
   </div>
 );
