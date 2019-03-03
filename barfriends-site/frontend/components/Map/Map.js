@@ -8,26 +8,24 @@ const MapContainerBox = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  height: 100vh; width: 100vw;
+  min-height: 800px; width: 100vw;
 `;
 const MapStyle = styled.div`
   grid-column: 1 / -1;
   grid-row: 1 / -1;
   text-align: center;
   z-index: 1;
-  @media (max-width: ${props => props.theme.mobileWidth}) {
-  };
 `;
 const HideDiv = styled.div`
   grid-column: 1 / -1;
-  grid-row: -1;
+  /* grid-row: -1; */
   margin-top:-50px;
   height: 50px;
   background: black;
   z-index: 2;
   content: '';
   @media (max-width: ${props => props.theme.mobileWidth}) {
-    /* margin-top: 2vh; */
+  /* background: red; */
 };
 `;
 

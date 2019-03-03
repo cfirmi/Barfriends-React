@@ -8,15 +8,13 @@ const joinBfs = '../../static/images/joinimg/join-barfriends.jpg';
 const Logo = '../../static/images/LogoNaked.png';
 
 const OuterBox = styled.div`
-  /* background: green; */
   display: grid;
-  /* height: 50vh; width: 100vw; */
-  width: 100vw;
+  width: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 100px 100px 100px 100px 100px 100px;
   @media (max-width: ${props => props.theme.mobileWidth}) {
   display: grid;
-  width: 100vw;
+  width: 100%;
   height: 100%;
  };
 `;

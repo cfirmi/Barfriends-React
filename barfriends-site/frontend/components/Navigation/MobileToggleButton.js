@@ -43,9 +43,9 @@ export default class MobileToggleButton extends Component {
         transition: 'all 0.2s ease',
       },
       lineTop: {
-        transform: this.state.open ? 'rotate(45deg)':'none',
+        transform: this.state.open ? 'translateX(-1px) rotate(45deg)':'none',
         transformOrigin: 'top left',
-        marginBottom: '6px',
+        marginBottom: '1px',
       },
       // lineMiddle: {
       //   opacity: this.state.open ? 0: 1,

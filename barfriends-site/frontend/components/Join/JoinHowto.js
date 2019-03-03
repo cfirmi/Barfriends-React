@@ -66,19 +66,21 @@ const HowToItem = styled.div`
   display: grid;
   grid-template-columns: 10px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-column: 2 / 9;
-  max-width: 1200px;
-  width: 1000px; 
+  /* max-width: 1200px; */
+  /* width: 1000px;  */
+    width: 100%;
   height: 160px;
   margin-top: 10px; margin-left: 50%;
   transform: translateX(-50%);
   @media (max-width: ${props => props.theme.mobileWidth}) {
     grid-template-columns: 195px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     margin-top: 10px;
-    width: 100%;
   }
   @media (max-width: 700px) {
+    height: 500px;
+    width: 100%; 
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 350px 10px;
+    grid-template-rows: 350px 100px;
   };
 `;
 const ImgBox = styled.img`
@@ -96,17 +98,20 @@ const ImgBox = styled.img`
       background: ${props => props.theme.orange}; 
     }
   @media (max-width: 700px) {
-    margin-left: -50px;
-    height: 100%;
-    grid-row: 1 / 2;
+
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 100vw; height: 390px;
     grid-column: 1 / -1;
+    grid-row: 1 / 2;
   }
 `;
 const TextBox = styled.div`
   /* background: yellow; */
   display: grid;
-  grid-template-rows: 50px 1fr;
   grid-template-columns: 1fr;
+  grid-template-rows: 50px 1fr;
+  margin-left: 20px;
   grid-column: 4 / -1;
   grid-row: 1 / -1;
 
@@ -115,9 +120,11 @@ const TextBox = styled.div`
     grid-template-rows: 35px 1fr;
   };
   @media (max-width: 700px) {
+    /* background: yellow; */
     margin-left: 0px;
+    margin-top: 33px;
     grid-column: 1 / -1;
-    grid-row: 3;
+    grid-row: 2;
     width: 100%;
   }
 `;
@@ -187,7 +194,7 @@ const OuterBox = styled.div`
   height: 100%;
  };
  @media (max-width: 700px) {
+   
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-
  };
 `;

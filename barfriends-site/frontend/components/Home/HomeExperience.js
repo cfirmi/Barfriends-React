@@ -16,13 +16,16 @@ const TitleThink = styled.div`
   font-weight: 600;
   text-align: center;
   line-height: 20px;;
-  font-size: 35px;
+  font-size: 65px;
   p {
+  margin-top: 40px;
+  color: white;
   font-weight: 100;
   font-size: 14px;
   text-decoration: underline;
   }
-  h4 {
+  h1 {
+    color: white;
     font-weight: 400;
     margin-left: -290px;
     text-align: center;
@@ -31,7 +34,7 @@ const TitleThink = styled.div`
     font-size: 30px;
   };
   @media (max-width: 500px) {
-    font-size: 19px;
+    font-size: 35px;
   };
   /* padding: 30vw; */
 `;
@@ -56,9 +59,7 @@ const BigBox = styled.div`
 const MainMap = () => (
     <OuterBox>
         <TitleThink>
-          <h1>
             Think Experience.
-          </h1>
           {/* <h4>#KnowWhereToGo</h4> */}
           <Link href="/experiencecampaignpage">
             <a>

@@ -1,11 +1,9 @@
-import JoinLearn from '../components/Join/JoinLearn';
-import JoinHowto from '../components/Join/JoinHowto';
-import { withTheme } from 'styled-components';
+import Join from './joinpage'
+
 
 const BFJoin = () => (
   <div style={{background: 'white'}}>
-    <JoinLearn />
-    <JoinHowto />
+    <Join />
   </div>
 );
 

@@ -38,6 +38,7 @@ export default MainDownload;
 
 const Back = styled.div`
   z-index: 0;
+
 `;
 
 
@@ -56,6 +57,7 @@ const OuterBox = styled.div`
   padding-top: 0px;
   margin-top: -10vh;
   height: 110vh;
+  min-height: 850px;
   overflow: hidden;
   };
 `;
@@ -123,12 +125,13 @@ const AvailFor = styled.div`
   z-index: 10;
   @media (max-width: ${props => props.theme.mobileWidth}) {
   margin-top: 10px;
-    /* display: none; */
+    display: none;
     /* background: rebeccapurple; */
     height: 450px; width: 100vw;
     grid-row: 4;
   };
 `;
+
 
 const Item = styled.div`
   display: grid;
@@ -163,10 +166,10 @@ const DeviceIcon = styled.div`
   height: 40px;
   width: 40px;
   z-index: 10;
+  line-height: 47px;
   img {
     height: 20px;
-    margin-top: 9px;
-    margin-left: 50%;
+    margin-left: 51%;
     transform: translateX(-50%);
   }
 `;
@@ -181,21 +184,21 @@ const DeviceType = styled.div`
 //Detailing the phone that displays
 
 const PhoneItem = styled.div`
-  /* background: blue;  */
   grid-row: 1 / -1;
   grid-column: 3;
   z-index: 10;
   img {
+  margin-bottom: 100px;
   width: 300px;
-  grid-column: 3;
-  margin-left: 30px ;
+  grid-column: 1;
+  margin-bottom: 130px ;
   grid-row: 1 / -1;
   }
   @media (max-width: ${props => props.theme.mobileWidth}) { 
-      /* background: red; */
-      grid-column: 1 / -1;
-      grid-row: 3;
-      margin-top: 55px;
+    /* background: red; */
+    grid-column: 1 / -1;
+    grid-row: 3;
+    margin-top: 55px;
     img {
       /* margin-top: 100px; */
       width: 300px;
