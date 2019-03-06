@@ -54,7 +54,7 @@ const ImgBox = styled.img`
   /* background: blue; */
   grid-column: 5 / -1;
   height: 100%;
-  grid-row: 1 / -1;
+  grid-row: 2 / -1;
   @media (max-width: ${props => props.theme.mobileWidth} ) {
   object-fit: cover;
     grid-column: 2 / 8;
