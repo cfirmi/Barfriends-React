@@ -28,14 +28,27 @@ const SeoTitle = styled.h1`
   font-size: 23px;
   font-weight: 200;
   color: white;
-  grid-column: 1 / 4;
+  grid-column: 1 / 5;
   margin-top: 39px;
   margin-left: 50px;
   grid-row: 4;
   @media (max-width: 500px ) {
+    margin:  39px 5px;
     grid-row: 2;
     grid-column: 1 / -1;
   }
+  @media (min-width: 1500px) {
+    margin-top: 60px;
+  };
+  ::selection {
+      background: ${props => props.theme.orange}; /* WebKit/Blink Browsers */
+    }
+    ::-webkit-selection {
+      background: ${props => props.theme.orange}; 
+    }
+    ::-moz-selection {
+      background: ${props => props.theme.orange}; 
+    }
 `;
 
 const Title = styled.img`

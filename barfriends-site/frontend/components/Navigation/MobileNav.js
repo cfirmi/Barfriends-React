@@ -2,7 +2,7 @@ import Link from 'next/link';
 import styled from 'styled-components';
 import { Mutation } from 'react-apollo';
 import { TOGGLE_CART_MUTATION } from './MobileDropNav';
-import {NavHamburger, InputCheckBox} from '../styles/ToggleDropButton';
+import { NavHamburger, InputCheckBox } from '../styles/ToggleDropButton';
 
 // Logo
 const Logo = '../../static/images/Logo.svg';
