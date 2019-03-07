@@ -1,10 +1,14 @@
-import Join from './joinpage'
+import JoinLearn from '../components/Join/JoinLearn';
+import JoinHowto from '../components/Join/JoinHowto';
+import ASKS from '../components/Join/ASK';
 
 
-const BFJoin = () => (
+const JoinPage = () => (
   <div style={{background: 'white'}}>
-    <Join />
+    <JoinLearn />
+    <JoinHowto />
+    <ASKS />
   </div>
 );
 
-export default BFJoin;
+export default JoinPage;

@@ -128,7 +128,7 @@ const TextBox = styled.div`
     width: 100%;
   }
 `;
-const Title = styled.p`
+const Title = styled.h2`
   /* background: pink; */
   font-size: 20px;
   font-weight: 600;
