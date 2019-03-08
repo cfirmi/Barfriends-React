@@ -14,42 +14,42 @@ export default class JoinHowto extends Component {
     return (
       <OuterBox>
           <HowToItem>
-            <ImgBox src={profile} alt=""/>
+            <ImgBox draggable="false" src={profile} alt=""/>
             <TextBox>
               <Title>Create A Profile</Title>
               <Text>All you need is a email and set a password. You can find the best places to go out tonight. To download the app, go to <span style={{borderBottom: '1px solid black', cursor: 'pointer', fontWeight: '400' }}> <a target="_blank" href="https://itunes.apple.com/us/app/barfriends/id1445453937?mt=8"> App Store </a></span></Text>
             </TextBox>
           </HowToItem>
           <HowToItem>
-            <ImgBox src={mapFinder} alt=""/>
+            <ImgBox draggable="false" src={mapFinder} alt=""/>
             <TextBox>
               <Title>Use the Map to find a bar</Title>
               <Text>Open the app, Select any bar, club or pub you see, find out where your friends are going out or how many people are going out to each place.</Text>
             </TextBox>
           </HowToItem>
           <HowToItem>
-            <ImgBox src={Uber} alt=""/>
+            <ImgBox draggable="false" src={Uber} alt=""/>
             <TextBox>
               <Title>Find a ride</Title>
               <Text>Found a bar! now you need a ride. Use our deeplink into the Uber app where you'll get real time information on a ride to the bar you selected.</Text>
             </TextBox>
           </HowToItem>
           <HowToItem>
-            <ImgBox src={atBar} alt=""/>
+            <ImgBox draggable="false" src={atBar} alt=""/>
             <TextBox>
               <Title>When you arrive</Title>
               <Text>Near the bar! You will be able to Join and see other people that are also at the bar and Joined.</Text>
             </TextBox>
           </HowToItem>
           <HowToItem>
-            <ImgBox src={sendASKS} alt=""/>
+            <ImgBox draggable="false" src={sendASKS} alt=""/>
             <TextBox>
               <Title>Making new friends</Title>
               <Text>Message your friends or other joined people. Invite to drink dance or play game in the bar in real time.</Text>
             </TextBox>
           </HowToItem>
           <HowToItem>
-            <ImgBox src={cheers} alt=""/>
+            <ImgBox draggable="false" src={cheers} alt=""/>
             <TextBox>
               <Title>Cheers to better nights out</Title>
               <Text>Always use Barfriends to have a fun and safe night out. For everyone at any time.</Text>
