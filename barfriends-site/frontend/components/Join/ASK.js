@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import Link from 'next/link'
+import CarouselComp from './Carousel';
 
 const Banner = '../../static/images/joinimg/ASKBanner.svg'
 
@@ -59,6 +60,9 @@ export default class ASKS extends Component {
           <h2 style={{fontStyle: 'italic'}}>❝It matters how the conversation goes, less about how it started❞</h2>
         </ASKing>
         <BannerImg draggable="false" src={Banner} alt=""/>
+        <br/>
+        <br/>
+      
       </OuterBox>
     )
   }
