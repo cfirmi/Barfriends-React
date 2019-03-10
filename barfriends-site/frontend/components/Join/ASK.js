@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import Link from 'next/link'
-import CarouselComp from './Carousel';
 
 const Banner = '../../static/images/joinimg/ASKBanner.svg'
 
