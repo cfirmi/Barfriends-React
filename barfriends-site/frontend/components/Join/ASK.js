@@ -12,6 +12,7 @@ const OuterBox = styled.div`
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 100px 100px 100px 100px 100px 100px;
   @media (max-width: ${props => props.theme.mobileWidth}) {
+  grid-template-rows: 100px 100px 100px ;
   display: grid;
   width: 100%;
   height: 100%;
@@ -33,9 +34,20 @@ const BannerImg = styled.img`
     ::-moz-selection {
       background: ${props => props.theme.orange}; 
     }
+    @media (max-width: ${props => props.theme.mobileWidth} ) {
+      grid-row: 2;
+    };
+    @media (max-width: 600px) {
+      grid-column: 1 / -1;
+    };
 `;
 const ASKing = styled.div`
- grid-column: 1 / -1;
+ /* background: red; */
+  grid-row: 2;
+  grid-column: 1 / -1;
+  @media (max-width: ${props => props.theme.mobileWidth} ) {
+    grid-row: 1;
+  };
   h1, h2 {
    text-align: center;
  ::selection {
@@ -56,11 +68,10 @@ export default class ASKS extends Component {
     return (
       <OuterBox>
         <ASKing>
-          <h1>Meet People Going Out</h1>
+          <h1>Go Out, Meet People, Have Fun</h1>
           <h2 style={{fontStyle: 'italic'}}>❝It matters how the conversation goes, less about how it started❞</h2>
         </ASKing>
         <BannerImg draggable="false" src={Banner} alt=""/>
-        <br/>
         <br/>
       
       </OuterBox>

@@ -166,7 +166,7 @@ const DeviceIcon = styled.div`
   height: 40px;
   width: 40px;
   z-index: 10;
-  line-height: 47px;
+  line-height: 35px;
   img {
     height: 20px;
     margin-left: 51%;
