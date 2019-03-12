@@ -10,7 +10,7 @@ const BusinessCarouselComp = () => (
     swiping={true} 
     pauseOnHover={true}
     speed={200}
-    // withoutControls={true}
+    withoutControls={true}
     renderCenterLeftControls={({ previousSlide }) => ( null
     )}
     renderCenterRightControls={({ nextSlide }) => ( null

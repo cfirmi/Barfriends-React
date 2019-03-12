@@ -49,6 +49,8 @@ injectGlobal`
       background: ${theme.black};
       color: ${theme.black};
       overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
     ::-webkit-scrollbar { 
       display: none; 
     }   

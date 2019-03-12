@@ -7,7 +7,7 @@ const barfriends = '../../static/images/business/barfriendsbusiness.svg'
 const BusinessIntro = () => (
   <OuterBox>
     <Title src={barfriends} alt="" />
-    <SeoTitle>Sign up with Barfriends Business today</SeoTitle>
+    <SeoTitle>Engage the mobile-first generation.</SeoTitle>
   </OuterBox>
 );
 const OuterBox = styled.div`
@@ -25,11 +25,12 @@ const OuterBox = styled.div`
   }
 `;
 const SeoTitle = styled.h1`
-  font-size: 23px;
+  /* font-size: 21px; */
+
   font-weight: 200;
   color: white;
   grid-column: 1 / 5;
-  margin-top: 39px;
+  margin-top: 60px;
   margin-left: 50px;
   grid-row: 4;
   @media (max-width: 500px ) {
@@ -54,10 +55,10 @@ const SeoTitle = styled.h1`
 const Title = styled.img`
   /* background: red; */
   grid-row: 4;
-  grid-column: 1 / 4;
+  grid-column: 1 / 5;
   margin-left: 50px;
   width: 100%;
-  min-width: 400px;
+  min-width: 500px;
   ::selection {
       background: ${props => props.theme.orange}; /* WebKit/Blink Browsers */
     }
