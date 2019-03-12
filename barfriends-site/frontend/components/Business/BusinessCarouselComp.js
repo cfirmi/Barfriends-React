@@ -1,16 +1,11 @@
 import Carousel from 'nuka-carousel'
-import styled from 'styled-components'
-
-const BetterEvents = "../../static/images/joinimg/ASKBanner.svg"
-const TheBoys = "../../static/images/business/theboys.jpg"
-
-const Images = styled.img`
-  width: 100%;
-`;
+import BusinessSignin from './BusinessSignin'
+import BusinessFun from './BusinessFun'
+import BusinessIntro from './BusinessIntro'
 
 const BusinessCarouselComp = () => (
   <Carousel 
-    autoplay={true} 
+    // autoplay={true} 
     wrapAround={true}
     swiping={true} 
     pauseOnHover={true}
@@ -20,14 +15,11 @@ const BusinessCarouselComp = () => (
     )}
     renderCenterRightControls={({ nextSlide }) => ( null
     )}
-    style={{height: '100vw', marginTop: '100vh', background: 'red', color: 'white' }}
+    style={{height: '100vh', color: 'white'}}
   >
-    <div style={{height: '100%', width: '100vw'}}>
-      <Images draggable='false' src={BetterEvents} alt=""/>
-    </div>
-    <div style={{height: '100%', width: '100vw'}}>
-      <Images draggable='false' src={TheBoys} alt=""/>
-    </div>
+    <BusinessSignin />
+    <BusinessIntro />
+    <BusinessFun />
   </Carousel>
 );
 
