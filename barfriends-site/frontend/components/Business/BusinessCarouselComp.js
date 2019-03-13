@@ -8,17 +8,18 @@ const BusinessCarouselComp = () => (
     // autoplay={true} 
     wrapAround={true}
     swiping={true} 
-    pauseOnHover={true}
-    speed={200}
+    pauseOnHover={false}
+    speed={100}
     withoutControls={true}
     renderCenterLeftControls={({ previousSlide }) => ( null
     )}
     renderCenterRightControls={({ nextSlide }) => ( null
     )}
-    style={{height: '100vh', color: 'white'}}
+    style={{height: '100%', width: '100vw', color: 'white'}}
+    className="random"
   >
-    <BusinessSignin />
     <BusinessIntro />
+    <BusinessSignin />
     <BusinessFun />
   </Carousel>
 );

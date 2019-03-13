@@ -6,7 +6,7 @@ const barfriends = '../../static/images/business/barfriendsbusiness.svg'
 
 const BusinessIntro = () => (
   <OuterBox>
-    <Title src={barfriends} alt="" />
+    <Title draggable="false" src={barfriends} alt="" />
     <SeoTitle>Engage the mobile-first generation.</SeoTitle>
   </OuterBox>
 );
@@ -17,29 +17,33 @@ const OuterBox = styled.div`
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   width: 100vw; height: 100vh;
-  h1 {
-    
-  }
   @media (max-width: ${props => props.theme.mobileWidth}) {
     margin-top: -40px;
   }
 `;
 const SeoTitle = styled.h1`
+  /* background: red; */
   /* font-size: 21px; */
-
   font-weight: 200;
   color: white;
-  grid-column: 1 / 5;
+  grid-column: 1 / 7;
   margin-top: 60px;
   margin-left: 50px;
   grid-row: 4;
   @media (max-width: 500px ) {
-    margin:  39px 5px;
+    margin: 39px 5px;
     grid-row: 2;
     grid-column: 1 / -1;
   }
   @media (min-width: 1500px) {
-    margin-top: 60px;
+    margin-top: 80px;
+  };
+  @media (max-width: 1000px) {
+    margin-top: 40px;
+  };
+  @media (max-width: 600px) {
+    text-align: center;
+    grid-row: 2;
   };
   ::selection {
       background: ${props => props.theme.orange}; /* WebKit/Blink Browsers */
@@ -68,9 +72,9 @@ const Title = styled.img`
     ::-moz-selection {
       background: ${props => props.theme.orange}; 
     }
-    @media (max-width: 500px ) {
+    @media (max-width: 600px ) {
       width: 80%;
-      min-width: 100%;
+      min-width: 80%;
       grid-row: 2;
       grid-column: 1 / -1;
       margin-left: 50%;

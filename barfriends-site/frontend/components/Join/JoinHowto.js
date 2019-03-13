@@ -68,7 +68,7 @@ const HowToItem = styled.div`
   grid-column: 2 / 9;
   /* max-width: 1200px; */
   /* width: 1000px;  */
-    width: 100%;
+  width: 100%;
   height: 160px;
   margin-top: 10px; margin-left: 50%;
   transform: translateX(-50%);
@@ -111,7 +111,7 @@ const TextBox = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 50px 1fr;
-  margin-left: 20px;
+  margin-left: 30px;
   grid-column: 4 / -1;
   grid-row: 1 / -1;
 
@@ -133,6 +133,7 @@ const Title = styled.h2`
   font-size: 20px;
   font-weight: 600;
   line-height: 1px;
+  margin-top: 20px;
   ::selection {
       background: ${props => props.theme.orange}; /* WebKit/Blink Browsers */
     }
@@ -142,6 +143,9 @@ const Title = styled.h2`
     ::-moz-selection {
       background: ${props => props.theme.orange}; 
     }
+    @media (max-width: 700px) {
+      margin-top: 20px;
+    };
 `;
 const Text = styled.div`
   /* background: orange; */

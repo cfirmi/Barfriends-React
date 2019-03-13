@@ -10,8 +10,6 @@ const BusinessFun = () => (
   </OuterBox>
 );
 const OuterBox = styled.div`
-/* background: yellow; */
-  /* margin-top: 106px; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -23,22 +21,37 @@ const OuterBox = styled.div`
     color: white;
     grid-column: 2 / 5;
     grid-row: 3;
+    z-index: 2;
   }
   h3 {
     font-size: 22px;
     text-align: left;
-    font-weight: 200;
+    font-weight: 400;
     color: white;
     grid-column: 2 / 5;
     grid-row: 4;
+    z-index: 2;
   }
+  @media (max-width: 600px) {
+    h1 {
+      grid-row: 1;
+      grid-column: 1 / -1;
+      font-size: 70px;
+    }
+    h3 {
+      grid-row: 2;
+      grid-column: 1 / -1;
+    }
+  };
 `;
 
 const BackgroundImg = styled.img`
   grid-row: 1 / -1;
   grid-column: 1 / -1;
-  height: 100%;
+  width: 100%;
+  min-height: 100vh;
   object-fit: cover;
+  z-index: 1;
 `;
 
 export default BusinessFun;

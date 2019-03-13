@@ -7,7 +7,7 @@ const Logo = '../../static/images/Logo.svg';
 const NavStyles = styled.div`
   background: ${props => props.theme.black};
   position:fixed;
-  height: 66px;
+  height: 80px;
   width: 100vw;
   line-height: 70px;
   `;
@@ -68,21 +68,21 @@ const Nav = () => (
           </a>
         </Link>
       </NavItems>
-      <NavItems>
+      <NavItems style={{marginTop: '15px'}}>
         <Link href='/join'>
           <a>
               Join
           </a>
         </Link>
       </NavItems>
-      <NavItems>
+      <NavItems style={{marginTop: '15px'}}>
         <Link href='/business'>
           <a>
               Business
           </a>
         </Link>
       </NavItems>
-      <NavItems>
+      <NavItems style={{marginTop: '15px'}}>
         <Link href='/terms'>
           <a>
               Terms
