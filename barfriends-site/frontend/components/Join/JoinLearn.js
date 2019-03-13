@@ -12,6 +12,7 @@ const OuterBox = styled.div`
   width: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 100px 100px 100px 100px 100px 100px;
+  height: 80vh;
   @media (max-width: ${props => props.theme.mobileWidth}) {
   display: grid;
   width: 100%;
