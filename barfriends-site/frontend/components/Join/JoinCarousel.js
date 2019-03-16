@@ -11,8 +11,9 @@ const ViewJoined = 'static/images/joinimg/joinCarousel/ViewJoinedBar.png'
 
 const PhoneBox = styled.div`
   /* background: purple; */
-  height: 700px;
-  width: 300px;
+  height: 750px;
+  width: 350px;
+  /* margin-top: 50px; */
   margin-left: 50%;
   transform: translateX(-50%);
   img {
@@ -27,21 +28,20 @@ const JoinCarouselComp = () => (
     swiping={true} 
     pauseOnHover={false}
     speed={100}
-    // withoutControls={true}
+    // withoutControls={false}
     cellAlign='center' 
-    // renderCenterLeftControls={({ previousSlide }) => ( null
-    // )}
-    // renderCenterRightControls={({ nextSlide }) => ( null
-    // )}
-    style={{height: '100%', width: '500px', color: 'white', marginLeft: '50%', transform: 'translateX(-50%)'}}
+    renderCenterLeftControls={({ previousSlide }) => ( null
+    )}
+    renderCenterRightControls={({ nextSlide }) => ( null
+    )}
+    style={{height: '100%', width: '380px', color: 'white', marginLeft: '50%', transform: 'translateX(-50%)'}}
   >
     <PhoneBox> 
-      <img src={Map} alt=""/>
+      <img draggable={false} src={Map} alt=""/>
     </PhoneBox>
     <PhoneBox> 
       <img src={JoinBar} alt=""/>
     </PhoneBox>
-    <PhoneBox> </PhoneBox>
   </Carousel>
 );
 

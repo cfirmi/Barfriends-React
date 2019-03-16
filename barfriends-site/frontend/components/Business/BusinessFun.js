@@ -15,21 +15,21 @@ const OuterBox = styled.div`
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   width: 100vw; height: 100vh;
   h1 {
-    font-size: 100px;
-    text-align: left;
-    font-weight: 600;
-    color: white;
     grid-column: 2 / 5;
     grid-row: 3;
+    font-size: 100px;
+    font-weight: 600;
+    text-align: left;
+    color: white;
     z-index: 2;
   }
   h3 {
-    font-size: 22px;
-    text-align: left;
-    font-weight: 400;
-    color: white;
     grid-column: 2 / 5;
     grid-row: 4;
+    text-align: left;
+    font-size: 22px;
+    font-weight: 400;
+    color: white;
     z-index: 2;
   }
   @media (max-width: 600px) {

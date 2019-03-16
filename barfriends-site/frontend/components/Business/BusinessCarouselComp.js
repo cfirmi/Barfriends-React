@@ -5,11 +5,11 @@ import BusinessIntro from './BusinessIntro'
 
 const BusinessCarouselComp = () => (
   <Carousel 
-    // autoplay={true} 
+    autoplay={true} 
     wrapAround={true}
     swiping={true} 
     pauseOnHover={false}
-    speed={100}
+    speed={300}
     withoutControls={true}
     renderCenterLeftControls={({ previousSlide }) => ( null
     )}

@@ -17,19 +17,20 @@ const OuterBox = styled.div`
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   width: 100vw; height: 100vh;
+  /* background: red; */
   @media (max-width: ${props => props.theme.mobileWidth}) {
     margin-top: -40px;
   }
 `;
 const SeoTitle = styled.h1`
-  /* background: red; */
-  /* font-size: 21px; */
-  font-weight: 200;
-  color: white;
-  grid-column: 1 / 7;
-  margin-top: 60px;
+  font-weight: 400;
+  color: black;
+  grid-column: 1;
+  width: 430px;
+  margin-top: 70px;
   margin-left: 50px;
   grid-row: 4;
+  /* background: black; */
   @media (max-width: 500px ) {
     margin: 39px 5px;
     grid-row: 2;

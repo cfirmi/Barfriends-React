@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-// import gg from '../../static/images/business/'
 
 const computerscreen = "../../static/images/business/computerscreen.svg"
 
@@ -18,28 +17,27 @@ const OuterBox = styled.div`
   grid-template-rows: 1fr 1fr 1fr 1fr;
   width: 100vw; height: 100vh;
   h1 {
-    font-weight: 600;
     margin-top: 150px;
     grid-column: 4 / -1;
     grid-row: 2;
-    color: white;
+    font-weight: 600;
+    font-size: 40px;
     text-align: center;
-    font-size: 45px;
+    color: black;
   }
   img {
+    margin-top: 100px; margin-left: -200px;
     grid-column: 1;
     grid-row: 2 / 5;
     height: 550px;
-    margin-top: 100px; margin-left: -200px;
   }
   p {
-    text-align: center;
     /* background: red; */
-    /* margin: 30px; */
+    text-align: center;
     grid-column: 4 / -1;
     grid-row: 3;
     font-size: 20px;
-    color: white;
+    color: grey;
   }
   @media (max-width: 1350px) {
     display: grid;
@@ -47,33 +45,30 @@ const OuterBox = styled.div`
     grid-template-rows: 1fr 1fr 1fr 1fr;
     width: 100vw; height: 100vh;
   h1 {
-    font-weight: 600;
     margin-top: 150px;
     grid-column: 1 / -1;
     grid-row: 1;
-    color: white;
+    font-weight: 600;
     text-align: center;
-    font-size: 45px;
   }
   p {
-    text-align: center;
     /* background: red; */
-    margin: 30px;
+    margin:  0px 30px;
     grid-column: 1 / -1;
     grid-row: 2;
-    color: white;
+    text-align: center;
   }
   img {
+    height: 550px;
+    margin-top: 100px; margin-left: 50%;
+    transform: translateX(-50%);
     grid-column: 1 / -1;
     grid-row: 2 / 5;
-    height: 550px;
-    margin-top: 100px; margin-left: 0px;
-    margin-left: 50%;
-    transform: translateX(-50%);
   }
   @media (max-width: 800px) {
     img {
       width: 90%;
+      grid-row: 2;
     }
   };
 };

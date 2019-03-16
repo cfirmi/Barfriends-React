@@ -70,7 +70,7 @@ const HowToItem = styled.div`
   /* width: 1000px;  */
   width: 100%;
   height: 160px;
-  margin-top: 10px; margin-left: 50%;
+  margin-left: 50%;
   transform: translateX(-50%);
   @media (max-width: ${props => props.theme.mobileWidth}) {
     grid-template-columns: 195px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -186,8 +186,7 @@ const Text = styled.div`
 const OuterBox = styled.div`
   /* background: red; */
   display: grid;
-  margin-top: 205px;
-  /* height: 50vh; width: 100vw; */
+  margin-top: 100px;
   width: 100vw;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 180px 180px 180px 180px 180px 180px 180px ;

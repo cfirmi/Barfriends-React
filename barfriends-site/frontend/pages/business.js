@@ -4,7 +4,7 @@ import BusinessSoon  from '../components/Business/BusinessSoon'
 import BarfriendsWhy from '../components/Business/BarfriendsWhy'
 
 const BFBusiness = () => (
-  <div>
+  <div style={{background: 'white'}}>
     <BusinessCarouselComp />
     <BarfriendsWhy />
     <BusinessSoon />
