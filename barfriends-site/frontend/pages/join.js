@@ -9,7 +9,7 @@ const JoinPage = () => (
     <JoinLearn />
     <Everywhere />
     <JoinHowto />
-    <ASKS />
+    {/* <ASKS /> */}
   </div>
 );
 

@@ -15,9 +15,10 @@ const OuterBox = styled.div`
   display: grid;
   grid-template-columns: 250px 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  width: 100vw; height: 100vh;
+  margin-top: 150px;
+  width: 100vw; height: 100%;  max-height: 700px;
   h1 {
-    margin-top: 150px;
+    /* margin-top: 150px; */
     grid-column: 4 / -1;
     grid-row: 2;
     font-weight: 600;
@@ -42,10 +43,9 @@ const OuterBox = styled.div`
   @media (max-width: 1350px) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    width: 100vw; height: 100vh;
+    grid-template-rows: 50px 50px 1fr 1fr 1fr 1fr;
+    width: 100vw; height: 100%;
   h1 {
-    margin-top: 150px;
     grid-column: 1 / -1;
     grid-row: 1;
     font-weight: 600;

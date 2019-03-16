@@ -98,7 +98,6 @@ const ImgBox = styled.img`
       background: ${props => props.theme.orange}; 
     }
   @media (max-width: 700px) {
-
     margin-left: 50%;
     transform: translateX(-50%);
     width: 100vw; height: 390px;
@@ -134,6 +133,7 @@ const Title = styled.h2`
   font-weight: 600;
   line-height: 1px;
   margin-top: 20px;
+  color: white;
   ::selection {
       background: ${props => props.theme.orange}; /* WebKit/Blink Browsers */
     }
@@ -152,6 +152,7 @@ const Text = styled.div`
   line-height: 35px;
   font-size: 18px;
   font-weight: 300;
+  color: white;
   ::selection {
       background: ${props => props.theme.orange}; /* WebKit/Blink Browsers */
     }
@@ -162,7 +163,7 @@ const Text = styled.div`
       background: ${props => props.theme.orange}; 
     }
   a {
-    color: black;
+    color: white;
     ::selection {
       background: ${props => props.theme.orange}; /* WebKit/Blink Browsers */
     }
@@ -184,10 +185,11 @@ const Text = styled.div`
 `;
 
 const OuterBox = styled.div`
-  /* background: red; */
+  background: black;
   display: grid;
-  margin-top: 100px;
+  margin-top: -200px;
   width: 100vw;
+  padding-top: 50px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 180px 180px 180px 180px 180px 180px 180px ;
   grid-column-gap: 25px;

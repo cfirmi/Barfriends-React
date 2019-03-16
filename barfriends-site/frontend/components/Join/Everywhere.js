@@ -13,12 +13,14 @@ const OuterBox = styled.div`
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   justify-content: space-around;
   h1 {
-    text-align: left;
+    text-align: center;
     font-weight: 800;
+    font-size: 30px;
   }
   p {
     color: grey;
-    text-align: left;
+    text-align: center;
+    font-size: 17px;
   }
   @media (max-width: 850px) {
     display: grid;
@@ -39,10 +41,10 @@ const Box1 = styled.div`
   grid-row: 3 / 5;
   grid-column: 1 / 4;
   text-align: center;
-  justify-self: end;
-  min-width: 200px;
-  max-width: 250px;
-  
+  min-width: 300px;
+  max-width: 330px;
+  margin-left: 50%;
+  transform: translateX(-50%);
   @media (max-width: 850px) {
     grid-row: 8;
     grid-column: 4 / 5;
@@ -56,9 +58,13 @@ const Box2 = styled.div`
   /* background: red; */
   grid-row: 3 / 5;
   grid-column: 5 / 8;
-  justify-self: start;
-  min-width: 200px;
+  justify-self: end;
+  min-width: 300px;
+  max-width: 330px;
+  max-height: 300px;
   text-align: center;
+  margin-left: 50%;
+  transform: translateX(-50%);
   @media (max-width: 850px) {
     grid-row: 9;
     grid-column: 4 / 5;
@@ -70,12 +76,14 @@ const Box2 = styled.div`
 `;
 const Box3 = styled.div`
   /* background: yellow; */
-  grid-row: 6 / 8;
+  grid-row: 4 / 8;
   grid-column: 1 / 4;
-  justify-self: end;
-  min-width: 200px;
+  min-width: 300px;
+  max-width: 330px;
   max-height: 300px;
   text-align: center;
+  margin-top: 50px; margin-left: 50%;
+  transform: translateX(-50%);
   @media (max-width: 850px) {
     grid-row: 10;
     grid-column: 4 / 5;
@@ -87,12 +95,15 @@ const Box3 = styled.div`
 `;
 const Box4 = styled.div`
   /* background: orange; */
-  grid-row: 6 / 8;
+  grid-row: 4 / 8;
   grid-column: 5 / 8;
-  justify-self: start;
-  min-width: 200px;
+  justify-self: end;
+  min-width: 300px;
+  max-width: 330px;
   max-height: 300px;
   text-align: center;
+  margin-top: 50px; margin-left: 50%;
+  transform: translateX(-50%);
   @media (max-width: 850px) {
     grid-row: 11;
     grid-column: 4 / 5;
@@ -108,12 +119,12 @@ export default class Everywhere extends Component {
     return (
       <OuterBox>
         <Box1>
-          <h1>Every city</h1>
+          <h1>Avaiable all over North America</h1>
           <p>Use the map to find all the bars & clubs. And the ones that are popular.</p>
         </Box1>
         <Box2>
           <h1>In Real-Time</h1>
-          <p>Wonder no more, see how the place is that you want to go out to, before commiting to them.  </p>
+          <p>See how busy places really are, before commiting to them.  </p>
         </Box2>
         <Box3> 
           <h1>Meet new people</h1>

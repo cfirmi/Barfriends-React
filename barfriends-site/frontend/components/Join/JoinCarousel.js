@@ -12,8 +12,8 @@ const ViewJoined = 'static/images/joinimg/joinCarousel/ViewJoinedBar.png'
 const PhoneBox = styled.div`
   /* background: purple; */
   height: 750px;
-  width: 350px;
-  /* margin-top: 50px; */
+  width: 300px;
+  margin-top: 150px;
   margin-left: 50%;
   transform: translateX(-50%);
   img {

@@ -17,7 +17,7 @@ export default BarfriendsWhy;
 const OuterBox = styled.div`
   background: white;
   display: grid;
-  width: 100vw; height: 66vh;
+  width: 100vw; height: 90vh;
   margin-top: 100px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
