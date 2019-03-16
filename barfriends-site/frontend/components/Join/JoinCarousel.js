@@ -13,17 +13,20 @@ const PhoneBox = styled.div`
   /* background: purple; */
   height: 750px;
   width: 300px;
-  margin-top: 150px;
+  /* margin-top: 150px; */
   margin-left: 50%;
   transform: translateX(-50%);
   img {
     width: 100%;
   }
+  @media (max-width: ${props => props.theme.mobileWidth}) {
+    height: 600px;
+  }
 `;
 
 const JoinCarouselComp = () => (
   <Carousel 
-    // autoplay={true} 
+    autoplay={true} 
     wrapAround={true}
     swiping={true} 
     pauseOnHover={false}
@@ -40,7 +43,7 @@ const JoinCarouselComp = () => (
       <img draggable={false} src={Map} alt=""/>
     </PhoneBox>
     <PhoneBox> 
-      <img src={JoinBar} alt=""/>
+      <img  draggable={false} src={JoinBar} alt=""/>
     </PhoneBox>
   </Carousel>
 );

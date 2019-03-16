@@ -69,7 +69,7 @@ const Title = styled.div`
   grid-row: 2 / 3;
   font-weight: 400;
   letter-spacing: 1.5px;
-  line-height: 35px;
+  line-height: 30px;
   text-align: left;
   font-size: 35px;
   padding: 10px 15px;
@@ -77,6 +77,15 @@ const Title = styled.div`
   border-radius:  20px 20px 0px 0px;
   color: ${props => props.theme.white};
   z-index: 10;
+  ::selection {
+      background: ${props => props.theme.orange}; /* WebKit/Blink Browsers */
+    }
+    ::-webkit-selection {
+      background: ${props => props.theme.orange}; 
+    }
+    ::-moz-selection {
+      background: ${props => props.theme.orange}; 
+    }
 
   @media (max-width: ${props => props.theme.mobileWidth}) {
     /* background: blue; */
@@ -100,11 +109,20 @@ const Desc = styled.div`
   width: 100%; height: 115px;
   color: ${props => props.theme.white};
   z-index: 10;
+  ::selection {
+      background: ${props => props.theme.orange}; /* WebKit/Blink Browsers */
+    }
+    ::-webkit-selection {
+      background: ${props => props.theme.orange}; 
+    }
+    ::-moz-selection {
+      background: ${props => props.theme.orange}; 
+    }
   @media (max-width: ${props => props.theme.mobileWidth}) {
     grid-row: 2;
     grid-column: 1 / -1;
     width: 100%;
-    margin-left: 0px;
+    margin-left: 0px;w
     margin-top: 25px;
     text-align: center;
     padding: 0px 20px;
