@@ -6,7 +6,7 @@ const Moon = '../../static/images/Experience/Moon2.png';
 
 const OuterBox = styled.div`
 background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, #020B31 90%);
-    margin-top: 100px;
+    margin-top: 200px;
 
 `;
 const TitleThink = styled.div`
