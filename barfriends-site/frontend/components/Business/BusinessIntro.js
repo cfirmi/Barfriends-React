@@ -11,8 +11,8 @@ const BusinessIntro = () => (
   </OuterBox>
 );
 const OuterBox = styled.div`
-  /* background: red; */
-  margin-top: 106px;
+  background: black;
+  margin-top: 80px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -24,7 +24,7 @@ const OuterBox = styled.div`
 `;
 const SeoTitle = styled.h1`
   font-weight: 400;
-  color: black;
+  color: white;
   grid-column: 1;
   width: 430px;
   margin-top: 70px;

@@ -37,14 +37,14 @@ export default class JoinHowto extends Component {
           <HowToItem>
             <ImgBox draggable="false" src={atBar} alt=""/>
             <TextBox>
-              <Title>When you arrive</Title>
+              <Title>Join When you arrive</Title>
               <Text>Near the bar! You will be able to Join and see other people that are also at the bar and Joined.</Text>
             </TextBox>
           </HowToItem>
           <HowToItem>
             <ImgBox draggable="false" src={sendASKS} alt=""/>
             <TextBox>
-              <Title>Making new friends</Title>
+              <Title>Meeting up new friends</Title>
               <Text>Message your friends or other joined people. Invite to drink dance or play game in the bar in real time.</Text>
             </TextBox>
           </HowToItem>
