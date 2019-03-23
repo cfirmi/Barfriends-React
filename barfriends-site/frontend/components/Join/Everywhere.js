@@ -44,7 +44,7 @@ const Box1 = styled.div`
   grid-column: 1 / 4;
   text-align: center;
   min-width: 300px;
-  max-width: 330px;
+  max-width: 320px;
   margin-left: 50%;
   transform: translateX(-50%);
   @media (max-width: 950px) {

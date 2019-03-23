@@ -45,7 +45,7 @@ const Title = styled.p`
     margin-left: 50%;
     transform: translateX(-50%);
     text-align: left;
-    min-width: 380px;
+    min-width: 95%;
     }
     @media (max-width: ${props => props.theme.trueMobileWidth}) {
     text-align: center;

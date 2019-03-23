@@ -33,7 +33,11 @@ const OuterBox = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 100px 200px;
+    margin-top: -100px;
     overflow: hidden;
+  };
+  @media (max-height: 825px ) {
+    margin-top: 00px;
   };
 `;
 
@@ -48,11 +52,12 @@ const AvailFor = styled.div`
   grid-column: 2 / 3;
     width: 100vw;
   };
+ 
 `;
 
 const Dload = styled.div`
   /* background: red; */
-  color: white;
+  color: black;
   text-align: center;
   font-size: 45px;
   grid-row: 1;
@@ -64,10 +69,10 @@ const Item = styled.div`
   display: grid;
   grid-template-columns: 40px 200px;
   grid-template-rows: 40px;
-
+  background: white;
+  box-shadow: ${props => props.theme.bs};
   width: 400px;
   height: 40px;
-  color: ${props => props.theme.orange};
   border-radius: 20px;
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -108,7 +113,7 @@ const DeviceType = styled.div`
   font-weight: 400;
   font-size: 17px;
   z-index: 10;
-  color: white;
+  color: black;
 `;
 //Detailing the phone that displays
 

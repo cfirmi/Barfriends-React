@@ -61,9 +61,13 @@ const WhyBox = styled.div`
     color: #000;
   }
     p {
+      margin-left: 50%;
+      transform: translateX(-50%); 
+      width: 100vw;
       margin-right: 0px;
       font-size: 16px;
       color: grey;
     }
+  };
   };
 `;

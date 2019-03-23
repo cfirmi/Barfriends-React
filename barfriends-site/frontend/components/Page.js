@@ -13,7 +13,7 @@ const theme = {
   mobileWidth: '1025px',
   trueMobileWidth: '600px',
   NavigationMarginTop: '80px',
-  bs: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
+  bs: '0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
 };
 const StylePage = styled.div`
   color: ${props => props.theme.offWhite};

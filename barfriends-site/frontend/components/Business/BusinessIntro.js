@@ -27,15 +27,11 @@ const SeoTitle = styled.h1`
   color: white;
   grid-column: 1;
   width: 430px;
-  margin-top: 70px;
+  margin-top: 50px;
   margin-left: 50px;
   grid-row: 4;
   /* background: black; */
-  @media (max-width: 500px ) {
-    margin: 39px 5px;
-    grid-row: 2;
-    grid-column: 1 / -1;
-  }
+
   @media (min-width: 1500px) {
     margin-top: 80px;
   };
@@ -46,6 +42,14 @@ const SeoTitle = styled.h1`
     text-align: center;
     grid-row: 2;
   };
+  @media (max-width: 500px ) {
+    margin: 39px 5px;
+    grid-row: 2;
+    grid-column: 1 / -1;
+    margin-left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+  }
   ::selection {
       background: ${props => props.theme.orange}; /* WebKit/Blink Browsers */
     }
@@ -61,6 +65,7 @@ const Title = styled.img`
   /* background: red; */
   grid-row: 4;
   grid-column: 1 / 5;
+  margin-top: -20px;
   margin-left: 50px;
   width: 100%;
   min-width: 500px;
@@ -81,6 +86,7 @@ const Title = styled.img`
       margin-left: 50%;
       transform: translateX(-50%);
     };
+    @media (max-height: ) {};
 `;
 
 export default BusinessIntro;

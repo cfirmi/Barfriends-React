@@ -5,7 +5,7 @@ import BusinessIntro from './BusinessIntro'
 
 const BusinessCarouselComp = () => (
   <Carousel 
-    autoplay={true} 
+    // autoplay={true} 
     wrapAround={true}
     swiping={true} 
     pauseOnHover={false}

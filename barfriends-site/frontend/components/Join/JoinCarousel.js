@@ -30,7 +30,7 @@ const JoinCarouselComp = () => (
     wrapAround={true}
     swiping={true} 
     pauseOnHover={false}
-    speed={100}
+    speed={200}
     // withoutControls={false}
     cellAlign='center' 
     renderCenterLeftControls={({ previousSlide }) => ( null

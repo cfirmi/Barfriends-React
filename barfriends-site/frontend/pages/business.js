@@ -7,7 +7,7 @@ const BFBusiness = () => (
   <div style={{background: 'white'}}>
     <BusinessCarouselComp />
     <BarfriendsWhy />
-    <BusinessSoon />
+    {/* <BusinessSoon /> */}
   </div>
 );
 

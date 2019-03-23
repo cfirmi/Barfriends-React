@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import MapContainer from '../Map/MapContainer';
-
+import MobileDownload from './MobileDownload';
 
 const AndroidIcon = '../../static/images/deviceimages/android.svg';
 const AppleIcon = '../../static/images/deviceimages/apple.svg';
@@ -11,8 +11,10 @@ const MainDownload = () => (
   {/* <Title>Expereince What You Want <br/>When Going Out</Title> */}
   {/* <Title>Expereince a different going out.</Title> */}
   {/* <Title>A different experience <br/> of going out.</Title> */}
-    <Title>Discover the best experience.</Title>
-    <Desc>With Barfriends, you'll get real time, simple, information for all bars, clubs & pubs near you, available on phones all over the world.</Desc>
+    {/* <Title>Discover the best experience.</Title>
+    <Desc>With Barfriends, you'll get real time, simple, information for all bars, clubs & pubs near you, available on phones all over the world.</Desc> */}
+    <Title>Barfriends has the best experience.</Title>
+    <Desc> You get real time, simple, information for all bars, clubs & pubs near you, available on phones all over the world.</Desc>
       <PhoneItem><img src={IphoneImage} alt=""/></PhoneItem>
     <AvailFor>
       <a target="_blank" href="https://itunes.apple.com/us/app/barfriends/id1445453937?mt=8">
@@ -54,7 +56,7 @@ const OuterBox = styled.div`
   /* background: red; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 100px 100px;
+  grid-template-rows: 100px 100px 100px 100px 100px 100px;
   padding-top: 0px;
   margin-top: -10vh;
   height: 110vh;
@@ -67,7 +69,7 @@ const Title = styled.div`
   /* background: ${props => props.theme.ogBlack}; */
   grid-column: 2 / 3;
   grid-row: 2 / 3;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 1.5px;
   line-height: 30px;
   text-align: left;
@@ -75,7 +77,7 @@ const Title = styled.div`
   padding: 10px 15px;
   width: 100%; height: 100%;
   border-radius:  20px 20px 0px 0px;
-  color: ${props => props.theme.white};
+  color: ${props => props.theme.black};
   z-index: 10;
   ::selection {
       background: ${props => props.theme.orange}; /* WebKit/Blink Browsers */
@@ -89,6 +91,7 @@ const Title = styled.div`
 
   @media (max-width: ${props => props.theme.mobileWidth}) {
     /* background: blue; */
+    display: none;
     margin-left: 0px;
     margin-top: 15px; 
     width: 100vw;
@@ -100,14 +103,14 @@ const Title = styled.div`
 const Desc = styled.div`
   grid-column: 2 / 3;
   grid-row: 3;
-  font-weight: 200;
+  font-weight: 400;
   line-height: 26px;
   text-align: left;
   font-size: 17px;
   padding: 0px 15px;
   letter-spacing: 0.98px;
   width: 100%; height: 115px;
-  color: ${props => props.theme.white};
+  color: ${props => props.theme.black};
   z-index: 10;
   ::selection {
       background: ${props => props.theme.orange}; /* WebKit/Blink Browsers */
@@ -119,10 +122,12 @@ const Desc = styled.div`
       background: ${props => props.theme.orange}; 
     }
   @media (max-width: ${props => props.theme.mobileWidth}) {
-    grid-row: 2;
+    display: none;
+    grid-row: 9;
     grid-column: 1 / -1;
     width: 100%;
-    margin-left: 0px;w
+    margin-left: 0px;
+    color: white;
     margin-top: 25px;
     text-align: center;
     padding: 0px 20px;
@@ -158,7 +163,8 @@ const Item = styled.div`
   grid-template-rows: 40px;
   width: 300px;
   height: 40px;
-  color: ${props => props.theme.orange};
+  background: #ffffff20;
+  box-shadow: ${props => props.theme.bs};
   border-radius: 20px;
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -198,7 +204,7 @@ const DeviceType = styled.div`
   font-weight: 400;
   font-size: 17px;
   z-index: 10;
-  color: white;
+  color: black;
 `;
 //Detailing the phone that displays
 
@@ -207,7 +213,6 @@ const PhoneItem = styled.div`
   grid-column: 3;
   z-index: 10;
   img {
-  margin-bottom: 100px;
   width: 300px;
   grid-column: 1;
   margin-bottom: 130px ;
@@ -216,7 +221,7 @@ const PhoneItem = styled.div`
   @media (max-width: ${props => props.theme.mobileWidth}) { 
     /* background: red; */
     grid-column: 1 / -1;
-    grid-row: 3;
+    grid-row: 1;
     margin-top: 55px;
     img {
       /* margin-top: 100px; */

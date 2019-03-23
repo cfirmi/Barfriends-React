@@ -4,7 +4,8 @@ import styled from 'styled-components';
 
 const MapContainerBox = styled.div`
   position: absolute;
-  top: 50px;
+  top: -150px;
+  height: 110vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
