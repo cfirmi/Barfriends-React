@@ -130,8 +130,9 @@ const CreateProfile = () => (
     {/* <ImageBox src={Profile} alt=""/> */}
     <PhoneBox draggable='false' src={Iphone} alt=""/>
     <VideoBox 
-      autoPlay='true'
+      autoPlay="true"
       // controls
+      muted
       loop
       src={Screen}>
     </VideoBox>
