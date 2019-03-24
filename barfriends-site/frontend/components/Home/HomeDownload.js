@@ -50,7 +50,7 @@ const OuterBox = styled.div`
   grid-template-columns: 1fr 370px 350px 1fr;
   grid-template-rows: 100px 100px;
   height: 100vh; width:100vw;
-  padding-top: 90px;
+  padding-top: 100px;
   z-index: 10;
   @media (max-width: ${props => props.theme.mobileWidth}) {
   /* background: red; */

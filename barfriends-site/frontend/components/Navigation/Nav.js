@@ -7,14 +7,14 @@ const Logo = '../../static/images/Logo.svg';
 const NavStyles = styled.div`
   background: ${props => props.theme.black};
   position:fixed;
-  height: 80px;
+  height: 85px;
   width: 100vw;
   line-height: 70px;
   `;
 
 const NavItems = styled.div`
   width: 170px;
-  height: 66px;
+  height: 70px;
   color: grey;
   text-align: center;
   font-weight: 300;
@@ -53,7 +53,7 @@ const NavBox = styled.div`
 `;
 const StyleLogo = styled.img`
   height: 65px;
-  margin-top: 20px;
+  margin-top: 17px;
   border-radius: 10px;
   box-shadow: -0px -0px 5px rgba(106, 106, 106, .20);
   z-index: 10;

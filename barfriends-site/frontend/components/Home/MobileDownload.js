@@ -59,7 +59,8 @@ const Dload = styled.div`
   /* background: red; */
   color: black;
   text-align: center;
-  font-size: 45px;
+  font-size: 50px;
+  font-weight: 200;
   grid-row: 1;
   grid-column: 1 / -1;
 `;
