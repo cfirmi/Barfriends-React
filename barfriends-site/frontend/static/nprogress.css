@@ -4,7 +4,7 @@
 }
 
 #nprogress .bar {
-  background: red;
+  background: #ff7000;
   position: fixed;
   z-index: 1031;
   top: 0;
@@ -21,7 +21,7 @@
   right: 0px;
   width: 100px;
   height: 100%;
-  box-shadow: 0 0 10px red, 0 0 5px red;
+  box-shadow: 0 0 10px #FF7000, 0 0 5px #FF7000;
   opacity: 1.0;
 
   -webkit-transform: rotate(3deg) translate(0px, -4px);
@@ -39,13 +39,14 @@
 }
 
 #nprogress .spinner-icon {
+  display: none;
   width: 18px;
   height: 18px;
   box-sizing: border-box;
 
   border: solid 2px transparent;
-  border-top-color: red;
-  border-left-color: red;
+  border-top-color: #FF7000;
+  border-left-color: #FF7000;
   border-radius: 50%;
 
   -webkit-animation: nprogress-spinner 400ms linear infinite;
