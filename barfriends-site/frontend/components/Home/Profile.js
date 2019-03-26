@@ -14,7 +14,7 @@ const OuterBox = styled.div`
   h1 {
     font-size: 70px;
     font-weight: 800;
-    line-height: 60px;
+    line-height: 70px;
     color: white;
     grid-row: 2;
     grid-column: 4 / -1;
@@ -45,7 +45,7 @@ const OuterBox = styled.div`
       grid-column: 1 / -1;
       text-align: center;
       grid-row: 1;
-    margin-top: -30px;
+      margin-top: -30px;
     }
     h2 {
     text-align: center;
@@ -78,15 +78,14 @@ const OuterBox = styled.div`
  const VideoBox = styled.video`
   margin-top: 120px;  margin-left: 125px;
   width: 250px;
-  /* width: 300px; */
   position: absolute;
   z-index: 1;
   border-radius: 25px;
   @media (max-width: ${props => props.theme.mobileWidth} ) {
-    margin-top: 200px;  margin-left: 125px;
+    margin-top: 200px;
     margin-left: 50%;
     transform: translateX(-50%);
-    };
+    }
   `;
     const PhoneBox = styled.img`
     position: absolute;
@@ -94,7 +93,7 @@ const OuterBox = styled.div`
     width: 300px;
     z-index: 2;
   @media (max-width: ${props => props.theme.mobileWidth} ) {
-    margin-top: 178px; margin-left: 100px;
+    margin-top: 178px;
     margin-left: 50%;
     transform: translateX(-50%);
   };
@@ -136,7 +135,7 @@ const CreateProfile = () => (
       loop
       src={Screen}>
     </VideoBox>
-    <h1>Going out <br/> has never been so easy</h1>
+    <h1>Going out is <br/> just easier</h1>
     {/* <h2> IS A GREAT NIGHT OUT</h2> */}
     <p>minima? Deleniti iusto perferendis alias doloribus ex mollitia quos voluptatibus provident. Minima facere unde nulla pariatur quam consectetur?</p>
     <Signup>

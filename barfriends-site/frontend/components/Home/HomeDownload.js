@@ -2,9 +2,43 @@ import styled from 'styled-components';
 import MapContainer from '../Map/MapContainer';
 import MobileDownload from './MobileDownload';
 
+const Iphone = '../../static/images/home/iphoneBlue.png'
+const Screen = '../../static/images/home/screenrecord.MP4'
+
 const AndroidIcon = '../../static/images/deviceimages/android.svg';
 const AppleIcon = '../../static/images/deviceimages/apple.svg';
 const IphoneImage = '../../static/images/deviceimages/iphonedisplay.png';
+
+const VideoBox = styled.video`
+  margin-top: 70px; 
+  width: 255px;
+  justify-self: center;
+  grid-row: 1;
+  grid-column: 3;
+  border-radius: 25px;
+  z-index: 1;
+@media (max-width: ${props => props.theme.mobileWidth} ) {
+  /* position: absolute;
+  margin-left: 50%;
+  transform: translateX(-50%); */
+  grid-column: 2 / 4;
+  };
+`;
+const PhoneBox = styled.img`
+  grid-column: 3;
+  grid-row: 1;
+  justify-self: center;
+  margin-top: 50px;
+  width: 304px;
+  z-index: 2;
+  @media (max-width: ${props => props.theme.mobileWidth} ) {
+    /* position: absolute; */
+    grid-column: 2 / 4;
+    margin-top: 51px;
+    /* margin-left: 50%;
+    transform: translateX(-50%); */
+  };
+`;
 
 const MainDownload = () => (
  <OuterBox>
@@ -15,7 +49,15 @@ const MainDownload = () => (
     <Desc>With Barfriends, you'll get real time, simple, information for all bars, clubs & pubs near you, available on phones all over the world.</Desc> */}
     <Title>Barfriends has the best experience.</Title>
     <Desc> You get real time, simple, information for all bars, clubs & pubs near you, available on phones all over the world.</Desc>
-      <PhoneItem><img src={IphoneImage} alt=""/></PhoneItem>
+      {/* <PhoneItem><img src={IphoneImage} alt=""/></PhoneItem> */}
+    <PhoneBox draggable='false' src={Iphone} alt=""/>
+    <VideoBox 
+      autoPlay="true"
+      // controls
+      muted
+      loop
+      src={Screen}>
+    </VideoBox>
     <AvailFor>
       <a target="_blank" href="https://itunes.apple.com/us/app/barfriends/id1445453937?mt=8">
         <Item>
@@ -99,6 +141,7 @@ const Title = styled.div`
     grid-column: 1 / -1;
     text-align: center;
   };
+
 `;
 const Desc = styled.div`
   grid-column: 2 / 3;

@@ -44,12 +44,10 @@ const Title = styled.p`
     margin-top: -0px; 
     margin-left: 50%;
     transform: translateX(-50%);
-    text-align: left;
-    min-width: 95%;
-    }
-    @media (max-width: ${props => props.theme.trueMobileWidth}) {
     text-align: center;
-    };
+    min-width: 95%;
+    font-weight: 600;
+    }
 `;
 const ImgBox = styled.img`
   /* background: blue; */

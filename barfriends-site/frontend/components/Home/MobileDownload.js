@@ -63,6 +63,9 @@ const Dload = styled.div`
   font-weight: 200;
   grid-row: 1;
   grid-column: 1 / -1;
+  @media (max-width: 500px) {
+    font-size: 40px;
+  };
 `;
 
 

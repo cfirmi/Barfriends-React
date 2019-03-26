@@ -11,7 +11,7 @@ const ViewJoined = 'static/images/joinimg/joinCarousel/ViewJoinedBar.png'
 
 const PhoneBox = styled.div`
   /* background: purple; */
-  height: 750px;
+  height: 650px;
   width: 300px;
   /* margin-top: 150px; */
   margin-left: 50%;
@@ -37,7 +37,7 @@ const JoinCarouselComp = () => (
     )}
     renderCenterRightControls={({ nextSlide }) => ( null
     )}
-    style={{height: '100%', width: '380px', color: 'white', marginLeft: '50%', transform: 'translateX(-50%)'}}
+    style={{border: 'none', height: '100%', width: '380px', color: 'white', marginLeft: '50%', transform: 'translateX(-50%)'}}
   >
     <PhoneBox> 
       <img draggable={false} src={Map} alt=""/>
