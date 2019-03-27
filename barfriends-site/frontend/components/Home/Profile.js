@@ -137,9 +137,11 @@ const CreateProfile = () => (
     </VideoBox>
     <h1>Going out is <br/> just easier</h1>
     {/* <h2> IS A GREAT NIGHT OUT</h2> */}
-    <p>minima? Deleniti iusto perferendis alias doloribus ex mollitia quos voluptatibus provident. Minima facere unde nulla pariatur quam consectetur?</p>
+    <p style={{fontSize: '20px'}}>Barfriends is the perfect place that you use to find new bars and clubs and meet new people.
+       {/* and also run and grow your own bar <span style={{textDecoration: 'underline', color: 'red'}}><Link href="business"><a> business</a></Link></span>.  */}
+    </p>
     <Signup>
-          <Link href="/signup">
+          <Link target="_blank" href="https://itunes.apple.com/us/app/barfriends/id1445453937?mt=8">
             <a>
               Join <div>→</div>
             </a>

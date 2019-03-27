@@ -6,7 +6,7 @@ const BarfriendsWhy = () => (
     <ImageWhy src={Map} alt=""/>
     <WhyBox>
       <h1>Why Barfriends</h1>
-      <p>People use Barfriends to discover bars or clubs in their area, sign up on Barfriends and reach your customers tonight.</p>
+      <p>People use Barfriends to discover bars or clubs in their area, sign up on Barfriends and reach those customers tonight.</p>
     </WhyBox>
   </OuterBox>
 );
@@ -68,6 +68,5 @@ const WhyBox = styled.div`
       font-size: 16px;
       color: grey;
     }
-  };
   };
 `;

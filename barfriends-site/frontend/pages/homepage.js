@@ -11,10 +11,10 @@ const Home = props => (
   <div>
     <MobileDownload />
     <MainDownload />
+    <Beyond />
     <CreateProfile />
     <EmojiMood />
     <Safety />
-    <Beyond />
     <MainExperience />
   </div>
 );
