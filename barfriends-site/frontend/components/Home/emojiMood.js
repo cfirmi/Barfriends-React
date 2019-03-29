@@ -51,6 +51,10 @@ const OuterBox = styled.div`
     line-height: 25px;
     @media (max-width: 1200px) {
       grid-row: 4;
+      margin-top: -230px;
+
+    };
+    @media (max-width: 1140px) {
       margin-top: -130px;
 
     };

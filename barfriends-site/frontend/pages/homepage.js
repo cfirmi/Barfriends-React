@@ -11,9 +11,9 @@ const Home = props => (
   <div>
     <MobileDownload />
     <MainDownload />
-    <Beyond />
     <CreateProfile />
     <EmojiMood />
+    <Beyond />
     <Safety />
     <MainExperience />
   </div>
