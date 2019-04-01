@@ -12,6 +12,7 @@ const OuterBox = styled.div`
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   justify-content: space-around;
+  margin-top: 100px; 
   h1 {
     text-align: center;
     font-weight: 800;
@@ -46,6 +47,7 @@ const Box1 = styled.div`
   min-width: 300px;
   max-width: 320px;
   margin-left: 50%;
+  line-height: 35px;
   transform: translateX(-50%);
   @media (max-width: 950px) {
     grid-row: 6;
@@ -65,6 +67,7 @@ const Box2 = styled.div`
   max-width: 330px;
   max-height: 300px;
   text-align: center;
+  line-height: 35px;
   margin-left: 50%;
   transform: translateX(-50%);
   @media (max-width: 950px) {
@@ -83,6 +86,7 @@ const Box3 = styled.div`
   max-width: 330px;
   max-height: 300px;
   text-align: center;
+  line-height: 35px;
   margin-top: 50px; margin-left: 50%;
   transform: translateX(-50%);
   @media (max-width: 950px) {
@@ -104,6 +108,7 @@ const Box4 = styled.div`
   max-width: 330px;
   max-height: 300px;
   text-align: center;
+  line-height: 35px;
   margin-top: 50px; margin-left: 50%;
   transform: translateX(-50%);
   @media (max-width: 950px) {
