@@ -41,10 +41,11 @@ const OuterBox = styled.div`
 `;
 
 const Title = styled.h1`
-  grid-column: 4 / -1;
+  grid-column: 3 / -1;
   font-weight: 600;
   font-size: 40px;
   grid-row:  2;
+  text-align: center;
   margin-top: 50px;
   ::selection {
       background: ${props => props.theme.orange}; /* WebKit/Blink Browsers */
@@ -69,8 +70,9 @@ const Title = styled.h1`
   }
  `;
 const Text = styled.p`
-  grid-column: 4 / 7;
+  grid-column: 3 / -1;
   grid-row: 3;
+  padding: 0 30px ;
   /* margin-top: 20px; */
   font-weight: 300;
   font-size: 16px;

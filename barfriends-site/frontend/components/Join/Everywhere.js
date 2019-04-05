@@ -5,15 +5,16 @@ import JoinCarousel from './JoinCarousel'
 
 
 const OuterBox = styled.div`
-  /* background: green; */
+  background: black;
   display: grid;
-  margin-top: 100px;
+  margin-top: 10px;
+  padding-top: 100px;
   width: 100%; height: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  justify-content: space-around;
-  margin-top: 100px; 
+  justify-content: space-around; 
   h1 {
+    color: white;
     text-align: center;
     font-weight: 800;
     font-size: 30px;
@@ -50,7 +51,7 @@ const Box1 = styled.div`
   line-height: 35px;
   transform: translateX(-50%);
   @media (max-width: 950px) {
-    grid-row: 6;
+    grid-row: 5;
     grid-column: 4 / 5;
     text-align: left;
     justify-self: start;
@@ -71,7 +72,7 @@ const Box2 = styled.div`
   margin-left: 50%;
   transform: translateX(-50%);
   @media (max-width: 950px) {
-    grid-row: 7;
+    grid-row: 6;
     grid-column: 4 / 5;
     text-align: left;
     width: 100%;
@@ -80,7 +81,7 @@ const Box2 = styled.div`
 `;
 const Box3 = styled.div`
   /* background: yellow; */
-  grid-row: 4 / 8;
+  grid-row: 5 / 8;
   grid-column: 1 / 4;
   min-width: 300px;
   max-width: 330px;
@@ -90,7 +91,7 @@ const Box3 = styled.div`
   margin-top: 50px; margin-left: 50%;
   transform: translateX(-50%);
   @media (max-width: 950px) {
-    grid-row: 8;
+    grid-row: 7;
     grid-column: 4 / 5;
     text-align: left;
     justify-self: start;
@@ -101,7 +102,7 @@ const Box3 = styled.div`
 `;
 const Box4 = styled.div`
   /* background: orange; */
-  grid-row: 4 / 8;
+  grid-row: 5 / 8;
   grid-column: 5 / 8;
   justify-self: start;
   min-width: 300px;
@@ -112,7 +113,7 @@ const Box4 = styled.div`
   margin-top: 50px; margin-left: 50%;
   transform: translateX(-50%);
   @media (max-width: 950px) {
-    grid-row: 9;
+    grid-row: 8;
     grid-column: 4 / 5;
     text-align: left;
     justify-self: start;
@@ -134,13 +135,14 @@ export default class Everywhere extends Component {
           <h1>In Real-Time</h1>
           <p>See how busy places really are, before commiting to them.  </p>
         </Box2>
-        <Box3> 
-          <h1>Meet new people</h1>
-          <p>Join the bar you are at and start messaging and meeting people</p>
+        <Box3>   
+          <h1>Get a ride</h1>  
+          <p>Use Uber to get a direct ride to a bar.</p>   
+
         </Box3>
         <Box4>
-          <h1>Get a ride</h1>  
-          <p>Use Uber to get a direct</p>
+          <h1>Meet new people</h1>
+          <p>Join the bar you are at and start messaging and meeting people</p>
         </Box4>
         <CarouselBox>
           <JoinCarousel />

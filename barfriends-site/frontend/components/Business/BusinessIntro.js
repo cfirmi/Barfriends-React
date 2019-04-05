@@ -7,7 +7,7 @@ const barfriends = '../../static/images/business/barfriendsbusiness.svg'
 const BusinessIntro = () => (
   <OuterBox>
     <Title draggable="false" src={barfriends} alt="" />
-    <SeoTitle>Engage the mobile-first generation.</SeoTitle>
+    <SeoTitle>Connect with people that are going out.</SeoTitle>
   </OuterBox>
 );
 const OuterBox = styled.div`
@@ -26,7 +26,7 @@ const SeoTitle = styled.h1`
   font-weight: 400;
   color: white;
   grid-column: 1;
-  width: 430px;
+  width: 490px;
   margin-top: 50px;
   margin-left: 50px;
   grid-row: 4;
@@ -79,14 +79,12 @@ const Title = styled.img`
       background: ${props => props.theme.orange}; 
     }
     @media (max-width: 600px ) {
-      width: 80%;
-      min-width: 80%;
+      width: 80vw;
       grid-row: 2;
       grid-column: 1 / -1;
       margin-left: 50%;
       transform: translateX(-50%);
     };
-    @media (max-height: ) {};
 `;
 
 export default BusinessIntro;

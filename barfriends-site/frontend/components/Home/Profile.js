@@ -18,6 +18,15 @@ const OuterBox = styled.div`
     color: white;
     grid-row: 2;
     grid-column: 4 / -1;
+    ::selection {
+      background: ${props => props.theme.orange}; /* WebKit/Blink Browsers */
+      }
+      ::-webkit-selection {
+        background: ${props => props.theme.orange}; 
+      }
+      ::-moz-selection {
+        background: ${props => props.theme.orange}; 
+      }
   }
   h2 {
     color: white;
@@ -25,6 +34,15 @@ const OuterBox = styled.div`
     grid-column: 4 / 7;
     margin-top: -80px;
     /* margin-top: 50px; */
+    ::selection {
+      background: ${props => props.theme.orange}; /* WebKit/Blink Browsers */
+      }
+      ::-webkit-selection {
+        background: ${props => props.theme.orange}; 
+      }
+      ::-moz-selection {
+        background: ${props => props.theme.orange}; 
+      }
   }
   p {
     color: white;
@@ -32,6 +50,15 @@ const OuterBox = styled.div`
     grid-column: 4 / 7;
     margin-top: -10px;
     /* margin-top: 50px; */
+    ::selection {
+      background: ${props => props.theme.orange}; /* WebKit/Blink Browsers */
+      }
+      ::-webkit-selection {
+        background: ${props => props.theme.orange}; 
+      }
+      ::-moz-selection {
+        background: ${props => props.theme.orange}; 
+      }
   }
   @media (max-width: 500px) {
     p {
@@ -54,6 +81,7 @@ const OuterBox = styled.div`
     grid-column: 1 / -1;
     margin-top: -80px;
     /* margin-top: 50px; */
+    
   }
     p {
       /* margin-top: 20px; */

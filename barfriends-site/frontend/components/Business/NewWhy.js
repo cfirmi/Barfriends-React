@@ -2,29 +2,35 @@ import styled from 'styled-components';
 
 const NewWhy = () => (
   <OuterBox>
-    <TitleBox>The Future of Going Out.</TitleBox>
-    <MainText>
-      Barfriends is a technology that gives access to you and to those who love your bar. 
-      We value your money and the time it takes reaching out to customers, hosting events and creating a unqiue atmosphere. 
-      Our Users are your customers, join us today, on Barfriends you simply start connecting and engaging with your community right away.
-    </MainText>
-    <TitleBox>How do I get started?</TitleBox>
-    <MainText> 
-      I want to advertise at your bar in exchange I advertise you on my app.
-      We want you to advertise you on our app in exchange for you to advertise for us at your bar.  
-    </MainText>
-    <TitleBox>What is different! Since I'm joining early</TitleBox>
-    <MainText> 
-      Basically 
-    </MainText>
+    <WhyItem>
+      <TitleBox>The Future of Going Out.</TitleBox>
+      <MainText>
+        Barfriends is a technology that gives access to you and to those who love your bar. 
+        We value your money and the time it takes reaching out to customers, hosting events and creating a unqiue atmosphere. 
+        Our Users are your customers, join us today, on Barfriends you simply start connecting and engaging with your community right away.
+      </MainText>
+    </WhyItem>
+    <WhyItem>
+      <TitleBox>How do I get started?</TitleBox>
+      <MainText> 
+        I want to advertise at your bar in exchange I advertise you on my app.
+        We want you to advertise you on our app in exchange for you to advertise for us at your bar.  
+      </MainText>
+    </WhyItem>
+    <WhyItem>
+      <TitleBox>What is different! Since I'm joining early</TitleBox>
+      <MainText> 
+        Basically 
+      </MainText>
+    </WhyItem>
   </OuterBox>
 );
 const OuterBox = styled.div`
-  background: black;
+  /* background: black; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  width: 100vw; height: 50vh;
+  width: 100vw; height: 100vh;
   margin-top: 100px;
 `;
 
@@ -52,6 +58,18 @@ const TitleBox = styled.div`
       width: 90vw;
     };
 `;
+ const WhyItem = styled.div`
+  background: #000;
+  background: #FF7000;
+  box-shadow: ${props => props.theme.bs2};
+  border-radius: 9px;
+  margin: 20px 0px; 
+  transform: translateX(-50%);
+  /* transform: skewX(-5deg); */
+  margin-left: 50%;
+  width: 80vw;
+  grid-column: 1 / -1;
+ `;
 const MainText = styled.p`
     /* background: red; */
     grid-column: 1 / -1;
