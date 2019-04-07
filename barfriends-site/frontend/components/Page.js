@@ -15,6 +15,10 @@ const theme = {
   NavigationMarginTop: '80px',
   bs: '0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
   bs2: '0 -5px 25px 1px rgba(105, 105, 105, .90), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
+  head1: '70px',
+  head2: '52px',
+  head3: '40px',
+  head4: '30px',
 };
 const StylePage = styled.div`
   color: ${props => props.theme.offWhite};

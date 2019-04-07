@@ -45,7 +45,7 @@ const OuterBox = styled.div`
       grid-column: 1 / -1;
       text-align: center;
       grid-row: 1;
-    margin-top: -30px;
+      margin-top: -30px;
     }
     h2 {
     text-align: center;
@@ -130,7 +130,7 @@ const CreateProfile = () => (
     {/* <ImageBox src={Profile} alt=""/> */}
     <PhoneBox draggable='false' src={Iphone} alt=""/>
     <VideoBox 
-      autoPlay='true'
+      autoPlay={true}
       // controls
       loop
       src={Screen}>

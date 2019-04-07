@@ -157,7 +157,7 @@ const CreateProfile = () => (
     {/* <ImageBox src={Profile} alt=""/> */}
     <PhoneBox draggable='false' src={Iphone} alt=""/>
     <VideoBox 
-      autoPlay="true"
+      autoPlay={true}
       // controls
       muted
       loop
@@ -165,7 +165,8 @@ const CreateProfile = () => (
     </VideoBox>
     <h1>Going out is <br/> just easier</h1>
     {/* <h2> IS A GREAT NIGHT OUT</h2> */}
-    <p style={{fontSize: '20px'}}>Barfriends is the perfect place that you use to find new bars and clubs and meet new people.
+    <p style={{fontSize: '20px'}}>with BarfriendsMap find and select a bar that's pop'n and get a ride with Uber.
+     {/* you use to find new bars and clubs and meet new people. */}
        {/* and also run and grow your own bar <span style={{textDecoration: 'underline', color: 'red'}}><Link href="business"><a> business</a></Link></span>.  */}
     </p>
     <Signup>

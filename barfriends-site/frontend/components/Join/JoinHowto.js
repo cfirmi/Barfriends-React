@@ -17,7 +17,7 @@ export default class JoinHowto extends Component {
             <ImgBox draggable="false" src={profile} alt=""/>
             <TextBox>
               <Title>Create A Profile</Title>
-              <Text>All you need is a email and set a password. You can find the best places to go out tonight. To download the app, go to <span style={{borderBottom: '1px solid black', cursor: 'pointer', fontWeight: '400' }}> <a target="_blank" href="https://itunes.apple.com/us/app/barfriends/id1445453937?mt=8"> App Store </a></span></Text>
+              <Text>All you need is a email and create a password. Then you can find the best places to go out tonight. To download the app, go to <span style={{borderBottom: '1px solid black', cursor: 'pointer', fontWeight: '400' }}> <a target="_blank" href="https://itunes.apple.com/us/app/barfriends/id1445453937?mt=8"> App Store </a></span></Text>
             </TextBox>
           </HowToItem>
           <HowToItem>

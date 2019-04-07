@@ -17,7 +17,7 @@ const OuterBox = styled.div`
     color: white;
     text-align: center;
     font-weight: 800;
-    font-size: 30px;
+    font-size: ${props => props.theme.head3};
   }
   p {
     color: grey;

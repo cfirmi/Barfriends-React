@@ -20,9 +20,9 @@ const OuterBox = styled.div`
   height: 100%;
  };
 `;
-const Title = styled.p`
+const Title = styled.h1`
   /* background: red; */
-  font-size: 35px;
+  font-size: ${props => props.theme.head2};
   height: 100%;
   line-height: 55px;
   font-weight: 400;

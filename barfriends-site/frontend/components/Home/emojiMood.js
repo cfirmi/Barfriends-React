@@ -12,7 +12,7 @@ const OuterBox = styled.div`
   h1 {
     grid-row: 3;
     grid-column: 1 / -1;
-    font-size: 70px;
+    font-size: ${props => props.theme.head1};
     font-weight: 800;
     text-align: center;
     margin-top: -60px;

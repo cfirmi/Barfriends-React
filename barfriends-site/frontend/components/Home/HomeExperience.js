@@ -9,13 +9,13 @@ background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, #020B31 90%);
     margin-top: 250px;
 
 `;
-const TitleThink = styled.div`
+const Title = styled.h1`
   margin-top: 35vh;
   margin-bottom: 10vh;
   color: white;
-  font-weight: 600;
+  font-weight: 800;
   text-align: center;
-  line-height: 20px;;
+  line-height: 60px;;
   font-size: 65px;
   p {
   margin-top: 40px;
@@ -58,15 +58,14 @@ const BigBox = styled.div`
 
 const MainMap = () => (
     <OuterBox>
-        <TitleThink>
-            Think Experience.
-          {/* <h4>#KnowWhereToGo</h4> */}
+        <Title>
+            Cheers To A Better <br/>Going Out Experience.
           <Link href="/experiencecampaignpage">
             <a>
               <p>campaign</p>
             </a>
           </Link>
-        </TitleThink>
+        </Title>
         <BigBox>
         <img src={Moon} alt=""/>
         </BigBox>

@@ -52,7 +52,7 @@ const MainDownload = () => (
       {/* <PhoneItem><img src={IphoneImage} alt=""/></PhoneItem> */}
     <PhoneBox draggable='false' src={Iphone} alt=""/>
     <VideoBox 
-      autoPlay="true"
+      autoPlay={true}
       // controls
       muted
       loop
