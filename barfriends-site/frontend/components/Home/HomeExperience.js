@@ -5,12 +5,18 @@ import Link from 'next/link';
 const Moon = '../../static/images/Experience/Moon2.png';
 
 const OuterBox = styled.div`
-background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, #020B31 90%);
-    margin-top: 250px;
-
+  background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, #020B31 90%);
+  margin-top: 250px;
+  min-height: 600px;
+  @media (max-width: 1400px) {
+  margin-top: 650px;
+  };
+  @media (max-width: 950px) {
+  margin-top: 100px;
+  };
 `;
 const Title = styled.h1`
-  margin-top: 35vh;
+  margin-top: 500px;
   margin-bottom: 10vh;
   color: white;
   font-weight: 800;
@@ -21,7 +27,7 @@ const Title = styled.h1`
   margin-top: 40px;
   color: white;
   font-weight: 100;
-  font-size: 14px;
+  font-size: ${props => props.theme.head4};
   text-decoration: underline;
   }
   h1 {
@@ -31,10 +37,10 @@ const Title = styled.h1`
     text-align: center;
   }
   @media (max-width: 850px) {
-    font-size: 30px;
+    font-size: ${props => props.theme.head2};
   };
   @media (max-width: 500px) {
-    font-size: 35px;
+    font-size: ${props => props.theme.head2};
   };
   /* padding: 30vw; */
 `;

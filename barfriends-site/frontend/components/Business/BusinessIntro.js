@@ -6,7 +6,9 @@ const barfriends = '../../static/images/business/barfriendsbusiness.svg'
 
 const BusinessIntro = () => (
   <OuterBox>
+    <IntroImage src={bar} alt=""/>
     <Title draggable="false" src={barfriends} alt="" />
+    <Welcome>Welcome to</Welcome>
     <SeoTitle>Connect with people that are going out.</SeoTitle>
   </OuterBox>
 );
@@ -16,40 +18,65 @@ const OuterBox = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  width: 100vw; height: 100vh;
+  width: 100vw; height: 90vh;
+  min-height: 600px;
   /* background: red; */
   @media (max-width: ${props => props.theme.mobileWidth}) {
     margin-top: -40px;
   }
 `;
-const SeoTitle = styled.h1`
-  font-weight: 400;
+ const IntroImage = styled.img`
+ grid-column: 1 / -1;
+ grid-row: 2;
+ object-fit: cover;
+ object-position: center;
+ margin-left: 50%;
+ transform: translateX(-50%);
+ height: 200px; width: 50vw;
+ min-width: 600px;
+ @media (max-width: 600px) {
+   width: 100%;
+   padding: 10px;
+   height: 400px;
+ };
+`;
+ const Welcome = styled.div`
   color: white;
-  grid-column: 1;
-  width: 490px;
-  margin-top: 50px;
-  margin-left: 50px;
+  grid-column: 1 / -1;
   grid-row: 4;
-  /* background: black; */
-
-  @media (min-width: 1500px) {
-    margin-top: 80px;
+  text-align: center;
+  font-size: ${props => props.theme.head2};
+  font-weight: 800;
+  margin-top: -80px;
+  @media (max-width: 600px ) {
+    font-size: ${props => props.theme.head2};
+    margin-top: -60px;
+    grid-row: 4;
   };
-  @media (max-width: 1000px) {
-    margin-top: 40px;
+`;
+const SeoTitle = styled.h1`
+  /* background: black; */
+  grid-column: 1 / -1;
+  grid-row: 4;
+  width: 490px;
+  color: white;
+  font-weight: 400;
+  text-align: center;
+  margin-left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: 600px) {
+    margin-top: 50px;
   };
   @media (max-width: 600px) {
     text-align: center;
-    grid-row: 2;
-  };
-  @media (max-width: 500px ) {
     margin: 39px 5px;
-    grid-row: 2;
+    grid-row: 4;
     grid-column: 1 / -1;
-    margin-left: 50%;
+    margin-top: 65px; margin-left: 50%;
     width: 100%;
     transform: translateX(-50%);
-  }
+  };
   ::selection {
       background: ${props => props.theme.orange}; /* WebKit/Blink Browsers */
     }
@@ -64,11 +91,12 @@ const SeoTitle = styled.h1`
 const Title = styled.img`
   /* background: red; */
   grid-row: 4;
-  grid-column: 1 / 5;
-  margin-top: -20px;
-  margin-left: 50px;
-  width: 100%;
-  min-width: 500px;
+  grid-column: 1 / -1;
+  min-width: 550px;
+  max-width: 550px;
+  margin-top: 0px;
+  margin-left: 50%;
+  transform: translateX(-50%);
   ::selection {
       background: ${props => props.theme.orange}; /* WebKit/Blink Browsers */
     }
@@ -79,10 +107,11 @@ const Title = styled.img`
       background: ${props => props.theme.orange}; 
     }
     @media (max-width: 600px ) {
-      width: 80vw;
-      grid-row: 2;
+      min-width: 90vw;
+      width: 90vw;
+      grid-row: 4;
       grid-column: 1 / -1;
-      margin-left: 50%;
+      margin-top: 30px; margin-left: 50%;
       transform: translateX(-50%);
     };
 `;

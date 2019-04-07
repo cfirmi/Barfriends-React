@@ -10,7 +10,7 @@ const OuterBox = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 200px 200px 200px 200px;
-
+  min-height: 800px;
   h1 {
     font-size: 70px;
     font-weight: 800;

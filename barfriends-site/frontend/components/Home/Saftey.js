@@ -10,15 +10,24 @@ const OuterBox = styled.div`
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 200px 100px 200px 150px;
   color: #fff;
-  p,
+  min-height: 700px; 
+  margin-top: 100px;
   span {
     color: #fff;
     line-height: 30px;
     text-align: left;
-    
+    ::selection {
+      background: ${props => props.theme.orange}; /* WebKit/Blink Browsers */
+    }
+    ::-webkit-selection {
+      background: ${props => props.theme.orange}; 
+    }
+    ::-moz-selection {
+      background: ${props => props.theme.orange}; 
+    }
   }
   
-  @media (max-width: ${props => props.theme.mobileWidth} ) {
+  @media (max-width: 1400px ) {
     grid-template-rows: 200px 100px 300px 100px 100px;
   };
 `;
@@ -29,7 +38,9 @@ const OuterBox = styled.div`
   max-width: 600px;
   max-height: 600px;
   object-fit: cover;
-  @media (max-width: ${props => props.theme.mobileWidth}) {
+  margin-top: 130px;
+  @media (max-width: 1400px) {
+    margin-top: 0px;
     grid-row: 2;
     margin-left: 50%;
     min-width: 100vw;
@@ -43,10 +54,16 @@ const OuterBox = styled.div`
 const Title = styled.h1`
   grid-column: 3 / -1;
   font-weight: 600;
-  font-size: ${props => props.theme.head3};
+  font-size: ${props => props.theme.head2};
   grid-row:  2;
   text-align: center;
-  margin-top: 50px;
+  min-width: 600px;
+  margin-top: 0px;
+  color: transparent;
+  background: url('../../static/images/business/sunset6.jpg') center;
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip:text;
   ::selection {
       background: ${props => props.theme.orange}; /* WebKit/Blink Browsers */
     }
@@ -57,27 +74,38 @@ const Title = styled.h1`
       background: ${props => props.theme.orange}; 
     }
   @media (max-width: 1325px) {
+    font-size: ${props => props.theme.head2};
     margin-top: 0px;
   };
-  @media (max-width: ${props => props.theme.mobileWidth}) { 
+  @media (max-width: 1400px) { 
     grid-row: 4;
     grid-column: 1 / -1;
     text-align: center;
     margin-top: 20px;
   }
-  @media (max-width: 505px) { 
-    margin-top: 0px;
-  }
+  @media (max-width: 730px) {
+    grid-row: 5;
+    margin-top: -30px;
+    padding: 0 50px;
+    min-width: 100vw;
+    font-size: ${props => props.theme.head3};
+  };
  `;
 const Text = styled.p`
+  color: transparent;
+  background: url('../../static/images/business/sunset6.jpg') center;
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip:text;
   grid-column: 3 / -1;
   grid-row: 3;
-  padding: 0 30px ;
-  /* margin-top: 20px; */
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 20px;
+  min-width: 650px; height: 650px;
+  font-weight: 600;
+  font-size: ${props => props.theme.head4};
+  line-height: 56px;
   justify-self: bottom;
+  margin-left: 50%;
+  transform: translateX(-50%);
   ::selection {
       background: ${props => props.theme.orange}; /* WebKit/Blink Browsers */
     }
@@ -87,19 +115,27 @@ const Text = styled.p`
     ::-moz-selection {
       background: ${props => props.theme.orange}; 
     }
-  @media (max-width: ${props => props.theme.mobileWidth}) { 
+  @media (max-width: 1400px) { 
+    min-width: 850px; 
     grid-row: 5;
     grid-column: 1 / -1;
     padding: 0 100px;
   }
+  @media (max-width: 730px) {
+    height: 1100px;
+    grid-row: 6;
+    padding: 0 50px;
+    min-width: 100vw;
+    font-size: ${props => props.theme.head4};
+  };
 `;
 
 const Safety = () => (
   <OuterBox>
-    <Title>Your safety is our concern</Title>
+    <Title>Your <span>safety</span> is our concern</Title>
     <Text>
       We connect you and your friends together to have a great time.
-      Choose to Join the bar you are at allowing people to connect with you through our <span style={{textDecoration: 'underline', textDecorationColor: 'blue'}}>ASKS</span> Messages.
+      Joining the bar you are at is only allowing other people that are also joined connect with eachother. User have the ability to block other user aswell Use our messaging platform by selecting an <span style={{textDecoration: 'underline', textDecorationColor: 'blue'}}>ASKS</span> and sending a message. Users can use a message to prove that someone is misbehaving and show bar security.
     </Text>
     <SafeImg draggable="false" selectable="false" src={Safe} alt=""/>
   </OuterBox>

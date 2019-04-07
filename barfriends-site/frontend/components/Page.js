@@ -51,6 +51,8 @@ injectGlobal`
       line-height: 2;
       font-family: 'Open Sans';
       /* Control background to the page */
+      /* font-smooth: antialiased; */
+      -webkit-font-smoothing: antialiased;
       background: ${theme.black};
       color: ${theme.black};
       overflow-x: hidden;
@@ -63,6 +65,7 @@ injectGlobal`
     a {
       text-decoration: none;
       color: ${theme.offWhite};
+      
     }
 `;
 export default class Page extends Component {

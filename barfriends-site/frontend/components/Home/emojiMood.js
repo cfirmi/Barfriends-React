@@ -51,12 +51,10 @@ const OuterBox = styled.div`
     line-height: 25px;
     @media (max-width: 1200px) {
       grid-row: 4;
-      margin-top: -230px;
-
+      margin-top: -220px;
     };
-    @media (max-width: 1140px) {
-      margin-top: -130px;
-
+    @media (max-width: 1062px) {
+      margin-top: -140px;
     };
     span {
       color: white;
@@ -99,7 +97,8 @@ const OuterBox = styled.div`
 const emojiMoods = () => (
   <OuterBox>
     <ImageBox draggable="false" selectable="false" src={emojiMood} alt=""/>
-    <h1>Wear your heart on your sleeve</h1>
+    {/* <h1>&#8220;Expressions Of Emotion Are Universal&#8221;</h1> */}
+    <h1>A True Expression Of Emotion</h1>
     <p>with <br/> <span>emojiMoods</span></p>
     {/* <p>minima? Deleniti iusto perferendis alias doloribus ex mollitia quos voluptatibus provident. Minima facere unde nulla pariatur quam consectetur?</p> */}
   </OuterBox>

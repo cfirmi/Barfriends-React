@@ -9,8 +9,8 @@ const BFBusiness = () => (
   <div style={{background: 'white'}}>
     {/* <BusinessCarouselComp /> */}
     <BusinessIntro />
-    <BarfriendsSignin />
     <BusinessInvite />
+    <BarfriendsSignin />
     {/* <NewWhy /> */}
   </div>
 );

@@ -8,19 +8,20 @@ const TheEvent = '../../static/images/business/BetterEvents.svg';
 const BusinessSignin = () => (
   <OuterBox>
     <BackgroundImg draggable="false" src={TheEvent} alt=""/>
-    <h1>Join today and connect with your customers tonight</h1>
-    <SignupButton>Contact</SignupButton>
+    <h1>Grow with us today. It's the best thing that you can do for your bar.</h1>
   </OuterBox>
 );
 const OuterBox = styled.div`
+  background: black;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  width: 100vw; height: 100vh;
+  width: 100vw; height: 90vh;
   h1 {
-    grid-column: 1 / -1;
+    grid-column: 2 / 7;
     grid-row: 5;
     font-size: ${props => props.theme.head2};
+    font-weight: 600;
     line-height: 88px;
     letter-spacing: -2px;
     text-align: center;
@@ -28,23 +29,6 @@ const OuterBox = styled.div`
     color: white;
     z-index: 2;
   }
-  @media (max-width: ${props => props.theme.mobileWidth}) {
-    width: 100vw; height: 50vh;
-    h1 {
-      grid-row: 4;
-      width: 80vw;
-      margin-left: 50%;
-      transform: translateX(-50%);
-    }
-  }
-  @media (max-width: 1150px) {
-    h1 {
-      grid-row: 5;
-      width: 90vw;
-      margin-left: 50%;
-      transform: translateX(-50%);
-    }
-  };
 `;
 const SignupButton = styled.button`
   background: ${props => props.theme.orange};;
@@ -67,15 +51,16 @@ const SignupButton = styled.button`
   }
 `;
 const BackgroundImg = styled.img`
-  grid-row: 1 / -1;
   grid-column: 1 / -1;
-  width: 100%;
+  grid-row: 1 / -1;
+  width: 75vw; height: 75vh;
   object-fit: cover;
-  min-height: 100vh;
-  object-fit: cover;
-  margin-left: 50%;
+  margin-top: 105px; margin-left: 50%;
   transform: translateX(-50%);
   z-index: 1;
+  @media (max-width: 850px) {
+    width: 100vw;
+  };
 `;
 
 export default BusinessSignin;
