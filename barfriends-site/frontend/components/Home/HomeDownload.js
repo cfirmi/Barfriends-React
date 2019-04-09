@@ -4,51 +4,55 @@ import MobileDownload from './MobileDownload';
 
 const Iphone = '../../static/images/home/iphoneBlue.png'
 const Screen = '../../static/images/home/screenrecord.MP4'
+const QR = '../../static/images/home/qrcode.svg'
+const label = '../../static/images/label.svg'
 
 const AndroidIcon = '../../static/images/deviceimages/android.svg';
 const AppleIcon = '../../static/images/deviceimages/apple.svg';
-const IphoneImage = '../../static/images/deviceimages/iphonedisplay.png';
 
 const VideoBox = styled.video`
-  margin-top: 70px; 
+  margin-top: 50px; 
   width: 255px;
   justify-self: center;
-  grid-row: 1;
-  grid-column: 3;
+  grid-row: 4;
+  grid-column: 2 / 4;
   border-radius: 25px;
   z-index: 1;
 @media (max-width: ${props => props.theme.mobileWidth} ) {
-  /* position: absolute;
-  margin-left: 50%;
-  transform: translateX(-50%); */
-  grid-column: 2 / 4;
+  margin-top: 50px;
+  grid-column: 1 / -1;
+  grid-row: 5;
   };
 `;
 const PhoneBox = styled.img`
-  grid-column: 3;
-  grid-row: 1;
+  grid-row: 4;
+  grid-column: 2 / 4;
   justify-self: center;
-  margin-top: 50px;
-  width: 304px;
+  margin-top: 30px;
+  width: 305px;
   z-index: 2;
   @media (max-width: ${props => props.theme.mobileWidth} ) {
-    /* position: absolute; */
-    grid-column: 2 / 4;
-    margin-top: 51px;
-    /* margin-left: 50%;
-    transform: translateX(-50%); */
+    /* display: none; */
+    grid-column: 1 / -1;
+    margin-top: 20px;
+    grid-row: 5;
+    margin-top: 31px;
   };
 `;
 
+
 const MainDownload = () => (
  <OuterBox>
-  {/* <Title>Expereince What You Want <br/>When Going Out</Title> */}
-  {/* <Title>Expereince a different going out.</Title> */}
-  {/* <Title>A different experience <br/> of going out.</Title> */}
+    {/* <Title>Expereince What You Want <br/>When Going Out</Title> */}
+    {/* <Title>Expereince a different going out.</Title> */}
+    {/* <Title>A different experience <br/> of going out.</Title> */}
     {/* <Title>Discover the best experience.</Title>
     <Desc>With Barfriends, you'll get real time, simple, information for all bars, clubs & pubs near you, available on phones all over the world.</Desc> */}
-    <Title>Barfriends has the best experience.</Title>
-    <Desc> You get real time, simple, information for all bars, clubs & pubs near you, available on phones all over the world.</Desc>
+    {/* <Title>The better going out experience.</Title> */}
+    <Label src={label} alt=""/>
+    <Desc>Find Bars. Go out. Meet Friends. Make new ones </Desc>
+    <Dload>Download Now</Dload>
+    {/* <Desc> You get real time, simple, information for all bars, clubs & pubs near you, available on phones all over the world.</Desc> */}
       {/* <PhoneItem><img src={IphoneImage} alt=""/></PhoneItem> */}
     <PhoneBox draggable='false' src={Iphone} alt=""/>
     <VideoBox 
@@ -58,16 +62,17 @@ const MainDownload = () => (
       loop
       src={Screen}>
     </VideoBox>
+    <QRLink src={QR} alt=""/>
     <AvailFor>
       <a target="_blank" href="https://itunes.apple.com/us/app/barfriends/id1445453937?mt=8">
         <Item>
-            <DeviceIcon><img src={AppleIcon} alt=""/></DeviceIcon>
+            <DeviceIcon><img className="apple" src={AppleIcon} alt=""/></DeviceIcon>
             <DeviceType>Apple</DeviceType>
         </Item>
       </a>
       <a target="_blank" href="https://play.google.com/store/apps/details?id=ca.acesoft.barfriends">
         <Item>
-            <DeviceIcon><img src={AndroidIcon} alt=""/></DeviceIcon>
+            <DeviceIcon><img className="android" src={AndroidIcon} alt=""/></DeviceIcon>
             <DeviceType>Android</DeviceType>
         </Item>
       </a>
@@ -82,7 +87,6 @@ export default MainDownload;
 
 const Back = styled.div`
   z-index: 0;
-
 `;
 
 
@@ -90,34 +94,35 @@ const OuterBox = styled.div`
   /* background: ${props => props.theme.orange}; */
   display: grid;
   grid-template-columns: 1fr 370px 350px 1fr;
-  grid-template-rows: 100px 100px;
-  height: 100vh; width:100vw;
-  min-height: 700px;
-  padding-top: 100px;
+  grid-template-rows: 100px 100px 100px 1fr 1fr 1fr;
+  height: 125vh; width:100vw;
+  margin-top: 150px;
+  min-height: 750px;
+  padding-top: 10px;
   z-index: 10;
   @media (max-width: ${props => props.theme.mobileWidth}) {
-  /* background: red; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 100px 100px 100px 100px 100px 100px;
+  margin-top: 0px;
+  margin-bottom: 100px;
   padding-top: 0px;
-  margin-top: -10vh;
-  height: 110vh;
-  min-height: 850px;
+  height: 130vh;
+  min-height: 1050px;
   overflow: hidden;
   };
 `;
-const Title = styled.div`
-  /* background: green; */
-  /* background: ${props => props.theme.ogBlack}; */
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
+const Label = styled.img`
+  grid-row: 1;
+  grid-column: 1 / -1;
   font-weight: 600;
   letter-spacing: 1.5px;
-  line-height: 30px;
+  line-height: 20px;
   text-align: left;
-  font-size: 35px;
+  font-size: 25px;
   padding: 10px 15px;
+  margin-left: 50%;
+  transform: translateX(-50%);
   width: 100%; height: 100%;
   border-radius:  20px 20px 0px 0px;
   color: ${props => props.theme.black};
@@ -133,23 +138,19 @@ const Title = styled.div`
     }
 
   @media (max-width: ${props => props.theme.mobileWidth}) {
-    /* background: blue; */
-    display: none;
-    margin-left: 0px;
     margin-top: 15px; 
     width: 100vw;
     grid-row: 1;
     grid-column: 1 / -1;
-    text-align: center;
   };
 
 `;
 const Desc = styled.div`
-  grid-column: 2 / 3;
-  grid-row: 3;
+  grid-column: 2 / 4;
+  grid-row: 2;
   font-weight: 400;
   line-height: 26px;
-  text-align: left;
+  text-align: center;
   font-size: 17px;
   padding: 0px 15px;
   letter-spacing: 0.98px;
@@ -178,35 +179,67 @@ const Desc = styled.div`
 
   };
 `;
-
+const Dload = styled.div`
+  display: none;
+  @media (max-width: ${props => props.theme.mobileWidth}) {
+    display: inline-block;
+    grid-row: 2;
+    grid-column: 1 / -1;
+    color: black;
+    font-weight: 200;
+    font-size: 40px;
+    text-align: center;
+    z-index: 4;
+  };
+`;
+ const QRLink = styled.img`
+  /* background: red; */
+  grid-row: 2;
+  grid-column: 2 / 3;
+  height: 100px; width: 100px;
+  margin-top: 50px; margin-left: 200px;
+  z-index: 3;
+  @media (max-width: ${props => props.theme.mobileWidth}) {
+    grid-column: 1 / -1;
+    margin-top: 0px;
+    height: 100px; width: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    grid-row: 4;
+  };
+`;
 
 const AvailFor = styled.div`
-  /* background: ${props => props.theme.ogBlack}; */
   display: grid;
   height: 100px; width: 100%;
-  margin-top: 110px;
-  border-radius: 0px 0px 20px 20px;
+  margin-top: 50px; margin-left: -20px;
+  padding-left: 40px;
+  border-left: 2px solid black;
   align-content: start;
-  grid-row: 3;
-  grid-column: 2 / 3;
+  grid-row: 2;
+  grid-column: 3 / 4;
   row-gap: 10px;
   z-index: 10;
   @media (max-width: ${props => props.theme.mobileWidth}) {
-  margin-top: 10px;
-    display: none;
-    /* background: rebeccapurple; */
     height: 450px; width: 100vw;
-    grid-row: 4;
+    grid-row: 3;
+    grid-column: 1 / -1;
+    margin-top: -30px;
+    border-left: none;
+    padding-left: 0px;
+    margin-left: 0px;
+
   };
 `;
 
 
 const Item = styled.div`
   display: grid;
-  grid-template-columns: 40px 200px;
+  grid-template-columns: 150px;
   grid-template-rows: 40px;
-  width: 300px;
+  width: 150px;
   height: 40px;
+  text-align: center;
   background: #ffffff20;
   box-shadow: ${props => props.theme.bs};
   border-radius: 20px;
@@ -232,48 +265,31 @@ const Item = styled.div`
 `;
 
 const DeviceIcon = styled.div`
+  grid-row: 1;
+  grid-column: 1;
   height: 40px;
   width: 40px;
   z-index: 10;
   line-height: 35px;
+    .apple {
+      margin-left: 30px;
+    }
+    .android {
+      margin-left: 20px;
+    }
   img {
     height: 20px;
-    margin-left: 51%;
-    transform: translateX(-50%);
   }
 `;
 const DeviceType = styled.div`
-  height: 40px; width: 200px;
+  /* background: red; */
+  grid-row: 1;
+  grid-column: 1;
+  height: 40px; width: 150px;
   line-height: 40px;
   font-weight: 400;
   font-size: 17px;
   z-index: 10;
   color: black;
-`;
-//Detailing the phone that displays
-
-const PhoneItem = styled.div`
-  grid-row: 1 / -1;
-  grid-column: 3;
-  z-index: 10;
-  img {
-  width: 300px;
-  grid-column: 1;
-  margin-bottom: 130px ;
-  grid-row: 1 / -1;
-  }
-  @media (max-width: ${props => props.theme.mobileWidth}) { 
-    /* background: red; */
-    grid-column: 1 / -1;
-    grid-row: 1;
-    margin-top: 55px;
-    img {
-      /* margin-top: 100px; */
-      width: 300px;
-      transform: translateX(-50%);
-      margin-left: 50%;
-      overflow-x: hidden;
-    }
-  };
 `;
 

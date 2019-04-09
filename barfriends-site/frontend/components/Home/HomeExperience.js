@@ -6,17 +6,14 @@ const Moon = '../../static/images/Experience/Moon2.png';
 
 const OuterBox = styled.div`
   background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, #020B31 90%);
-  margin-top: 250px;
+  margin-top: 150px;
   min-height: 600px;
-  @media (max-width: 1400px) {
-  margin-top: 650px;
-  };
   @media (max-width: 950px) {
-  margin-top: 100px;
+  margin-top: 10px;
   };
 `;
 const Title = styled.h1`
-  margin-top: 500px;
+  margin-top: 300px;
   margin-bottom: 10vh;
   color: white;
   font-weight: 800;

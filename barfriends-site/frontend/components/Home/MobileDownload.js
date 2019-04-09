@@ -1,11 +1,14 @@
 import styled from 'styled-components';
 
+const QR = '../../static/images/home/qrcode.svg'
+const label = '../../static/images/label.svg'
 
 const AndroidIcon = '../../static/images/deviceimages/android.svg';
 const AppleIcon = '../../static/images/deviceimages/apple.svg';
 
 const MobileDownload = () => (
  <OuterBox>
+   <Label src={label} alt=""/>
     <AvailFor>
     <Dload>Download Now</Dload>
       <a target="_blank" href="https://itunes.apple.com/us/app/barfriends/id1445453937?mt=8">
@@ -28,35 +31,40 @@ export default MobileDownload;
 
 const OuterBox = styled.div`
   @media (max-width: ${props => props.theme.mobileWidth}) {
-    /* background: red; */
-    z-index: 10;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 100px 200px;
-    margin-top: -100px;
     overflow: hidden;
+    z-index: 10;
   };
   @media (max-height: 825px ) {
     margin-top: 00px;
   };
 `;
 
+ const Label = styled.img`
+  grid-row: 1;
+  grid-column: 1 / -1;
+  width: 100%; height: 100%;
+  padding: 10px 15px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+`;
+
 const AvailFor = styled.div`
   display: none;
   @media (max-width: ${props => props.theme.mobileWidth}) {
-  display: grid;
-  margin-top: -80px;
-  align-content: start;
-  z-index: 10;
-  grid-row: 2;
-  grid-column: 2 / 3;
+    display: grid;
+    align-content: start;
+    z-index: 10;
+    grid-row: 2;
+    grid-column: 2 / 3;
     width: 100vw;
   };
  
 `;
 
 const Dload = styled.div`
-  /* background: red; */
   color: black;
   text-align: center;
   font-size: 50px;
