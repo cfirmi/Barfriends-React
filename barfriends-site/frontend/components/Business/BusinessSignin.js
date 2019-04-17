@@ -8,7 +8,7 @@ const TheEvent = '../../static/images/business/BetterEvents.svg';
 const BusinessSignin = () => (
   <OuterBox>
     <BackgroundImg draggable="false" src={TheEvent} alt=""/>
-    <h1>Grow with us today. It's the best thing that you can do for your bar.</h1>
+    <h1>Contacting us today is the best thing that you can do for your bar.</h1>
   </OuterBox>
 );
 const OuterBox = styled.div`

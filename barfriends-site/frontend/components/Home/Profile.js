@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const Profile = '../../static/images/home/Profile.png'
 const Iphone = '../../static/images/home/iphoneBlue.png'
-const Screen = '../../static/images/home/screenrecord.MP4'
+const ScreenUber = '../../static/images/home/Uber.mov'
 
 const OuterBox = styled.div`
   /* background: red; */
@@ -48,7 +48,7 @@ const OuterBox = styled.div`
     color: white;
     grid-row: 3;
     grid-column: 4 / 7;
-    margin-top: -10px;
+    margin-top: 10px;
     /* margin-top: 50px; */
     ::selection {
       background: ${props => props.theme.orange}; /* WebKit/Blink Browsers */
@@ -84,7 +84,6 @@ const OuterBox = styled.div`
     
   }
     p {
-      /* margin-top: 20px; */
       grid-column: 1 / -1;
       grid-row: 5;
       margin-top: -20px;
@@ -98,6 +97,9 @@ const OuterBox = styled.div`
       text-align: center;
       grid-row: 1;
       margin-top: -100px;
+    }
+    p {
+      padding: 0px 30px;
     }
   };
 
@@ -129,12 +131,12 @@ const OuterBox = styled.div`
  const Signup = styled.div`
   /* color: grey; */
   background: ${props => props.theme.orange};
-  grid-row: 3;
-  grid-column: 4 / 5 ;
+  grid-row: 4;
+  grid-column: 6 / 7 ;
   height: 40px; width: 140px;
   line-height: 40px;
   text-align: center;
-  margin-top: 80px;
+  margin-top: 50px;
   cursor: pointer;
   div {
     /* background: red; */
@@ -143,11 +145,27 @@ const OuterBox = styled.div`
     color: white;
   }
   @media (max-width: ${props => props.theme.mobileWidth}) {
-    margin-top: 100px;
+    margin-top: 130px;
     grid-row: 5;
     grid-column: 1 / -1;
     margin-left: 50%; margin-bottom: 500px;
     transform: translateX(-50%);
+  };
+  @media (max-width: 950px) {
+    grid-row: 6;
+    margin-top: -90px;
+  };
+  @media (max-width: 590px) {
+    margin-top: -0px;
+  };
+  @media (max-width: 489px) {
+    margin-top: 20px;
+  };
+  @media (max-width: 450px) {
+    margin-top: 120px;
+  };
+  @media (max-width: 300px) {
+    grid-row: 7;
   };
 `;
 
@@ -161,13 +179,13 @@ const CreateProfile = () => (
       // controls
       muted
       loop
-      src={Screen}>
+      src={ScreenUber}>
     </VideoBox>
     <h1>Going out is <br/> just easier</h1>
     {/* <h2> IS A GREAT NIGHT OUT</h2> */}
-    <p style={{fontSize: '20px'}}>with BarfriendsMap find and select a bar that's pop'n and get a ride with Uber.
      {/* you use to find new bars and clubs and meet new people. */}
        {/* and also run and grow your own bar <span style={{textDecoration: 'underline', color: 'red'}}><Link href="business"><a> business</a></Link></span>.  */}
+    <p style={{fontSize: '20px'}}>move around the BarfriendsMap, see and select bars. See which of your friends are there and how many people are at the bar. Select the bar to get ride information from Uber. Tap the Uber button and go right into Uber App.
     </p>
     <Signup>
           <Link target="_blank" href="https://itunes.apple.com/us/app/barfriends/id1445453937?mt=8">

@@ -142,7 +142,7 @@ const Safety = () => (
       We connect you and your friends together to have a great time going out. 
       To join a bar you have to be near it to be shown the join button. Only those who join the bar can see other joined members.
       <br/> 
-      <Link href="/saftey">
+      <Link href="/safety">
         <a>
           <span style={{ cursor: 'pointer', textDecoration: 'underline',fontSize: '20px', textDecorationColor: 'blue'}}>Learn More</span>
         </a>

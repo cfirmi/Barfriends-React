@@ -63,7 +63,7 @@ const MainMap = () => (
     <OuterBox>
         <Title>
             Cheers To A Better <br/>Going Out Experience.
-          <Link href="/experiencecampaignpage">
+          <Link href="/experiencecampaign">
             <a>
               <p>campaign</p>
             </a>

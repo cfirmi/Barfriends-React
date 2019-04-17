@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 // import girls from '../images/joinimg/girls'
 const joinBfs = '../../static/images/joinimg/join-barfriends.jpg';
-const Logo = '../../static/images/LogoNaked.png';
+const QR = '../../static/images/home/qrcode.svg'
 
 const OuterBox = styled.div`
   display: grid;
@@ -18,16 +18,20 @@ const OuterBox = styled.div`
   display: grid;
   width: 100%;
   height: 100%;
+  grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
  };
 `;
 const Title = styled.h1`
   /* background: red; */
-  font-size: ${props => props.theme.head2};
+  font-size: ${props => props.theme.head1};
   height: 100%;
-  line-height: 55px;
+  line-height: 70px;
   font-weight: 400;
-  max-width: 430px;
-  grid-column: 2 / 5 ;
+  text-align: center;
+  padding: 0 15px;
+  /* max-width: 480px; */
+  grid-column: 1 / 5;
+  place-self: center;
   grid-row: 3 / 4;
   /* user-select: none;   */
   ::selection {
@@ -39,22 +43,21 @@ const Title = styled.h1`
     ::-moz-selection {
       background: ${props => props.theme.orange}; 
     }
-    @media (max-width: ${props => props.theme.mobileWidth} ) {
+    
+  @media (max-width: ${props => props.theme.mobileWidth} ) {
     grid-column: 1 / -1 ;
     grid-row: 5 / 6; 
-    margin-top: -0px; 
-    margin-left: 50%;
-    transform: translateX(-50%);
+    margin-top: 50px; 
     text-align: center;
     min-width: 95%;
     font-weight: 600;
-    }
+  }
 `;
 const ImgBox = styled.img`
   /* background: blue; */
   grid-column: 5 / -1;
-  height: 100%;
   grid-row: 2 / -1;
+  height: 100%;
   @media (max-width: ${props => props.theme.mobileWidth} ) {
   object-fit: cover;
     grid-column: 2 / 8;
@@ -66,31 +69,86 @@ const ImgBox = styled.img`
   };
 `;
 const Signup = styled.div`
-  /* color: grey; */
   background: ${props => props.theme.orange};
-  grid-row: 4 / 5;
-  grid-column: 2 / 5 ;
-  height: 40px; width: 140px;
-  line-height: 40px;
+  grid-row: 5;
+  grid-column: 1 / 5;
+  place-self: center;
+  height: 50px; width: 170px;
+  margin-top: -60px;
+  padding: 10px;
+  line-height: 33px;
+  font-weight: 800;
   text-align: center;
-  margin-top: 60px;
+  border-radius: 30px;
   cursor: pointer;
+  color: white;
   div {
     /* background: red; */
     display: inline-block;
     width: 10px;
     color: white;
   }
+  @media (max-width: 1881px) {
+    margin-top: 20px;
+  };
+  @media (max-width: 1356px) {
+    grid-row: 6;
+    grid-column: 3;
+    margin-left: 50px;
+    margin-top: 100px;
+  };
   @media (max-width: ${props => props.theme.mobileWidth}) {
-    margin-top: 130px;
-    grid-row: 5;
+    grid-row: 6;
     grid-column: 1 / -1;
-    margin-left: 50%;
-    transform: translateX(-50%);
+    margin-left: 0px; margin-top: 90px;
     div {
     display: inline-block;
     width: 10px;
   }
+  }
+  @media (max-width: 972px) {
+    margin-top: 120px;
+    grid-row: 7;
+  };
+  @media (max-width: 702px) {
+    margin-top: 0px;
+    grid-row: 8;
+  };
+  @media (max-width: 602px) {
+    grid-row: 9;
+  };
+  @media (max-width: 525px) {
+    display: none;
+  };
+`;
+const DownloadImage = styled.img`
+  /* background: red; */
+  grid-row: 6;
+  grid-column: 1 / 5;
+  place-self: center;
+  width: 150px;
+  height: 150px;
+  @media (max-width: 1881px) {
+    margin-top: 100px;
+  };
+  @media (max-width: 1356px) {
+  grid-column: 2;
+  };
+  @media (max-width: ${props => props.theme.mobileWidth}) {
+    margin-top: 150px;
+    grid-row: 7;
+    grid-column: 1 / -1;
+  };
+  @media (max-width: 972px) {
+    margin-top: 0px;
+    grid-row: 9;
+  };
+  @media (max-width: 702px) {
+    margin-top: -100px;
+    grid-row: 10;
+  };
+  @media (max-width: 602px) {
+    grid-row: 11;
   };
 `;
 
@@ -98,13 +156,12 @@ export default class JoinLearn extends Component {
   render() {
     return (
       <OuterBox>
-        <Title>A guide for how to use Barfriends</Title>
+        <Title> Joining Tonight Makes You Apart Of Something Special<span style={{color: '#FF7000'}}>.</span></Title>
+        <DownloadImage src={QR} alt=""/>
         <Signup>
-          <Link href="/signup">
-            <a>
-              Join <div>→</div>
-            </a>
-          </Link>
+          <a href="https://itunes.apple.com/us/app/barfriends/id1445453937?mt=8">
+            DOWNLOAD HERE
+          </a>
         </Signup>
         <ImgBox src={joinBfs} alt=""/>
       </OuterBox>

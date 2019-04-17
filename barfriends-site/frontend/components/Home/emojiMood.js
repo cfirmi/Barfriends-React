@@ -47,6 +47,7 @@ const OuterBox = styled.div`
     grid-column: 1 / -1;
     margin-top: 10px;
     font-size: 20px;
+    z-index: 2;
     /* margin-top: 50px; */
     line-height: 25px;
     @media (max-width: 1200px) {
@@ -92,7 +93,12 @@ const OuterBox = styled.div`
     ::-moz-selection {
       background: transparent 
     }
- `;
+    @media (max-width: 1000px) {
+      height: auto;
+      /* grid-row: 3 / -1; */
+      width: 100%;
+    }; 
+  `;
  
 const emojiMoods = () => (
   <OuterBox>

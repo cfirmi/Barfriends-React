@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled, { ThemeProvider, injectGlobal } from 'styled-components';
+import { ParallaxProvider } from 'react-scroll-parallax';
 import Header from '../components/Header';
 import Meta from '../components/Meta';
 
@@ -15,6 +16,7 @@ const theme = {
   NavigationMarginTop: '80px',
   bs: '0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
   bs2: '0 -5px 25px 1px rgba(105, 105, 105, .90), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
+  bs3: '0 -5px 2px 1px rgba(25, 25, 25, .90), 0 6px 2px 0 rgba(0, 0, 0, 0.19)',
   head1: '70px',
   head2: '52px',
   head3: '40px',
@@ -39,6 +41,7 @@ injectGlobal`
   html {
     box-sizing: border-box;
     font-size: 10px;
+    scroll-behavior: smooth;
     }
     * , *:before, *:after {
       box-sizing: inherit;
@@ -72,11 +75,13 @@ export default class Page extends Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
-        <StylePage>
-          <Meta />
-          <Header />
-          <Inner>{this.props.children}</Inner>
-        </StylePage>
+        <ParallaxProvider>
+          <StylePage>
+            <Meta />
+            <Header />
+            <Inner>{this.props.children}</Inner>
+          </StylePage>
+        </ParallaxProvider>    
       </ThemeProvider>
     );
   }

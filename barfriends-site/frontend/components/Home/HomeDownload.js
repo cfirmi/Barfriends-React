@@ -3,7 +3,7 @@ import MapContainer from '../Map/MapContainer';
 import MobileDownload from './MobileDownload';
 
 const Iphone = '../../static/images/home/iphoneBlue.png'
-const Screen = '../../static/images/home/screenrecord.MP4'
+const ScreenIntro = '../../static/images/home/intro.mov'
 const QR = '../../static/images/home/qrcode.svg'
 const label = '../../static/images/label.svg'
 
@@ -60,7 +60,7 @@ const MainDownload = () => (
       // controls
       muted
       loop
-      src={Screen}>
+      src={ScreenIntro}>
     </VideoBox>
     <QRLink src={QR} alt=""/>
     <AvailFor>
@@ -116,15 +116,11 @@ const Label = styled.img`
   grid-row: 1;
   grid-column: 1 / -1;
   font-weight: 600;
-  letter-spacing: 1.5px;
-  line-height: 20px;
-  text-align: left;
-  font-size: 25px;
   padding: 10px 15px;
   margin-left: 50%;
   transform: translateX(-50%);
-  width: 100%; height: 100%;
-  border-radius:  20px 20px 0px 0px;
+  width: 90%;
+   height: 100%;
   color: ${props => props.theme.black};
   z-index: 10;
   ::selection {
@@ -139,7 +135,7 @@ const Label = styled.img`
 
   @media (max-width: ${props => props.theme.mobileWidth}) {
     margin-top: 15px; 
-    width: 100vw;
+    /* width: 100vw; */
     grid-row: 1;
     grid-column: 1 / -1;
   };
@@ -221,13 +217,15 @@ const AvailFor = styled.div`
   row-gap: 10px;
   z-index: 10;
   @media (max-width: ${props => props.theme.mobileWidth}) {
-    height: 450px; width: 100vw;
+    /* background: red; */
+    height: 100px; width: 300px;
     grid-row: 3;
     grid-column: 1 / -1;
     margin-top: -30px;
     border-left: none;
     padding-left: 0px;
-    margin-left: 0px;
+    margin-left: 50%;
+    transform: translateX(-50%);
 
   };
 `;

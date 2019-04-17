@@ -46,7 +46,7 @@ const OuterBox = styled.div`
   grid-row: 1;
   grid-column: 1 / -1;
   width: 100%; height: 100%;
-  padding: 10px 15px;
+  /* padding: 10px 15px; */
   margin-left: 50%;
   transform: translateX(-50%);
 `;
