@@ -3,7 +3,7 @@ import Experience2 from '../components/Campaign/Experience2';
 import styled from 'styled-components'
 
 const OuterBox = styled.div` 
-
+  display: inline-block;
 `;
 
 const ExperienceCampaign = () => (

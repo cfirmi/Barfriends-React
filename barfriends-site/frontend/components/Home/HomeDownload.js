@@ -43,17 +43,9 @@ const PhoneBox = styled.img`
 
 const MainDownload = () => (
  <OuterBox>
-    {/* <Title>Expereince What You Want <br/>When Going Out</Title> */}
-    {/* <Title>Expereince a different going out.</Title> */}
-    {/* <Title>A different experience <br/> of going out.</Title> */}
-    {/* <Title>Discover the best experience.</Title>
-    <Desc>With Barfriends, you'll get real time, simple, information for all bars, clubs & pubs near you, available on phones all over the world.</Desc> */}
-    {/* <Title>The better going out experience.</Title> */}
     <Label src={label} alt=""/>
     <Desc>Find Bars. Go out. Meet Friends. Make new ones </Desc>
     <Dload>Download Now</Dload>
-    {/* <Desc> You get real time, simple, information for all bars, clubs & pubs near you, available on phones all over the world.</Desc> */}
-      {/* <PhoneItem><img src={IphoneImage} alt=""/></PhoneItem> */}
     <PhoneBox draggable='false' src={Iphone} alt=""/>
     <VideoBox 
       autoPlay={true}
@@ -97,7 +89,7 @@ const OuterBox = styled.div`
   grid-template-rows: 100px 100px 100px 1fr 1fr 1fr;
   height: 125vh; width:100vw;
   margin-top: 150px;
-  min-height: 750px;
+  min-height: 1050px;
   padding-top: 10px;
   z-index: 10;
   @media (max-width: ${props => props.theme.mobileWidth}) {

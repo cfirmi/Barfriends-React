@@ -88,7 +88,7 @@ const Title = styled.h1`
   }
   @media (max-width: 730px) {
     grid-row: 5;
-    margin-top: -30px;
+    margin-top: -60px;
     padding: 0 50px;
     min-width: 100vw;
     font-size: ${props => props.theme.head3};
@@ -128,7 +128,7 @@ const Text = styled.p`
   }
   @media (max-width: 730px) {
     height: 900px;
-    grid-row: 6;
+    grid-row: 7;
     padding: 0 50px;
     min-width: 100vw;
     font-size: ${props => props.theme.head4};

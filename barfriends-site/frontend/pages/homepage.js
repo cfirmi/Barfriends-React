@@ -8,7 +8,6 @@ import Beyond from '../components/Home/Beyond';
 
 const Home = props => (
   <div>
-    {/* <MobileDownload /> */}
     <HomeDownload />
     <CreateProfile />
     <EmojiMood />

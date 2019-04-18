@@ -63,6 +63,7 @@ const MessageImg = styled.img`
   grid-row: 5; 
   grid-column: 3 / 6;
   margin-left: 50%;
+  padding: 20px;
   transform: translateX(-50%);
 `;
 export default Beyond;

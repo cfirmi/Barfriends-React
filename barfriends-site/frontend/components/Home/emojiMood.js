@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import Link from 'next/link'
 
-const emojiMood = '../../static/images/home/emojiBackground.png'
+const emojiMood = '../../static/images/home/emojiMood.png'
 
 const OuterBox = styled.div`
   /* background: red; */
@@ -76,14 +76,13 @@ const OuterBox = styled.div`
 `;
 
  const ImageBox = styled.img`
-  margin-top: -100px;
   grid-row: 2 / 5;
   grid-column: 1 / -1;
   height: 100%;
-  margin-left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
   z-index: 1;
-  /* width: 300px; */
+  /* background: url("../../static/images/home/emojiMood.png"); */
+  /* background-position: center; */
   ::selection {
       background: transparent
     }
@@ -94,9 +93,7 @@ const OuterBox = styled.div`
       background: transparent 
     }
     @media (max-width: 1000px) {
-      height: auto;
-      /* grid-row: 3 / -1; */
-      width: 100%;
+      display: none;
     }; 
   `;
  

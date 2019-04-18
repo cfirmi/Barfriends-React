@@ -92,6 +92,7 @@ const OuterBox = styled.div`
     }
   };
   @media (max-width: 600px) {
+    margin-top: 30vh;
     h1 {
       grid-column: 1 / -1;
       text-align: center;

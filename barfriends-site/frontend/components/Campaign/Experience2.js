@@ -5,7 +5,7 @@ import { Parallax } from 'react-scroll-parallax'
 // const Girlsimage = '../../static/images/campaign/girlssunset.jpg'
 
 const OuterBox = styled.div`
-  background: blue;
+  background: black;
   position: relative;
   display: inline-block;
   width: 100vw; height: 100vh;
@@ -17,7 +17,7 @@ export default class Experience2 extends Component {
   render() {
     return (
       <OuterBox>
-        <h1>This is the second and third divs</h1>
+        {/* <h1>This is the second and third divs</h1> */}
       </OuterBox>
     )
   }

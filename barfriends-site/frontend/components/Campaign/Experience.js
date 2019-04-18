@@ -12,6 +12,7 @@ const OuterBox = styled.div`
   grid-template-rows: 1fr 1fr;
   height: 100vh;
   z-index: 1;
+  margin-top: 20px;
   .img-class {
     grid-column: 1 / -1;
     grid-row: 1;
@@ -55,7 +56,7 @@ export default class Experience1 extends Component {
         </Parallax>
         <Parallax className="title-class" y={[-40, 95]}>
           <Title1>FUN NIGHTS WITH YOUR FRIENDS</Title1>
-        </Parallax>w
+        </Parallax>
       </OuterBox>
     )
   }

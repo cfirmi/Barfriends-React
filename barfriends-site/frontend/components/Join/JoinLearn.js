@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import Link from 'next/link';
-// import hhh from '../../static/images/joinimg/join-barfriends.jpg'
 
-// import girls from '../images/joinimg/girls'
 const joinBfs = '../../static/images/joinimg/join-barfriends.jpg';
 const QR = '../../static/images/home/qrcode.svg'
 
@@ -13,6 +10,7 @@ const OuterBox = styled.div`
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 100px 100px 100px 100px 100px 100px;
   height: 80vh;
+  min-height: 100vh;
   
   @media (max-width: ${props => props.theme.mobileWidth}) {
   display: grid;
@@ -22,18 +20,15 @@ const OuterBox = styled.div`
  };
 `;
 const Title = styled.h1`
-  /* background: red; */
   font-size: ${props => props.theme.head1};
   height: 100%;
   line-height: 70px;
   font-weight: 400;
   text-align: center;
   padding: 0 15px;
-  /* max-width: 480px; */
   grid-column: 1 / 5;
   place-self: center;
   grid-row: 3 / 4;
-  /* user-select: none;   */
   ::selection {
       background: ${props => props.theme.orange}; /* WebKit/Blink Browsers */
     }
@@ -77,13 +72,12 @@ const Signup = styled.div`
   margin-top: -60px;
   padding: 10px;
   line-height: 33px;
-  font-weight: 800;
+  font-weight: 600;
   text-align: center;
   border-radius: 30px;
   cursor: pointer;
   color: white;
   div {
-    /* background: red; */
     display: inline-block;
     width: 10px;
     color: white;
@@ -160,7 +154,7 @@ export default class JoinLearn extends Component {
         <DownloadImage src={QR} alt=""/>
         <Signup>
           <a href="https://itunes.apple.com/us/app/barfriends/id1445453937?mt=8">
-            DOWNLOAD HERE
+            DOWNLOAD
           </a>
         </Signup>
         <ImgBox src={joinBfs} alt=""/>
