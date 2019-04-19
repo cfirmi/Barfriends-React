@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 const messages = '../../static/images/home/messages.svg'
+const me = '../../static/images/home/me.jpg'
+const misia = '../../static/images/home/misia.jpg'
 
 const Beyond = () => (
   <OuterBox>
@@ -9,8 +11,8 @@ const Beyond = () => (
     <p>Send <span>ASKS</span> to people you want to meet in the bar.</p>
     </div>
     <MessageImg src={messages} alt=""/>
-    <GirlImg src="" alt=""/>
-    <BoyImg src="" alt=""/>
+    <GirlImg alt=""/>
+    <BoyImg alt=""/>
   </OuterBox>
 );
 const OuterBox = styled.div`
@@ -61,10 +63,28 @@ const OuterBox = styled.div`
 `;
 
  const BoyImg = styled.div`
-  background: red;
+  background-image: url('../../static/images/home/me.jpg');
+  background-size: cover;
+  height: 125px; width: 125px;
+  grid-row: 4;
+  grid-column: 4;
+  margin-left: 100px;
+  border-radius: 65px;
+  @media (max-width: 800px) {
+  grid-column: 6;
+  };
  `;
  const GirlImg = styled.div`
-  background: blue;
+  background-image: url('../../static/images/home/misia.jpg');
+  background-size: cover;
+  height: 125px; width: 125px;
+  grid-row: 4;
+  grid-column: 4;
+  border-radius: 65px;
+  z-index: 2;
+  @media (max-width: 800px) {
+  grid-column: 1;
+  };
  `;
 
 const MessageImg = styled.img`
