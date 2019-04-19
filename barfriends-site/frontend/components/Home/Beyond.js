@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
 const messages = '../../static/images/home/messages.svg'
-const me = '../../static/images/home/me.jpg'
-const misia = '../../static/images/home/misia.jpg'
 
 const Beyond = () => (
   <OuterBox>
@@ -90,7 +88,7 @@ const OuterBox = styled.div`
 const MessageImg = styled.img`
   height: 250px;
   grid-row: 5; 
-  grid-column: 3 / 6;
+  grid-column: 1 / -1;
   margin-left: 50%;
   padding: 20px;
   transform: translateX(-50%);
