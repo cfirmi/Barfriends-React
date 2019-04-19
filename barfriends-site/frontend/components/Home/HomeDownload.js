@@ -44,7 +44,7 @@ const PhoneBox = styled.img`
 const MainDownload = () => (
  <OuterBox>
     <Label src={label} alt=""/>
-    <Desc>Find Bars. Go Out. Meet Friends. Chat with new ones.</Desc>
+    <Desc>Find Bars. Go Out. Meet Friends. Chat With New Ones.</Desc>
     <Dload>Download Now</Dload>
     <PhoneBox draggable='false' src={Iphone} alt=""/>
     <VideoBox 
