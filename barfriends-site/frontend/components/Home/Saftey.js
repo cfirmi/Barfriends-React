@@ -46,7 +46,7 @@ const OuterBox = styled.div`
     margin-top: 0px;
     grid-row: 2;
     margin-left: 50%;
-    min-width: 100vw;
+    width: 100vw;
     max-height: 400px;
     object-position: 0% 70%;
     transform: translateX(-50%);

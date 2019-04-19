@@ -5,7 +5,7 @@ const BusinessInvite = () => (
       {/* <Title>
         Content For Your Customers
       </Title> */}
-      <IntroPara>Your <span style={{color: 'white'}}>customers</span> want to know more about your bar. Join us today and you will see how easy engaging with the mobile first generation will be. 
+      <IntroPara>Your <span style={{color: 'white'}}>customers</span> want to know more about your bar. Join us today and begin engaging with the mobile first generation will be. 
           {/* Advertise weekly schedules, upcoming special events. Watch as nights at your bar become sociallly popular.  */}
           {/* Join Barfriends today and use your profile to your advantage.
           Our Users are your customers people want to know more about your bar and you have a can reach then tonight with Barfriends.  */}

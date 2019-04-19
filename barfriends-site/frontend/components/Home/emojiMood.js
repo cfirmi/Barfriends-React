@@ -76,10 +76,11 @@ const OuterBox = styled.div`
 `;
 
  const ImageBox = styled.img`
-  grid-row: 2 / 5;
+  grid-row: 1/ 5;
   grid-column: 1 / -1;
   height: 100%;
-  width: 100%;
+  width: auto;
+  place-self: center;
   z-index: 1;
   /* background: url("../../static/images/home/emojiMood.png"); */
   /* background-position: center; */
@@ -92,7 +93,7 @@ const OuterBox = styled.div`
     ::-moz-selection {
       background: transparent 
     }
-    @media (max-width: 1000px) {
+    @media (max-width: 500px) {
       display: none;
     }; 
   `;

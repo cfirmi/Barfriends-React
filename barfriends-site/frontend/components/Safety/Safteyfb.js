@@ -5,7 +5,8 @@ const fbthumb = '../../static/images/safety/fbthumb.svg'
 
 const OuterBox = styled.div`
   display: grid;
-  width: 500px; height: 50%;
+  height: 50%;
+  max-width: 100vw;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   box-shadow: ${props => props.theme.bs3};
@@ -14,6 +15,7 @@ const OuterBox = styled.div`
   margin-left: 50%;
   transform: translateX(-50%);
   @media (max-width: 650px) {
+    padding: 0px;
     border-radius: 0px;
     width: 100vw;
   };
@@ -42,7 +44,7 @@ const Text = styled.p`
   @media (max-width: 650px) {
     grid-column: 1 / -1;
     grid-row: 3;
-      padding: 0px 00px;
+    padding: 0px 0px;
   };
 `;
 
