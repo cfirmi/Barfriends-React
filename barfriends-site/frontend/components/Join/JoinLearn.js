@@ -150,7 +150,7 @@ export default class JoinLearn extends Component {
   render() {
     return (
       <OuterBox>
-        <Title> Joining Tonight Makes You Apart Of Something Special<span style={{color: '#FF7000'}}>.</span></Title>
+        <Title> Joining Tonight Makes You A Part Of Something Special<span style={{color: '#FF7000'}}>.</span></Title>
         <DownloadImage src={QR} alt=""/>
         <Signup>
           <a href="https://itunes.apple.com/us/app/barfriends/id1445453937?mt=8">

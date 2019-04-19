@@ -11,6 +11,7 @@ const OuterBox = styled.div`
 const BFBusiness = () => (
   <OuterBox>
 <br/>
+<h1>Terms Of Use</h1>
     <span style={{fontWeight: '800'}}>BARFRIENDS INC. Terms of Use for Web and Mobile</span>
     <br/>
 
@@ -360,7 +361,7 @@ end of Terms of Use
 <br/>
 <h1>PRIVACY POLICY</h1>
 <br/>
-BARFRIENDS INC. Privacy Policy Web and Mobile
+<span style={{fontWeight: '800'}}>BARFRIENDS INC. Privacy Policy Web and Mobile</span>
 <br/>
 <br/>
 

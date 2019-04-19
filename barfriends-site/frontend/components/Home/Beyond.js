@@ -9,6 +9,8 @@ const Beyond = () => (
     <p>Send <span>ASKS</span> to people you want to meet in the bar.</p>
     </div>
     <MessageImg src={messages} alt=""/>
+    <GirlImg src="" alt=""/>
+    <BoyImg src="" alt=""/>
   </OuterBox>
 );
 const OuterBox = styled.div`
@@ -57,6 +59,13 @@ const OuterBox = styled.div`
     }
   }
 `;
+
+ const BoyImg = styled.div`
+  background: red;
+ `;
+ const GirlImg = styled.div`
+  background: blue;
+ `;
 
 const MessageImg = styled.img`
   height: 250px;
