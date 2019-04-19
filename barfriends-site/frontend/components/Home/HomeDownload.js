@@ -44,7 +44,7 @@ const PhoneBox = styled.img`
 const MainDownload = () => (
  <OuterBox>
     <Label src={label} alt=""/>
-    <Desc>Find Bars. Go Out. Meet Friends. Chat With New Ones.</Desc>
+    <Desc>Find Bars. Go Out. Meet Friends. Chat.</Desc>
     <Dload>Download Now</Dload>
     <PhoneBox draggable='false' src={Iphone} alt=""/>
     <VideoBox 
@@ -155,15 +155,14 @@ const Desc = styled.div`
       background: ${props => props.theme.orange}; 
     }
   @media (max-width: ${props => props.theme.mobileWidth}) {
-    display: none;
-    grid-row: 9;
+    grid-row: 2;
     grid-column: 1 / -1;
     width: 100%;
     margin-left: 0px;
-    color: white;
-    margin-top: 25px;
+    color: black;
+    /* margin-top: 25px; */
     text-align: center;
-    padding: 0px 20px;
+    padding: 0px 10px;
 
   };
 `;

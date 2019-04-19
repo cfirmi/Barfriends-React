@@ -27,7 +27,7 @@ const OuterBox = styled.div`
      font-size: 50px;
     };
     @media (max-width: 450px) {
-     margin-top: -40px;
+     margin-top: -100px;
      font-size: 40px;
     };
     ::selection {

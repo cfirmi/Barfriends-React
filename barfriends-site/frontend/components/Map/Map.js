@@ -4,11 +4,11 @@ import styled from 'styled-components';
 
 const MapContainerBox = styled.div`
   position: absolute;
-  top: -130px;
-  height: 120vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  top: -130px;
+  height: 120vh;
   min-height: 800px; width: 100vw;
 `;
 const MapStyle = styled.div`
@@ -20,7 +20,7 @@ const MapStyle = styled.div`
 const HideDiv = styled.div`
   grid-column: 1 / -1;
   /* grid-row: -1; */
-  margin-top:-50px;
+  margin-top: -50px;
   height: 50px;
   background: black;
   z-index: 2;
