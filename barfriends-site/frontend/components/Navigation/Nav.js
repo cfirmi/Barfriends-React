@@ -53,7 +53,7 @@ const NavBox = styled.div`
 `;
 const StyleLogo = styled.img`
   height: 65px;
-  margin-top: 17px;
+  margin-top: 10px;
   border-radius: 10px;
   box-shadow: -0px -0px 5px rgba(106, 106, 106, .20);
   z-index: 10;
