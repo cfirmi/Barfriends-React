@@ -6,11 +6,11 @@ const Iphone = '../../static/images/home/iphoneBlue.png'
 const Screen = '../../static/images/home/screenrecord.MP4'
 
 const OuterBox = styled.div`
-  /* background: red; */
+  background: red;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 200px 200px 200px 200px;
-  min-height: 800px;
+  min-height: 900px;
   h1 {
     font-size: 70px;
     font-weight: 800;
@@ -68,7 +68,7 @@ const OuterBox = styled.div`
     h1 {
       grid-column: 1 / -1;
       text-align: center;
-      grid-row: 1;
+      grid-row: 2;
       margin-top: -100px;
     }
   };
@@ -137,7 +137,6 @@ const CreateProfile = () => (
     </VideoBox>
     <h1>Going out <br/> has never been so easy</h1>
     {/* <h2> IS A GREAT NIGHT OUT</h2> */}
-    <p>minima? Deleniti iusto perferendis alias doloribus ex mollitia quos voluptatibus provident. Minima facere unde nulla pariatur quam consectetur?</p>
     <Signup>
           <Link href="/signup">
             <a>

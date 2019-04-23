@@ -97,7 +97,7 @@ const OuterBox = styled.div`
       grid-column: 1 / -1;
       text-align: center;
       grid-row: 1;
-      margin-top: -100px;
+      margin-top: -160px;
     }
     p {
       padding: 0px 30px;
