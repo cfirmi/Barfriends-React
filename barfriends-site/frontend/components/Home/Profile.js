@@ -186,15 +186,19 @@ const CreateProfile = () => (
     {/* <h2> IS A GREAT NIGHT OUT</h2> */}
      {/* you use to find new bars and clubs and meet new people. */}
        {/* and also run and grow your own bar <span style={{textDecoration: 'underline', color: 'red'}}><Link href="business"><a> business</a></Link></span>.  */}
-    <p style={{fontSize: '20px'}}>move around the BarfriendsMap, see and select bars. See which of your friends are there and how many people are at the bar. Select the bar to get ride information from Uber. Tap the Uber button and go right into Uber App.
+    <p style={{fontSize: '20px'}}>the BarfriendsMap,
+     shows you your profile and the bars, clubs or pubs that are near you.
+      Select the profile icon and choose an emojiMood, that describes you tonight 😄. Chat with any of your friends, see if they want to go out.
+       Swipe down to return to the BarfriendsMap and find the bar and Uber to it.
+       Arrive and join the bar to message other joined people to the bar.
     </p>
-    <Signup>
+    {/* <Signup>
           <Link target="_blank" href="https://itunes.apple.com/us/app/barfriends/id1445453937?mt=8">
             <a>
               Join <div>→</div>
             </a>
           </Link>
-        </Signup>
+        </Signup> */}
   </OuterBox>
  );
  

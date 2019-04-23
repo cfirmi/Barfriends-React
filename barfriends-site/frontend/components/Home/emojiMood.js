@@ -8,7 +8,7 @@ const OuterBox = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 200px 200px 200px 200px;
-  margin-bottom: 200px;
+  margin-top: 200px;
   h1 {
     grid-row: 3;
     grid-column: 1 / -1;
@@ -22,11 +22,11 @@ const OuterBox = styled.div`
      margin-top: -100px;
      margin-bottom: 0px;
     };
-    @media (max-width: 650px) {
+    @media (max-width: 640px) {
      margin-top: -60px;
      font-size: 50px;
     };
-    @media (max-width: 450px) {
+    @media (max-width: 458px) {
      margin-top: -100px;
      font-size: 40px;
     };
@@ -94,7 +94,10 @@ const OuterBox = styled.div`
       background: transparent 
     }
     @media (max-width: 500px) {
-      display: none;
+      /* display: none; */
+      width: 100%;
+      height: auto;
+      grid-row: 2 / 5;
     }; 
   `;
  

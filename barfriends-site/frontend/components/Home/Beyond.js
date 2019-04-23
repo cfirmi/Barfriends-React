@@ -16,10 +16,9 @@ const Beyond = () => (
 const OuterBox = styled.div`
   /* background: yellow; */
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns:  1fr 1fr 125px 1fr  1fr 125px 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  width: 100vw; height: 55vh;
-  margin-bottom: 100px;
+  width: 100vw; height: 1000px;
   .title {
     grid-row: 3;
     grid-column: 1 / -1;
@@ -65,11 +64,17 @@ const OuterBox = styled.div`
   background-size: cover;
   height: 125px; width: 125px;
   grid-row: 4;
-  grid-column: 4;
-  margin-left: 100px;
+  grid-column: 5;
+  margin-left: -10px;
   border-radius: 65px;
-  @media (max-width: 800px) {
-  grid-column: 6;
+  padding: 10px;
+  @media (max-width: 500px) {
+    grid-row: 5;
+    grid-column: 1 / -1;
+    height: 300px; width: 100vw;
+    border-radius: 0px;
+    background-size: 100% 550px;
+    background-position-y: -100px;
   };
  `;
  const GirlImg = styled.div`
@@ -78,10 +83,15 @@ const OuterBox = styled.div`
   height: 125px; width: 125px;
   grid-row: 4;
   grid-column: 4;
+  padding: 10px;
   border-radius: 65px;
+  border: 4px solid #ff7000;
   z-index: 2;
-  @media (max-width: 800px) {
-  grid-column: 1;
+  @media (max-width: 500px) {
+    grid-column: 1 / -1;
+    height: 300px; width: 100vw;
+    border-radius: 0px;
+    background-position-y: -100px;
   };
  `;
 
@@ -92,5 +102,9 @@ const MessageImg = styled.img`
   margin-left: 50%;
   padding: 20px;
   transform: translateX(-50%);
+  @media (max-width: 600px) {
+    grid-row: 6; 
+  };
 `;
+
 export default Beyond;
