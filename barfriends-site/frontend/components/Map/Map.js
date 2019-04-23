@@ -10,6 +10,9 @@ const MapContainerBox = styled.div`
   top: -130px;
   height: 120vh;
   min-height: 800px; width: 100vw;
+  @media (max-width: 600px) {
+    display: none;
+  };
 `;
 const MapStyle = styled.div`
   grid-column: 1 / -1;

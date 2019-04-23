@@ -83,7 +83,6 @@ const Back = styled.div`
 
 
 const OuterBox = styled.div`
-  /* background: ${props => props.theme.orange}; */
   display: grid;
   grid-template-columns: 1fr 370px 350px 1fr;
   grid-template-rows: 100px 100px 100px 1fr 1fr 1fr;
@@ -103,6 +102,10 @@ const OuterBox = styled.div`
   min-height: 1050px;
   overflow: hidden;
   };
+  @media (max-width: 600px) {
+  margin-top: -120px;
+  padding-top: 30px;
+  };
 `;
 const Label = styled.img`
   grid-row: 1;
@@ -112,7 +115,7 @@ const Label = styled.img`
   margin-left: 50%;
   transform: translateX(-50%);
   width: 90%;
-   height: 100%;
+  height: 100%;
   color: ${props => props.theme.black};
   z-index: 10;
   ::selection {
@@ -130,6 +133,9 @@ const Label = styled.img`
     /* width: 100vw; */
     grid-row: 1;
     grid-column: 1 / -1;
+  };
+  @media (max-width: 600px) {
+    color: white;
   };
 
 `;
@@ -165,6 +171,10 @@ const Desc = styled.div`
     padding: 0px 10px;
 
   };
+  @media (max-width: 600px) {
+    color: white;
+    margin-top: -10px;
+  };
 `;
 const Dload = styled.div`
   display: none;
@@ -177,6 +187,10 @@ const Dload = styled.div`
     font-size: 40px;
     text-align: center;
     z-index: 4;
+  };
+  @media (max-width: 600px) {
+    color: white;
+    margin-top: 20px;
   };
 `;
  const QRLink = styled.img`
@@ -193,6 +207,9 @@ const Dload = styled.div`
     margin-left: 50%;
     transform: translateX(-50%);
     grid-row: 4;
+  };
+  @media (max-width: 600px) {
+    color: white;
   };
 `;
 
@@ -218,6 +235,10 @@ const AvailFor = styled.div`
     margin-left: 50%;
     transform: translateX(-50%);
 
+  };
+  @media (max-width: 600px) {
+    color: white;
+    margin-top: 20px;
   };
 `;
 
@@ -251,6 +272,10 @@ const Item = styled.div`
     height: 40px;
     width: 300px;
   };
+  @media (max-width: 600px) {
+    background: white;
+  };
+  
 `;
 
 const DeviceIcon = styled.div`
@@ -280,5 +305,6 @@ const DeviceType = styled.div`
   font-size: 17px;
   z-index: 10;
   color: black;
+  
 `;
 
