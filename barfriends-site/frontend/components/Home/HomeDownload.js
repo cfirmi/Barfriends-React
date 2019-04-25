@@ -103,8 +103,7 @@ const OuterBox = styled.div`
   overflow: hidden;
   };
   @media (max-width: 600px) {
-  margin-top: -120px;
-  padding-top: 30px;
+  margin-top: 5vh;
   };
 `;
 const Label = styled.img`

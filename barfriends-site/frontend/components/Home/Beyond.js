@@ -69,6 +69,7 @@ const OuterBox = styled.div`
   border-radius: 65px;
   padding: 10px;
   @media (max-width: 500px) {
+    margin-left: 0px;
     grid-row: 5;
     grid-column: 1 / -1;
     height: 300px; width: 100vw;
@@ -92,6 +93,7 @@ const OuterBox = styled.div`
     height: 300px; width: 100vw;
     border-radius: 0px;
     background-position-y: -100px;
+    border: none;
   };
  `;
 
