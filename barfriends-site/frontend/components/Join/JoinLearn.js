@@ -10,8 +10,7 @@ const OuterBox = styled.div`
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 100px 100px 100px 100px 100px 100px;
   height: 80vh;
-  min-height: 100vh;
-  
+  min-height: 700px;
   @media (max-width: ${props => props.theme.mobileWidth}) {
   display: grid;
   width: 100%;
@@ -20,7 +19,7 @@ const OuterBox = styled.div`
  };
 `;
 const Title = styled.h1`
-  font-size: ${props => props.theme.head1};
+  font-size: ${props => props.theme.head2};
   height: 100%;
   line-height: 70px;
   font-weight: 400;
