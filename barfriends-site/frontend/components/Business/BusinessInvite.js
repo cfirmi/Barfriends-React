@@ -10,7 +10,12 @@ const BusinessInvite = () => (
           {/* Join Barfriends today and use your profile to your advantage.
           Our Users are your customers people want to know more about your bar and you have a can reach then tonight with Barfriends.  */}
       </IntroPara>
-      <SignupButton>Contact</SignupButton>
+      <SignupButton>
+        {/* <a href="mailto:christian@barfriends.net&subject=Barfriends%20Business">
+          Contact
+        </a> */}
+        <a target="_blank" href="mailto:christian@barfriends.net?subject=Barfriends Business Bar Owner&">Contact via email</a>
+      </SignupButton>
   </OuterBox>
 );
 //Edit test commit test2
@@ -22,17 +27,6 @@ const OuterBox = styled.div`
   width: 100vw; height: 100vh;
   min-height: 600px;
 `;
-//  const Title = styled.div`
-//   background: url('../../static/images/business/sunset3.jpg') center;
-//   background-size: 9000px;
-//   background-clip: text;
-//   -webkit-background-clip:text;
-//   grid-column: 1 / -1;
-//   text-align: center;
-//   font-weight: 800;
-//   font-size: ${props => props.theme.head2};
-//   color: transparent;
-// `;
  const IntroPara = styled.div`
   background: url('../../static/images/business/sunset4.jpg') center;
   background-size: 100%;
@@ -78,6 +72,9 @@ const SignupButton = styled.button`
   box-shadow: ${props => props.theme.bs};
   transition: 0.5s ease;
   z-index: 2;
+  a {
+    padding: 20px 10px;
+  }
   :hover {
     background: white;
     color: ${props => props.theme.orange};
